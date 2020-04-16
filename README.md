@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # UpSet.js
 
 UpSet.js is a JavaScript re-implementation of [UpSetR](https://www.rdocumentation.org/packages/UpSetR/) which itself is based on [UpSet](http://vcg.github.io/upset/about/). The core library is written in React but provides also bundle editions for plain JavaScript use. The `UpSet` React component is implemented as a pure functional component solely depending on the given properties.
@@ -47,7 +43,7 @@ const UpSetSelection = (props: any) => {
 
 ![simple](https://user-images.githubusercontent.com/4129778/79372711-4cc33d00-7f56-11ea-865e-e1f74261ccb2.png)
 
-see also https://upsetjs.netlify.app/api/?path=/docs/upset--default
+see also [Storybook Page](https://upsetjs.netlify.app/api/?path=/docs/upset--default)
 
 ### Bundled version
 
@@ -121,7 +117,7 @@ see also [![Open in CodePen][codepen]](https://codepen.io/sgratzl/pen/BaNmpJq)
 
 ## UpSet.js App
 
-It contains a sample application for exploring sets and set intersections. It is the counterpart to the original [UpSet](http://vcg.github.io/upset/about/) and [UpSet2](https://vdl.sci.utah.edu/upset2/). The app is deployed at https://upsetjs.netlify.app.
+It contains a sample application for exploring sets and set intersections. It is the counterpart to the original [UpSet](http://vcg.github.io/upset/about/) and [UpSet2](https://vdl.sci.utah.edu/upset2/). The app is deployed at [https://upsetjs.netlify.app](https://upsetjs.netlify.app).
 
 ![upset_app1](https://user-images.githubusercontent.com/4129778/79368561-e3d8c680-7f4f-11ea-9a87-f4421a3846cf.png)
 
@@ -182,7 +178,7 @@ upsetjs() %>% fromList(listInput) %>% interactiveChart()
 
 see also [Basic.Rmd](https://github.com/upsetjs/upsetjs_r/master/vignettes/basic.Rmd)
 
-and https://upsetjs.github.io/upsetjs_r
+and [R Package Documentation](https://upsetjs.github.io/upsetjs_r)
 
 ### Juptyer Widget
 
