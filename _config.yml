@@ -1,0 +1,5 @@
+theme: jekyll-theme-cayman
+title: UpSet.js
+description: |
+  UpSet.js is a React re-implementation of UpSetR
+show_downloads: false
