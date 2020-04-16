@@ -1,5 +1,7 @@
 # UpSet.js
 
+[![NPM Package][npm-image]][npm-url] [![Netlify Status][netlify-image]][netlify-url]
+
 UpSet.js is a JavaScript re-implementation of [UpSetR](https://www.rdocumentation.org/packages/UpSetR/) which itself is based on [UpSet](http://vcg.github.io/upset/about/). The core library is written in React but provides also bundle editions for plain JavaScript use. The `UpSet` React component is implemented as a pure functional component solely depending on the given properties.
 
 ![interactions](https://user-images.githubusercontent.com/4129778/79372064-b262f980-7f55-11ea-872e-6e6857c0df82.png)
@@ -210,3 +212,9 @@ If you want to use Upset.js for a commercial application the commercial license 
 ### Open-source license
 
 This library is released under the `GNU AGPLv3` version to be used for private and academic purposes. In case of a commercial use, please get in touch regarding a commercial license.
+
+[npm-image]: https://badge.fury.io/js/%40upsetjs%2Freact.svg
+[npm-url]: https://npmjs.org/package/@upsetjs/react
+[netlify-image]: https://api.netlify.app/api/v1/badges/22f99fef-9985-46eb-8715-9eb91e16190f/deploy-status
+[netlify-url]: https://app.netlify.app/sites/upsetjs/deploys
+[codepen]: https://img.shields.io/badge/CodePen-open-blue?logo=codepen
