@@ -24,9 +24,7 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         <a href="{{ '/' | relative_url }}" class="btn">Home</a>
-      {% if site.github.is_project_page %}
         <a href="https://github.com/upsetjs" class="btn">View on GitHub</a>
-      {% endif %}
         <a href="{{ '/app/' | relative_url }}" class="btn">Demo Application</a>
         <a href="{{ '/api/' | relative_url }}" class="btn">API Documentation</a>
         <a href="{{ '/integrations/' | relative_url }}" class="btn">Integrations</a>
