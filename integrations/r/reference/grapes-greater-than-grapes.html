@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>adds a new query to the plot — addQuery • upsetjs</title>
+<title>reexport operator — %&gt;% • upsetjs</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="adds a new query to the plot — addQuery" />
-<meta property="og:description" content="adds a new query to the plot" />
+<meta property="og:title" content="reexport operator — %&gt;%" />
+<meta property="og:description" content="reexport operator" />
 
 
 
@@ -120,45 +120,30 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>adds a new query to the plot</h1>
-    <small class="dont-index">Source: <a href='https://github.com/upsetjs/upset_r/blob/master/R/queries.R'><code>R/queries.R</code></a></small>
-    <div class="hidden name"><code>addQuery.Rd</code></div>
+    <h1>reexport operator</h1>
+    <small class="dont-index">Source: <a href='https://github.com/upsetjs/upset_r/blob/master/R/reexport.R'><code>R/reexport.R</code></a></small>
+    <div class="hidden name"><code>grapes-greater-than-grapes.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>adds a new query to the plot</p>
+    <p>reexport operator</p>
     </div>
 
-    <pre class="usage"><span class='fu'>addQuery</span>(<span class='no'>upsetjs</span>, <span class='no'>name</span>, <span class='no'>color</span>, <span class='kw'>elems</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>set</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
+    <pre class="usage"><span class='no'>lhs</span> <span class='kw'>%&gt;%</span> <span class='no'>rhs</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>upsetjs</th>
-      <td><p>the upsetjs (proxy) instance</p></td>
+      <th>lhs</th>
+      <td><p>A value or the magrittr placeholder.</p></td>
     </tr>
     <tr>
-      <th>name</th>
-      <td><p>name of the query</p></td>
-    </tr>
-    <tr>
-      <th>color</th>
-      <td><p>color of the query</p></td>
-    </tr>
-    <tr>
-      <th>elems</th>
-      <td><p>the list of elems to highlight</p></td>
-    </tr>
-    <tr>
-      <th>set</th>
-      <td><p>the set name, similar to the selection</p></td>
+      <th>rhs</th>
+      <td><p>A function call using the magrittr semantics.</p></td>
     </tr>
     </table>
 
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>upsetjs</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
