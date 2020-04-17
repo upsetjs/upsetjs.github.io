@@ -2,3 +2,9 @@
 --- 
 
 @import "{{ site.theme }}";
+
+#skip-to-content {
+    position: absolute;
+    left: -10000px;
+    top: -10000px;
+}
