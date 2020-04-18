@@ -132,6 +132,7 @@
 <p>requirements:</p>
 <ul>
 <li>R with packages: devtools, pkgdown</li>
+<li>pandoc</li>
 </ul>
 <div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">npm</span> i -g yarn</span>
 <span id="cb4-2"><a href="#cb4-2"></a><span class="ex">yarn</span> set version berry</span>
@@ -140,37 +141,33 @@
 <div id="building" class="section level3">
 <h3 class="hasAnchor">
 <a href="#building" class="anchor"></a>Building</h3>
-<pre><code>yarn lint
-yarn build</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">yarn</span> lint</span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="ex">yarn</span> build</span></code></pre></div>
 </div>
 <div id="r-package" class="section level3">
 <h3 class="hasAnchor">
 <a href="#r-package" class="anchor"></a>R Package</h3>
-<p>Notes:</p>
-<ul>
-<li>
-<p>R is stupid when coming to ignoring files during build. Thus <code>.yarn</code> and <code>node_modules</code> directories need to removed prior to the build. e.g.,</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">mkdir</span> ../upsetjs_r_t</span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">mv</span> .yarn ../upsetjs_r_t/</span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="fu">mv</span> node_modules ../upsetjs_r_t/</span></code></pre></div>
-</li>
-</ul>
-<div class="sourceCode" id="cb7"><pre class="r"><span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/check.html">check</a></span>()
-<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/build.html">build</a></span>()
-
-<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/load_all.html">load_all</a></span>()</pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="ex">yarn</span> check:r</span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="ex">yarn</span> build:r</span></code></pre></div>
+<p>or in R</p>
+<div class="sourceCode" id="cb7"><pre class="r"><span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/check.html">check</a></span>(<span class="st">"r_package"</span>)
+<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/document.html">document</a></span>(<span class="st">"r_package"</span>)
+<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/build.html">build</a></span>(<span class="st">"r_package"</span>)
+<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/load_all.html">load_all</a></span>(<span class="st">"r_package"</span>)</pre></div>
 <p><strong>R Package Website</strong></p>
-<div class="sourceCode" id="cb8"><pre class="r"><span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/build_site.html">build_site</a></span>()</pre></div>
-<p>checkout the gh-pages branch or switch to its worktree</p>
-<pre class="sh`"><code>git worktree add ../upsetjs_r_pages -b gh-pages
-</code></pre>
-<p>update the website</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a><span class="bu">cd</span> ../upsetjs_r_pages</span>
-<span id="cb10-2"><a href="#cb10-2"></a><span class="fu">rm</span> *</span>
-<span id="cb10-3"><a href="#cb10-3"></a><span class="fu">cp</span> ../upsetjs_r/docs .</span>
-<span id="cb10-4"><a href="#cb10-4"></a><span class="fu">git</span> commit -am <span class="st">'update website'</span></span>
-<span id="cb10-5"><a href="#cb10-5"></a><span class="fu">git</span> push</span></code></pre></div>
+<p>will be automatically updated upon push</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a><span class="ex">yarn</span> docs:r</span></code></pre></div>
+<p>or in R</p>
+<div class="sourceCode" id="cb9"><pre class="r">devtools::build_site("r_package)</pre></div>
 </div>
+</div>
+<div id="release" class="section level2">
+<h2 class="hasAnchor">
+<a href="#release" class="anchor"></a>Release</h2>
+<p>use <code>release-it</code></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a><span class="ex">yarn</span> release:major</span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="ex">yarn</span> release:minor</span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="ex">yarn</span> release:patch</span></code></pre></div>
 </div>
 <div id="license" class="section level2">
 <h2 class="hasAnchor">
