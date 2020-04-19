@@ -3,5 +3,6 @@ pkgdown: 1.5.1
 pkgdown_sha: ~
 articles:
   basic: basic.html
-last_built: 2020-04-18T15:51Z
+  covid19: covid19.html
+last_built: 2020-04-19T15:33Z
 

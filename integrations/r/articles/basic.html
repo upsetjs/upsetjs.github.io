@@ -56,6 +56,9 @@
 <li>
       <a href="../articles/basic.html">UpSet.js HTMLWidget</a>
     </li>
+    <li>
+      <a href="../articles/covid19.html">Covid19</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -82,7 +85,7 @@
       <h1 data-toc-skip>UpSet.js HTMLWidget</h1>
                         <h4 class="author">Samuel Gratzl</h4>
             
-            <h4 class="date">2020-04-18</h4>
+            <h4 class="date">2020-04-19</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/upsetjs/upset_r/blob/master/../vignettes/basic.Rmd"><code>../vignettes/basic.Rmd</code></a></small>
       <div class="hidden name"><code>basic.Rmd</code></div>
@@ -111,8 +114,8 @@
 
 <span class="no">w</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/interactiveChart.html">interactiveChart</a></span>()
 <span class="no">w</span></pre></body></html></div>
-<div id="htmlwidget-2b162c343f766f6a9266" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2b162c343f766f6a9266">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"interactive":true},"evals":[],"jsHooks":[]}</script><p>UpSet consists of three areas:</p>
+<div id="htmlwidget-e3aba803d1493cdd0516" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e3aba803d1493cdd0516">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"interactive":true},"evals":[],"jsHooks":[]}</script><p>UpSet consists of three areas:</p>
 <ul>
 <li>The bottom left area shows the list of sets as a vertical bar chart. The length of the bar corresponds to the cardinality of the set, i.e., the number of elements in this set.</li>
 <li>The top right area shows the list of set intersections as a horiztonal bar chart. Again the length corresponds to the cardinality of the set</li>
@@ -131,8 +134,8 @@
 <div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="kw">one</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"e"</span>, <span class="st">"g"</span>, <span class="st">"h"</span>, <span class="st">"k"</span>, <span class="st">"l"</span>, <span class="st">"m"</span>),
     <span class="kw">two</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"d"</span>, <span class="st">"e"</span>, <span class="st">"j"</span>), <span class="kw">three</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"a"</span>, <span class="st">"e"</span>, <span class="st">"f"</span>, <span class="st">"g"</span>, <span class="st">"h"</span>, <span class="st">"i"</span>, <span class="st">"j"</span>,
         <span class="st">"l"</span>, <span class="st">"m"</span>)))</pre></body></html></div>
-<div id="htmlwidget-7ecf62aaefbbdf3ec6a3" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7ecf62aaefbbdf3ec6a3">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-9a866076c318b30618ae" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9a866076c318b30618ae">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="expression-input" class="section level3">
 <h3 class="hasAnchor">
@@ -144,8 +147,8 @@
 
 
 <span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromExpression.html">fromExpression</a></span>(<span class="no">expressionInput</span>)</pre></body></html></div>
-<div id="htmlwidget-ccd66f97f2982208a95f" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ccd66f97f2982208a95f">{"x":{"mode":"hover","sets":[{"name":"one","elems":null,"cardinality":9},{"name":"three","elems":null,"cardinality":9},{"name":"two","elems":null,"cardinality":5}],"combinations":[{"name":"one","elems":null,"cardinality":9,"degree":1,"setNames":"one"},{"name":"three","elems":null,"cardinality":9,"degree":1,"setNames":"three"},{"name":"one&three","elems":null,"cardinality":6,"degree":2,"setNames":["one","three"]},{"name":"two","elems":null,"cardinality":5,"degree":1,"setNames":"two"},{"name":"one&two","elems":null,"cardinality":3,"degree":2,"setNames":["one","two"]},{"name":"two&three","elems":null,"cardinality":3,"degree":2,"setNames":["two","three"]},{"name":"one&two&three","elems":null,"cardinality":2,"degree":3,"setNames":["one","two","three"]}]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-96d9184c0fa6e7ba04b6" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-96d9184c0fa6e7ba04b6">{"x":{"mode":"hover","sets":[{"name":"one","elems":null,"cardinality":9},{"name":"three","elems":null,"cardinality":9},{"name":"two","elems":null,"cardinality":5}],"combinations":[{"name":"one","elems":null,"cardinality":9,"degree":1,"setNames":"one"},{"name":"three","elems":null,"cardinality":9,"degree":1,"setNames":"three"},{"name":"one&three","elems":null,"cardinality":6,"degree":2,"setNames":["one","three"]},{"name":"two","elems":null,"cardinality":5,"degree":1,"setNames":"two"},{"name":"one&two","elems":null,"cardinality":3,"degree":2,"setNames":["one","two"]},{"name":"two&three","elems":null,"cardinality":3,"degree":2,"setNames":["two","three"]},{"name":"one&two&three","elems":null,"cardinality":2,"degree":3,"setNames":["one","two","three"]}]},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="data-frame-input" class="section level3">
 <h3 class="hasAnchor">
@@ -161,8 +164,8 @@
 
 
 <span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromDataFrame.html">fromDataFrame</a></span>(<span class="no">dataFrame</span>)</pre></body></html></div>
-<div id="htmlwidget-c96ca00fdcbb76227c3a" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c96ca00fdcbb76227c3a">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5046cd36a79bfecff840" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5046cd36a79bfecff840">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="data-intersections" class="section level2">
@@ -184,11 +187,11 @@
 </ul>
 <div class="sourceCode" id="cb6"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/generateIntersections.html">generateIntersections</a></span>(<span class="kw">min</span> <span class="kw">=</span> <span class="fl">2</span>, <span class="kw">max</span> <span class="kw">=</span> <span class="kw">NULL</span>,
     <span class="kw">empty</span> <span class="kw">=</span> <span class="no">T</span>, <span class="kw">order.by</span> <span class="kw">=</span> <span class="st">"cardinality"</span>, <span class="kw">limit</span> <span class="kw">=</span> <span class="kw">NULL</span>)</pre></body></html></div>
-<div id="htmlwidget-c5ce5c7d312743102f34" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c5ce5c7d312743102f34">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","min":2,"empty":true,"order":"cardinality"}},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb7"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/generateUnions.html">generateUnions</a></span>(<span class="kw">min</span> <span class="kw">=</span> <span class="fl">0</span>, <span class="kw">max</span> <span class="kw">=</span> <span class="fl">2</span>, <span class="kw">empty</span> <span class="kw">=</span> <span class="no">T</span>,
+<div id="htmlwidget-dab0af674023277cf919" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-dab0af674023277cf919">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","min":2,"empty":true,"order":"cardinality"}},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb7"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/generateUnions.html">generateUnions</a></span>(<span class="kw">min</span> <span class="kw">=</span> <span class="fl">0</span>, <span class="kw">max</span> <span class="kw">=</span> <span class="fl">2</span>, <span class="kw">empty</span> <span class="kw">=</span> <span class="no">T</span>,
     <span class="kw">order.by</span> <span class="kw">=</span> <span class="st">"degree"</span>, <span class="kw">limit</span> <span class="kw">=</span> <span class="kw">NULL</span>)</pre></body></html></div>
-<div id="htmlwidget-975a953ea3abef5d5ec9" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-975a953ea3abef5d5ec9">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"union","min":0,"max":2,"empty":true,"order":"degree"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-45039ffa2388db809229" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-45039ffa2388db809229">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"union","min":0,"max":2,"empty":true,"order":"degree"}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="interaction" class="section level2">
 <h2 class="hasAnchor">
@@ -198,18 +201,18 @@
 <a href="#interactivity" class="anchor"></a>Interactivity</h3>
 <p>by setting the <code>interactiveFlag</code> flag, the user can interactively highlight sets within the chart.</p>
 <div class="sourceCode" id="cb8"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/interactiveChart.html">interactiveChart</a></span>()</pre></body></html></div>
-<div id="htmlwidget-a9e105a9a2bc4d306385" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a9e105a9a2bc4d306385">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"interactive":true},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-eb509c48bc0f1fe808a7" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-eb509c48bc0f1fe808a7">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"interactive":true},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="selection" class="section level3">
 <h3 class="hasAnchor">
 <a href="#selection" class="anchor"></a>Selection</h3>
 <p>with <code>setSelection</code> one manually sets the selection that is currently highlighted. The set is referenced by its name, a vector with multiple names is deteced as an intersection name</p>
 <div class="sourceCode" id="cb9"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/setSelection.html">setSelection</a></span>(<span class="st">"one"</span>)</pre></body></html></div>
-<div id="htmlwidget-df6183f53690d127cbcb" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-df6183f53690d127cbcb">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"selection":"one"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb10"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/setSelection.html">setSelection</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"one"</span>, <span class="st">"two"</span>))</pre></body></html></div>
-<div id="htmlwidget-76a968d4847538c36b8e" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-76a968d4847538c36b8e">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"selection":["one","two"]},"evals":[],"jsHooks":[]}</script><p>In case UpSet will be used in a R Shiny context, it reports the current selection bsaed using two custom events:</p>
+<div id="htmlwidget-c6a234414c25518c1f41" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c6a234414c25518c1f41">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"selection":"one"},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb10"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/setSelection.html">setSelection</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"one"</span>, <span class="st">"two"</span>))</pre></body></html></div>
+<div id="htmlwidget-4295cdbd71f63d584657" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4295cdbd71f63d584657">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"selection":["one","two"]},"evals":[],"jsHooks":[]}</script><p>In case UpSet will be used in a R Shiny context, it reports the current selection bsaed using two custom events:</p>
 <ul>
 <li>
 <code>&lt;outputid&gt;_hover</code> when the user hovers over an item</li>
@@ -226,8 +229,8 @@
 <p>besides the selection UpSet supports defining queries. A query can be a list of elements or a set that should be highlighted. A query consists of a name, a color, and either the list of elements or the upset set (combination) to highlight.</p>
 <div class="sourceCode" id="cb11"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/addQuery.html">addQuery</a></span>(<span class="st">"Q1"</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="st">"red"</span>, <span class="kw">elems</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"a"</span>,
     <span class="st">"b"</span>, <span class="st">"c"</span>)) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/addQuery.html">addQuery</a></span>(<span class="st">"Q2"</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="st">"blue"</span>, <span class="kw">set</span> <span class="kw">=</span> <span class="st">"two"</span>)</pre></body></html></div>
-<div id="htmlwidget-c01083dbc703d03258b6" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c01083dbc703d03258b6">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"queries":[{"name":"Q1","color":"red","elems":["a","b","c"]},{"name":"Q2","color":"blue","set":"two"}]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-277d1b7b0da37b09b9a7" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-277d1b7b0da37b09b9a7">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"queries":[{"name":"Q1","color":"red","elems":["a","b","c"]},{"name":"Q2","color":"blue","set":"two"}]},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="styling" class="section level2">
 <h2 class="hasAnchor">
@@ -237,24 +240,24 @@
 <a href="#theme" class="anchor"></a>Theme</h3>
 <p>UpSet.js supports two themes: light and dark. The theme can be set by the <code>chartTheme</code> function</p>
 <div class="sourceCode" id="cb12"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/chartTheme.html">chartTheme</a></span>(<span class="st">"dark"</span>)</pre></body></html></div>
-<div id="htmlwidget-bd3cdbc42682017bd19b" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bd3cdbc42682017bd19b">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"theme":"dark"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-63ce514c2b9320a2b4df" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-63ce514c2b9320a2b4df">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"theme":"dark"},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="labels" class="section level3">
 <h3 class="hasAnchor">
 <a href="#labels" class="anchor"></a>Labels</h3>
 <div class="sourceCode" id="cb13"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/chartLabels.html">chartLabels</a></span>(<span class="kw">combination.name</span> <span class="kw">=</span> <span class="st">"Combination Label"</span>,
     <span class="kw">set.name</span> <span class="kw">=</span> <span class="st">"Set Label"</span>)</pre></body></html></div>
-<div id="htmlwidget-98c0e6bc97f2b06a05f0" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-98c0e6bc97f2b06a05f0">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"setName":"Set Label","combinationName":"Combination Label"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-55af78c222d30b7ae897" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-55af78c222d30b7ae897">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"setName":"Set Label","combinationName":"Combination Label"},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="log-scale" class="section level3">
 <h3 class="hasAnchor">
 <a href="#log-scale" class="anchor"></a>Log Scale</h3>
 <p>setting <code><a href="../reference/chartLayout.html">chartLayout(numerical.scale = 'log')</a></code> switches to a log scale, similarly <code>'linear'</code> goes back to a linear scale</p>
 <div class="sourceCode" id="cb14"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/chartLayout.html">chartLayout</a></span>(<span class="kw">numerical.scale</span> <span class="kw">=</span> <span class="st">"log"</span>)</pre></body></html></div>
-<div id="htmlwidget-de810e28ce1dd1281042" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-de810e28ce1dd1281042">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"numericalScale":"log"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-cb612f1f3b4db095c5bd" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cb612f1f3b4db095c5bd">{"x":{"mode":"hover","sets":[{"name":"one","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9},{"name":"three","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9},{"name":"two","elems":["a","b","d","e","j"],"cardinality":5}],"combinations":{"type":"intersection","order":"cardinality"},"numericalScale":"log"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
