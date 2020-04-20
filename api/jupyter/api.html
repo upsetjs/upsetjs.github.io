@@ -1,0 +1,776 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API Documentation &mdash; upsetjs_jupyter_widget 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script src="static/jquery.js"></script>
+        <script src="static/underscore.js"></script>
+        <script src="static/doctools.js"></script>
+        <script src="static/language_data.js"></script>
+        <script src="static/helper.js"></script>
+        <script src="static/embed-bundle.js"></script>
+    
+    <script type="text/javascript" src="static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Developer install" href="develop-install.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> upsetjs_jupyter_widget
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation and usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="develop-install.html">Developer install</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">upsetjs_jupyter_widget</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>API Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-documentation">
+<h1>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="upsetjs_jupyter_widget.UpSetWidget">
+<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget.</code><code class="sig-name descname">UpSetWidget</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">clonee</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>UpSet Widget</p>
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.alternating_background_color">
+<code class="sig-name descname">alternating_background_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.alternating_background_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>A trait for unicode strings.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.append_query">
+<code class="sig-name descname">append_query</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="n">upset</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">elems</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.append_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.append_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>adds another UpSetQuery to be visualized</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>color</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>upset</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSet" title="upsetjs_jupyter_widget._model.UpSetSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSet</span></code></a>[~T], <a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetIntersection" title="upsetjs_jupyter_widget._model.UpSetSetIntersection"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetIntersection</span></code></a>[~T], <a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetUnion" title="upsetjs_jupyter_widget._model.UpSetSetUnion"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetUnion</span></code></a>[~T], <a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetComposite" title="upsetjs_jupyter_widget._model.UpSetSetComposite"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetComposite</span></code></a>[~T], <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – </p></li>
+<li><p><strong>elems</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[~T]]) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetWidget</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.band_scale">
+<code class="sig-name descname">band_scale</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.band_scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>An enum whose value must be in a given sequence.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.bar_label_offset">
+<code class="sig-name descname">bar_label_offset</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.bar_label_offset" title="Permalink to this definition">¶</a></dt>
+<dd><p>A float trait.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.bar_padding">
+<code class="sig-name descname">bar_padding</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.bar_padding" title="Permalink to this definition">¶</a></dt>
+<dd><p>A float trait.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.clear_queries">
+<code class="sig-name descname">clear_queries</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.clear_queries"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.clear_queries" title="Permalink to this definition">¶</a></dt>
+<dd><p>deletes the list of queries</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.color">
+<code class="sig-name descname">color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>A trait for unicode strings.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.combination_name">
+<code class="sig-name descname">combination_name</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.combination_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A trait for unicode strings.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.combination_name_axis_offset">
+<code class="sig-name descname">combination_name_axis_offset</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.combination_name_axis_offset" title="Permalink to this definition">¶</a></dt>
+<dd><p>A float trait.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.combinations">
+<em class="property">property </em><code class="sig-name descname">combinations</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.combinations" title="Permalink to this definition">¶</a></dt>
+<dd><p>the UpSet list of set combinations</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetCombination" title="upsetjs_jupyter_widget._model.UpSetSetCombination"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetCombination</span></code></a>[~T]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.copy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a copy of itself</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetWidget</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.dot_padding">
+<code class="sig-name descname">dot_padding</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.dot_padding" title="Permalink to this definition">¶</a></dt>
+<dd><p>A float trait.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.elems">
+<code class="sig-name descname">elems</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.elems" title="Permalink to this definition">¶</a></dt>
+<dd><p>An instance of a Python list.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.export_buttons">
+<code class="sig-name descname">export_buttons</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.export_buttons" title="Permalink to this definition">¶</a></dt>
+<dd><p>A boolean (True, False) trait.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.font_family">
+<code class="sig-name descname">font_family</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.font_family" title="Permalink to this definition">¶</a></dt>
+<dd><p>A trait for unicode strings.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.font_sizes">
+<code class="sig-name descname">font_sizes</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.font_sizes" title="Permalink to this definition">¶</a></dt>
+<dd><p>An instance of a Python dict.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.from_dataframe">
+<code class="sig-name descname">from_dataframe</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_frame</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.from_dataframe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.from_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>generates the list of sets from a dataframe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_frame</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>) – </p></li>
+<li><p><strong>order_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.from_dict">
+<code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sets</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>generates the list of sets from a dict</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sets</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[~T]]) – </p></li>
+<li><p><strong>order_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetWidget</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.generate_intersections">
+<code class="sig-name descname">generate_intersections</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">min_degree</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">max_degree</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">empty</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.generate_intersections"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.generate_intersections" title="Permalink to this definition">¶</a></dt>
+<dd><p>customize the generation of the sets</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>min_degree</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – </p></li>
+<li><p><strong>max_degree</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – </p></li>
+<li><p><strong>empty</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – </p></li>
+<li><p><strong>order_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.generate_unions">
+<code class="sig-name descname">generate_unions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">min_degree</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">max_degree</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">empty</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.generate_unions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.generate_unions" title="Permalink to this definition">¶</a></dt>
+<dd><p>customize the generation of the sets</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>min_degree</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – </p></li>
+<li><p><strong>max_degree</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – </p></li>
+<li><p><strong>empty</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – </p></li>
+<li><p><strong>order_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.get_interact_value">
+<code class="sig-name descname">get_interact_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.get_interact_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.get_interact_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value for this widget which should be passed to
+interactive functions. Custom widgets can change this method
+to process the raw value <code class="docutils literal notranslate"><span class="pre">self.value</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.height">
+<em class="property">property </em><code class="sig-name descname">height</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the widget height</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.height_ratios">
+<code class="sig-name descname">height_ratios</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.height_ratios" title="Permalink to this definition">¶</a></dt>
+<dd><p>An instance of a Python tuple.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.hover_hint_color">
+<code class="sig-name descname">hover_hint_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.hover_hint_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>A trait for unicode strings.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.mode">
+<code class="sig-name descname">mode</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>An enum whose value must be in a given sequence.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.not_member_color">
+<code class="sig-name descname">not_member_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.not_member_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>A trait for unicode strings.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.numeric_scale">
+<code class="sig-name descname">numeric_scale</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.numeric_scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>An enum whose value must be in a given sequence.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.on_selection_changed">
+<code class="sig-name descname">on_selection_changed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">callback</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.on_selection_changed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.on_selection_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>add callback listener to listen for selection changes</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.padding">
+<code class="sig-name descname">padding</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.padding" title="Permalink to this definition">¶</a></dt>
+<dd><p>A float trait.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.queries">
+<em class="property">property </em><code class="sig-name descname">queries</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.queries" title="Permalink to this definition">¶</a></dt>
+<dd><p>current list of UpSet queries</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.query_legend">
+<code class="sig-name descname">query_legend</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.query_legend" title="Permalink to this definition">¶</a></dt>
+<dd><p>A boolean (True, False) trait.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.selection">
+<em class="property">property </em><code class="sig-name descname">selection</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.selection" title="Permalink to this definition">¶</a></dt>
+<dd><p>the current selection</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<code class="docutils literal notranslate"><span class="pre">None</span></code>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[~T], <a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSet" title="upsetjs_jupyter_widget._model.UpSetSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSet</span></code></a>[~T], <a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetIntersection" title="upsetjs_jupyter_widget._model.UpSetSetIntersection"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetIntersection</span></code></a>[~T], <a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetUnion" title="upsetjs_jupyter_widget._model.UpSetSetUnion"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetUnion</span></code></a>[~T], <a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetComposite" title="upsetjs_jupyter_widget._model.UpSetSetComposite"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetComposite</span></code></a>[~T]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.selection_color">
+<code class="sig-name descname">selection_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.selection_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>A trait for unicode strings.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.set_name">
+<code class="sig-name descname">set_name</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.set_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A trait for unicode strings.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.set_name_axis_offset">
+<code class="sig-name descname">set_name_axis_offset</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.set_name_axis_offset" title="Permalink to this definition">¶</a></dt>
+<dd><p>A float trait.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.sets">
+<em class="property">property </em><code class="sig-name descname">sets</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.sets" title="Permalink to this definition">¶</a></dt>
+<dd><p>the UpSet list of sets</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSet" title="upsetjs_jupyter_widget._model.UpSetSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSet</span></code></a>[~T]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.text_color">
+<code class="sig-name descname">text_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.text_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>A trait for unicode strings.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.theme">
+<code class="sig-name descname">theme</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.theme" title="Permalink to this definition">¶</a></dt>
+<dd><p>An enum whose value must be in a given sequence.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.value">
+<code class="sig-name descname">value</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>A trait type representing a Union type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.width">
+<em class="property">property </em><code class="sig-name descname">width</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the widget width</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.width_ratios">
+<code class="sig-name descname">width_ratios</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.width_ratios" title="Permalink to this definition">¶</a></dt>
+<dd><p>An instance of a Python tuple.</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-upsetjs_jupyter_widget._model"></span><p>model definitions for UpSet</p>
+<dl class="py class">
+<dt id="upsetjs_jupyter_widget._model.UpSetBaseSet">
+<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget._model.</code><code class="sig-name descname">UpSetBaseSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">set_type</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">elems</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetBaseSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetBaseSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>a set base class</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>set_type</strong> (<a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetType" title="upsetjs_jupyter_widget._model.UpSetSetType"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetType</span></code></a>) – </p></li>
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>elems</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[~T]]) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget._model.UpSetBaseSet.cardinality">
+<em class="property">property </em><code class="sig-name descname">cardinality</code><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetBaseSet.cardinality" title="Permalink to this definition">¶</a></dt>
+<dd><p>the cardinality of this set</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetBaseSet.elems">
+<code class="sig-name descname">elems</code><em class="property">: t.FrozenSet[T]</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetBaseSet.elems" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetBaseSet.name">
+<code class="sig-name descname">name</code><em class="property">: str</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetBaseSet.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetBaseSet.set_type">
+<code class="sig-name descname">set_type</code><em class="property">: UpSetSetType</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetBaseSet.set_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="upsetjs_jupyter_widget._model.UpSetQuery">
+<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget._model.</code><code class="sig-name descname">UpSetQuery</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="n">upset</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">elems</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetQuery"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetQuery" title="Permalink to this definition">¶</a></dt>
+<dd><p>a query representation in UpSet</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>color</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>upset</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSet" title="upsetjs_jupyter_widget._model.UpSetSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSet</span></code></a>[~T], <a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetIntersection" title="upsetjs_jupyter_widget._model.UpSetSetIntersection"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetIntersection</span></code></a>[~T], <a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetUnion" title="upsetjs_jupyter_widget._model.UpSetSetUnion"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetUnion</span></code></a>[~T], <a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetComposite" title="upsetjs_jupyter_widget._model.UpSetSetComposite"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetComposite</span></code></a>[~T], <code class="docutils literal notranslate"><span class="pre">None</span></code>]) – </p></li>
+<li><p><strong>elems</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[~T]]) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetQuery.color">
+<code class="sig-name descname">color</code><em class="property">: str</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetQuery.color" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetQuery.elems">
+<code class="sig-name descname">elems</code><em class="property">: t.Optional[t.FrozenSet[T]]</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetQuery.elems" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetQuery.name">
+<code class="sig-name descname">name</code><em class="property">: str</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetQuery.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetQuery.set">
+<code class="sig-name descname">set</code><em class="property">: t.Optional[UpSetSetLike[T]]</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetQuery.set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="upsetjs_jupyter_widget._model.UpSetSet">
+<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget._model.</code><code class="sig-name descname">UpSetSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">elems</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>a set representation within UpSet</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>elems</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[~T]]) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget._model.UpSetSet.degree">
+<em class="property">property </em><code class="sig-name descname">degree</code><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSet.degree" title="Permalink to this definition">¶</a></dt>
+<dd><p>the degree of this set, i.e., the number of contained sets</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetSet.elems">
+<code class="sig-name descname">elems</code><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSet.elems" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetSet.name">
+<code class="sig-name descname">name</code><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSet.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetSet.set_type">
+<code class="sig-name descname">set_type</code><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSet.set_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetCombination">
+<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget._model.</code><code class="sig-name descname">UpSetSetCombination</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">set_type</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">elems</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sets</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetSetCombination"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetCombination" title="Permalink to this definition">¶</a></dt>
+<dd><p>a set cobmination within UpSet like an intersection</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>set_type</strong> (<a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetType" title="upsetjs_jupyter_widget._model.UpSetSetType"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetType</span></code></a>) – </p></li>
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>elems</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[~T]]) – </p></li>
+<li><p><strong>sets</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[<a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSet" title="upsetjs_jupyter_widget._model.UpSetSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSet</span></code></a>[~T]]]) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetCombination.degree">
+<em class="property">property </em><code class="sig-name descname">degree</code><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetCombination.degree" title="Permalink to this definition">¶</a></dt>
+<dd><p>the degree of this set, i.e., the number of contained sets</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetCombination.sets">
+<code class="sig-name descname">sets</code><em class="property">: t.FrozenSet[UpSetSet[T]]</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetCombination.sets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetComposite">
+<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget._model.</code><code class="sig-name descname">UpSetSetComposite</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">elems</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sets</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetSetComposite"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetComposite" title="Permalink to this definition">¶</a></dt>
+<dd><p>a set composite representation in UpSet</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>elems</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[~T]]) – </p></li>
+<li><p><strong>sets</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[<a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSet" title="upsetjs_jupyter_widget._model.UpSetSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSet</span></code></a>[~T]]]) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetComposite.sets">
+<code class="sig-name descname">sets</code><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetComposite.sets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetIntersection">
+<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget._model.</code><code class="sig-name descname">UpSetSetIntersection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">elems</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sets</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetSetIntersection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetIntersection" title="Permalink to this definition">¶</a></dt>
+<dd><p>a set intersection representation in UpSet</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>elems</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[~T]]) – </p></li>
+<li><p><strong>sets</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[<a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSet" title="upsetjs_jupyter_widget._model.UpSetSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSet</span></code></a>[~T]]]) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetIntersection.sets">
+<code class="sig-name descname">sets</code><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetIntersection.sets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetType">
+<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget._model.</code><code class="sig-name descname">UpSetSetType</code><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetSetType"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetType" title="Permalink to this definition">¶</a></dt>
+<dd><p>enum of which type the set is</p>
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetType.COMPOSITE">
+<code class="sig-name descname">COMPOSITE</code><em class="property"> = 'composite'</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetType.COMPOSITE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetType.INTERSECTION">
+<code class="sig-name descname">INTERSECTION</code><em class="property"> = 'intersection'</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetType.INTERSECTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetType.SET">
+<code class="sig-name descname">SET</code><em class="property"> = ('set',)</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetType.SET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetType.UNION">
+<code class="sig-name descname">UNION</code><em class="property"> = 'union'</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetType.UNION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetUnion">
+<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget._model.</code><code class="sig-name descname">UpSetSetUnion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">elems</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sets</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetSetUnion"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetUnion" title="Permalink to this definition">¶</a></dt>
+<dd><p>a set union representation in UpSet</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>elems</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[~T]]) – </p></li>
+<li><p><strong>sets</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.FrozenSet" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FrozenSet</span></code></a>[<a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSet" title="upsetjs_jupyter_widget._model.UpSetSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSet</span></code></a>[~T]]]) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetSetUnion.sets">
+<code class="sig-name descname">sets</code><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetUnion.sets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="develop-install.html" class="btn btn-neutral float-right" title="Developer install" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Samuel Gratzl
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
