@@ -191,6 +191,12 @@
 </dd></dl>
 
 <dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.attrs">
+<code class="sig-name descname">attrs</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.attrs" title="Permalink to this definition">¶</a></dt>
+<dd><p>An instance of a Python dict.</p>
+</dd></dl>
+
+<dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.band_scale">
 <code class="sig-name descname">band_scale</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.band_scale" title="Permalink to this definition">¶</a></dt>
 <dd><p>An enum whose value must be in a given sequence.</p>
@@ -286,12 +292,13 @@
 
 <dl class="py method">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.from_dataframe">
-<code class="sig-name descname">from_dataframe</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_frame</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.from_dataframe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.from_dataframe" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">from_dataframe</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_frame</span></em>, <em class="sig-param"><span class="n">attributes</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.from_dataframe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.from_dataframe" title="Permalink to this definition">¶</a></dt>
 <dd><p>generates the list of sets from a dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>data_frame</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>) – </p></li>
+<li><p><strong>attributes</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>]) – </p></li>
 <li><p><strong>order_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
 <li><p><strong>limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – </p></li>
 </ul>
@@ -327,7 +334,7 @@
 <li><p><strong>min_degree</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – </p></li>
 <li><p><strong>max_degree</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – </p></li>
 <li><p><strong>empty</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – </p></li>
-<li><p><strong>order_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>order_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – </p></li>
 <li><p><strong>limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – </p></li>
 </ul>
 </dd>
@@ -344,7 +351,7 @@
 <li><p><strong>min_degree</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – </p></li>
 <li><p><strong>max_degree</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – </p></li>
 <li><p><strong>empty</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – </p></li>
-<li><p><strong>order_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – </p></li>
+<li><p><strong>order_by</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – </p></li>
 <li><p><strong>limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.8)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – </p></li>
 </ul>
 </dd>
@@ -385,7 +392,7 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 <dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.mode">
 <code class="sig-name descname">mode</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.mode" title="Permalink to this definition">¶</a></dt>
-<dd><p>An enum whose value must be in a given sequence.</p>
+<dd><p>padding within the svg</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -409,7 +416,7 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 <dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.padding">
 <code class="sig-name descname">padding</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.padding" title="Permalink to this definition">¶</a></dt>
-<dd><p>A float trait.</p>
+<dd><p>padding argument for scaleBand (0..1)</p>
 </dd></dl>
 
 <dl class="py method">
@@ -612,7 +619,7 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 <dl class="py class">
 <dt id="upsetjs_jupyter_widget._model.UpSetSetCombination">
 <em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget._model.</code><code class="sig-name descname">UpSetSetCombination</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">set_type</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">elems</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sets</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetSetCombination"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetCombination" title="Permalink to this definition">¶</a></dt>
-<dd><p>a set cobmination within UpSet like an intersection</p>
+<dd><p>a set combination within UpSet like an intersection</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -632,7 +639,8 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 <dl class="py attribute">
 <dt id="upsetjs_jupyter_widget._model.UpSetSetCombination.sets">
 <code class="sig-name descname">sets</code><em class="property">: t.FrozenSet[UpSetSet[T]]</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetCombination.sets" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>the set of UpSetSets this set combination is composed of</p>
+</dd></dl>
 
 </dd></dl>
 
