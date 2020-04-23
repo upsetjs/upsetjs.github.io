@@ -97,9 +97,6 @@
     <li>
       <a href="../articles/basic.html">UpSet.js HTMLWidget</a>
     </li>
-    <li>
-      <a href="../articles/covid19.html">Covid19</a>
-    </li>
   </ul>
 </li>
       </ul>
@@ -134,9 +131,9 @@
 
     <pre class="usage"><span class='fu'>generateIntersections</span>(
   <span class='no'>upsetjs</span>,
-  <span class='kw'>min</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>min</span> <span class='kw'>=</span> <span class='fl'>0</span>,
   <span class='kw'>max</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>empty</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>empty</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
   <span class='kw'>order.by</span> <span class='kw'>=</span> <span class='st'>"cardinality"</span>,
   <span class='kw'>limit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>
 )</pre>
@@ -162,7 +159,7 @@
     </tr>
     <tr>
       <th>order.by</th>
-      <td><p>order intersections by cardinality or degree</p></td>
+      <td><p>order intersections by cardinality, degree, name or a combination of it</p></td>
     </tr>
     <tr>
       <th>limit</th>

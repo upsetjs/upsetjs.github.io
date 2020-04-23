@@ -97,9 +97,6 @@
     <li>
       <a href="../articles/basic.html">UpSet.js HTMLWidget</a>
     </li>
-    <li>
-      <a href="../articles/covid19.html">Covid19</a>
-    </li>
   </ul>
 </li>
       </ul>
@@ -135,6 +132,7 @@
     <pre class="usage"><span class='fu'>fromDataFrame</span>(
   <span class='no'>upsetjs</span>,
   <span class='no'>df</span>,
+  <span class='kw'>attributes</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>order.by</span> <span class='kw'>=</span> <span class='st'>"cardinality"</span>,
   <span class='kw'>limit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>shared</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -151,6 +149,10 @@
     <tr>
       <th>df</th>
       <td><p>the data.frame like structure</p></td>
+    </tr>
+    <tr>
+      <th>attributes</th>
+      <td><p>the optional column list or data frame</p></td>
     </tr>
     <tr>
       <th>order.by</th>

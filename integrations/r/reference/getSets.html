@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>specify chart flags — chartStyleFlags • upsetjs</title>
+<title>extract the vector of elements — getSets • upsetjs</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,9 @@
 
 
 
-<meta property="og:title" content="specify chart flags — chartStyleFlags" />
-<meta property="og:description" content="specify chart flags" />
+<meta property="og:title" content="extract the vector of elements — getSets" />
+<meta property="og:description" content="extract the vector of elements
+extract the vector of sets" />
 
 
 
@@ -120,41 +121,33 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>specify chart flags</h1>
-    <small class="dont-index">Source: <a href='https://github.com/upsetjs/upset_r/blob/master/R/style.R'><code>R/style.R</code></a></small>
-    <div class="hidden name"><code>chartStyleFlags.Rd</code></div>
+    <h1>extract the vector of elements</h1>
+    <small class="dont-index">Source: <a href='https://github.com/upsetjs/upset_r/blob/master/R/data.R'><code>R/data.R</code></a></small>
+    <div class="hidden name"><code>getSets.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>specify chart flags</p>
+    <p>extract the vector of elements</p>
+<p>extract the vector of sets</p>
     </div>
 
-    <pre class="usage"><span class='fu'>chartStyleFlags</span>(<span class='no'>upsetjs</span>, <span class='kw'>id</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>export.buttons</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>class.name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
+    <pre class="usage"><span class='fu'>getSets</span>(<span class='no'>upsetjs</span>)
+
+<span class='fu'>getSets</span>(<span class='no'>upsetjs</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>upsetjs</th>
-      <td><p>the upsetjs (proxy) instance</p></td>
-    </tr>
-    <tr>
-      <th>id</th>
-      <td><p>the optional HTML ID</p></td>
-    </tr>
-    <tr>
-      <th>export.buttons</th>
-      <td><p>show export SVG and PNG buttons</p></td>
-    </tr>
-    <tr>
-      <th>class.name</th>
-      <td><p>extra CSS class name to the root element</p></td>
+      <td><p>the upsetjs instance</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>upsetjs</p>
+    <p>vector of elements</p>
+<p>vector of sets</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
