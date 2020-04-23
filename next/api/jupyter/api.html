@@ -163,12 +163,12 @@
 <h1>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="upsetjs_jupyter_widget.UpSetWidget">
-<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget.</code><code class="sig-name descname">UpSetWidget</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">clonee</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget.</code><code class="sig-name descname">UpSetWidget</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget" title="Permalink to this definition">¶</a></dt>
 <dd><p>UpSet Widget</p>
 <dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.alternating_background_color">
 <code class="sig-name descname">alternating_background_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.alternating_background_color" title="Permalink to this definition">¶</a></dt>
-<dd><p>A trait for unicode strings.</p>
+<dd><p>A string holding a valid HTML color such as ‘blue’, ‘#060482’, ‘#A80’</p>
 </dd></dl>
 
 <dl class="py method">
@@ -223,7 +223,7 @@
 <dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.color">
 <code class="sig-name descname">color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.color" title="Permalink to this definition">¶</a></dt>
-<dd><p>A trait for unicode strings.</p>
+<dd><p>A string holding a valid HTML color such as ‘blue’, ‘#060482’, ‘#A80’</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -238,15 +238,10 @@
 <dd><p>A float trait.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.combinations">
-<em class="property">property </em><code class="sig-name descname">combinations</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.combinations" title="Permalink to this definition">¶</a></dt>
-<dd><p>the UpSet list of set combinations</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSetCombination" title="upsetjs_jupyter_widget._model.UpSetSetCombination"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSetCombination</span></code></a>[~T]]</p>
-</dd>
-</dl>
+<code class="sig-name descname">combinations</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.combinations" title="Permalink to this definition">¶</a></dt>
+<dd><p>An instance of a Python list.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -265,6 +260,11 @@
 <code class="sig-name descname">dot_padding</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.dot_padding" title="Permalink to this definition">¶</a></dt>
 <dd><p>A float trait.</p>
 </dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget.UpSetWidget.elem_to_index">
+<code class="sig-name descname">elem_to_index</code><em class="property">: Dict[T, int]</em><em class="property"> = {}</em><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.elem_to_index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.elems">
@@ -386,7 +386,7 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 <dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.hover_hint_color">
 <code class="sig-name descname">hover_hint_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.hover_hint_color" title="Permalink to this definition">¶</a></dt>
-<dd><p>A trait for unicode strings.</p>
+<dd><p>A string holding a valid HTML color such as ‘blue’, ‘#060482’, ‘#A80’</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -398,7 +398,7 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 <dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.not_member_color">
 <code class="sig-name descname">not_member_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.not_member_color" title="Permalink to this definition">¶</a></dt>
-<dd><p>A trait for unicode strings.</p>
+<dd><p>A string holding a valid HTML color such as ‘blue’, ‘#060482’, ‘#A80’</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -419,10 +419,10 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 <dd><p>padding argument for scaleBand (0..1)</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.queries">
-<em class="property">property </em><code class="sig-name descname">queries</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.queries" title="Permalink to this definition">¶</a></dt>
-<dd><p>current list of UpSet queries</p>
+<code class="sig-name descname">queries</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.queries" title="Permalink to this definition">¶</a></dt>
+<dd><p>An instance of a Python list.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -445,7 +445,7 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 <dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.selection_color">
 <code class="sig-name descname">selection_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.selection_color" title="Permalink to this definition">¶</a></dt>
-<dd><p>A trait for unicode strings.</p>
+<dd><p>A string holding a valid HTML color such as ‘blue’, ‘#060482’, ‘#A80’</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -460,21 +460,16 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 <dd><p>A float trait.</p>
 </dd></dl>
 
-<dl class="py method">
+<dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.sets">
-<em class="property">property </em><code class="sig-name descname">sets</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.sets" title="Permalink to this definition">¶</a></dt>
-<dd><p>the UpSet list of sets</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference internal" href="#upsetjs_jupyter_widget._model.UpSetSet" title="upsetjs_jupyter_widget._model.UpSetSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetSet</span></code></a>[~T]]</p>
-</dd>
-</dl>
+<code class="sig-name descname">sets</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.sets" title="Permalink to this definition">¶</a></dt>
+<dd><p>An instance of a Python list.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt id="upsetjs_jupyter_widget.UpSetWidget.text_color">
 <code class="sig-name descname">text_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.text_color" title="Permalink to this definition">¶</a></dt>
-<dd><p>A trait for unicode strings.</p>
+<dd><p>A string holding a valid HTML color such as ‘blue’, ‘#060482’, ‘#A80’</p>
 </dd></dl>
 
 <dl class="py attribute">
