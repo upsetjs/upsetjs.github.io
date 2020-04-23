@@ -20,6 +20,12 @@
           { "type": "string" },
           {
             "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": {
+                "type": "string"
+              }
+            },
             "additionalProperties": true
           }
         ]
@@ -37,15 +43,20 @@
             "type": "integer"
           },
           "elems": {
-            "type": "array",
-            "items": {
-              "type": "integer"
-            }
+            "oneOf": [
+              { "type": "string" },
+              {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              }
+            ]
           }
         }
       }
     },
-    "combinations": {
+    "combinationOptions": {
       "$comment": "TODO",
       "type": "object",
       "additionalProperties": true
