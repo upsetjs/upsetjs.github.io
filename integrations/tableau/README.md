@@ -1,0 +1,67 @@
+# UpSet.js as Tableau Extension
+
+[![Github Actions][github-actions-image]][github-actions-url]
+
+This repository contains a [Tableau](https://tableau.com) extension for showing UpSet.js plots in dashboards.
+
+This package is part of the UpSet.js ecosystem located at the main [Github Monorepo](https://github.com/upsetjs/upsetjs).
+
+![image](https://user-images.githubusercontent.com/4129778/80315576-bcf47d00-87f8-11ea-854c-adb56fa6b044.png)
+
+## Installation
+
+1. Download the extension description file at [upsetjs.trex](https://upset.js.org/integrations/tableau/upsetjs.trex)
+1. Create a new dashboard and show at least one sheet in the dashboard
+1. Follow [https://tableau.github.io/extensions-api/docs/trex_overview.html](https://tableau.github.io/extensions-api/docs/trex_overview.html) and choose the downloaded file
+1. Use the `configure` button or the `configure` menu entry to specify the input data
+
+## Example
+
+see https://github.com/upsetjs/upsetjs_tableau_extension/examples/simpsowns.twb
+
+## Dev Environment
+
+requirements:
+
+- a Tableau instance run via: `& 'C:\Program Files\Tableau\Tableau 2020.1\bin\tableau.exe' --remote-debugging-port=8696`
+- Chrome 79 for debugging see https://tableau.github.io/extensions-api/docs/trex_debugging.html
+
+alternatively one can append `#mock` to use mock data to test the extension in the web browser. It is based on a dump of the simpsons dashboard.
+
+```sh
+npm i -g yarn
+yarn set version berry
+yarn install
+yarn pnpify --sdk
+```
+
+### Building
+
+```sh
+yarn lint
+yarn build
+```
+
+## Release
+
+use `release-it`
+
+```sh
+yarn release:major
+yarn release:minor
+yarn release:patch
+```
+
+## License
+
+### Commercial license
+
+If you want to use Upset.js for a commercial application the commercial license is the appropriate license. Contact [@sgratzl](mailto:sam@sgratzl.com) for details.
+
+### Open-source license
+
+This library is released under the `GNU AGPLv3` version to be used for private and academic purposes. In case of a commercial use, please get in touch regarding a commercial license.
+
+[github-actions-image]: https://github.com/upsetjs/upsetjs_tableau_extension/workflows/ci/badge.svg
+[github-actions-url]: https://github.com/upsetjs/upsetjs_tableau_extension/actions
+[codepen]: https://img.shields.io/badge/CodePen-open-blue?logo=codepen
