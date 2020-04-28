@@ -6,7 +6,7 @@ This repository contains a [Tableau](https://tableau.com) extension for showing 
 
 This package is part of the UpSet.js ecosystem located at the main [Github Monorepo](https://github.com/upsetjs/upsetjs).
 
-![image](https://user-images.githubusercontent.com/4129778/80315576-bcf47d00-87f8-11ea-854c-adb56fa6b044.png)
+![image](https://user-images.githubusercontent.com/4129778/80464806-9b9baa00-893a-11ea-9066-553c1e146f91.png)
 
 ## Installation
 
@@ -14,6 +14,10 @@ This package is part of the UpSet.js ecosystem located at the main [Github Monor
 1. Create a new dashboard and show at least one sheet in the dashboard
 1. Follow [https://tableau.github.io/extensions-api/docs/trex_overview.html](https://tableau.github.io/extensions-api/docs/trex_overview.html) and choose the downloaded file
 1. Use the `configure` button or the `configure` menu entry to specify the input data
+
+**Notes**
+
+Due to the restrictions of the dashboard extension system, you need to have at least one sheet in the dashboard that is showing the target data. For example, as in the simpsons one a bar chart showing the age per simpsons characters. The extension is then linked to this sheet and will get its data and selection from it. Similiary, the extension will set the selection in this sheet which can then propagate it to other sheets using dashboard actions.
 
 ## Example
 
