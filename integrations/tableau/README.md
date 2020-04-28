@@ -2,11 +2,11 @@
 
 [![Github Actions][github-actions-image]][github-actions-url]
 
-This repository contains a [Tableau](https://tableau.com) extension for showing UpSet.js plots in dashboards.
+This repository contains a [Tableau](https://tableau.com) extension for showing UpSet.js plots in Tableau dashboards.
 
 This package is part of the UpSet.js ecosystem located at the main [Github Monorepo](https://github.com/upsetjs/upsetjs).
 
-![image](https://user-images.githubusercontent.com/4129778/80464806-9b9baa00-893a-11ea-9066-553c1e146f91.png)
+![image](https://user-images.githubusercontent.com/4129778/80474503-d3f5b500-8947-11ea-8397-345a5efb5a65.png)
 
 ## Installation
 
@@ -17,7 +17,7 @@ This package is part of the UpSet.js ecosystem located at the main [Github Monor
 
 **Notes**
 
-Due to the restrictions of the dashboard extension system, you need to have at least one sheet in the dashboard that is showing the target data. For example, as in the simpsons one a bar chart showing the age per simpsons characters. The extension is then linked to this sheet and will get its data and selection from it. Similiary, the extension will set the selection in this sheet which can then propagate it to other sheets using dashboard actions.
+Due to the restrictions of the dashboard extension system, you need to have at least one sheet in the dashboard that is showing the target data. For example, as in the simpsons one a bar chart showing the age per simpsons characters. The extension is then linked to this sheet and will get its data and selection from it. Similarly, the extension will set the selection in this sheet which then can propagate it to other sheets using dashboard actions.
 
 ## Example
 
