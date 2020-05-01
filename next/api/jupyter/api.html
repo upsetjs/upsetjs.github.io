@@ -162,18 +162,18 @@
   <div class="section" id="api-documentation">
 <h1>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="upsetjs_jupyter_widget.UpSetWidget">
-<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget.</code><code class="sig-name descname">UpSetWidget</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget" title="Permalink to this definition">¶</a></dt>
-<dd><p>UpSet Widget</p>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget">
+<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget.</code><code class="sig-name descname">UpSetJSWidget</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/widget.html#UpSetJSWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>UpSet.js Widget</p>
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.alternating_background_color">
-<code class="sig-name descname">alternating_background_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.alternating_background_color" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.alternating_background_color">
+<code class="sig-name descname">alternating_background_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.alternating_background_color" title="Permalink to this definition">¶</a></dt>
 <dd><p>A string holding a valid HTML color such as ‘blue’, ‘#060482’, ‘#A80’</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.append_query">
-<code class="sig-name descname">append_query</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="n">upset</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">elems</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.append_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.append_query" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.append_query">
+<code class="sig-name descname">append_query</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="n">upset</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">elems</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/widget.html#UpSetJSWidget.append_query"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.append_query" title="Permalink to this definition">¶</a></dt>
 <dd><p>adds another UpSetQuery to be visualized</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -185,120 +185,122 @@
 </ul>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetWidget</span></code></p>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetJSWidget</span></code></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.attrs">
-<code class="sig-name descname">attrs</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.attrs" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.attrs">
+<code class="sig-name descname">attrs</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.attrs" title="Permalink to this definition">¶</a></dt>
 <dd><p>An instance of a Python dict.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.band_scale">
-<code class="sig-name descname">band_scale</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.band_scale" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.band_scale">
+<code class="sig-name descname">band_scale</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.band_scale" title="Permalink to this definition">¶</a></dt>
 <dd><p>An enum whose value must be in a given sequence.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.bar_label_offset">
-<code class="sig-name descname">bar_label_offset</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.bar_label_offset" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.bar_label_offset">
+<code class="sig-name descname">bar_label_offset</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.bar_label_offset" title="Permalink to this definition">¶</a></dt>
 <dd><p>A float trait.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.bar_padding">
-<code class="sig-name descname">bar_padding</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.bar_padding" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.bar_padding">
+<code class="sig-name descname">bar_padding</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.bar_padding" title="Permalink to this definition">¶</a></dt>
 <dd><p>A float trait.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.clear_queries">
-<code class="sig-name descname">clear_queries</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.clear_queries"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.clear_queries" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.clear_queries">
+<code class="sig-name descname">clear_queries</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/widget.html#UpSetJSWidget.clear_queries"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.clear_queries" title="Permalink to this definition">¶</a></dt>
 <dd><p>deletes the list of queries</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.color">
-<code class="sig-name descname">color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.color" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.color">
+<code class="sig-name descname">color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.color" title="Permalink to this definition">¶</a></dt>
 <dd><p>A string holding a valid HTML color such as ‘blue’, ‘#060482’, ‘#A80’</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.combination_name">
-<code class="sig-name descname">combination_name</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.combination_name" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.combination_name">
+<code class="sig-name descname">combination_name</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.combination_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>A trait for unicode strings.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.combination_name_axis_offset">
-<code class="sig-name descname">combination_name_axis_offset</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.combination_name_axis_offset" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.combination_name_axis_offset">
+<code class="sig-name descname">combination_name_axis_offset</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.combination_name_axis_offset" title="Permalink to this definition">¶</a></dt>
 <dd><p>A float trait.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.combinations">
-<code class="sig-name descname">combinations</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.combinations" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.combinations">
+<code class="sig-name descname">combinations</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.combinations" title="Permalink to this definition">¶</a></dt>
 <dd><p>An instance of a Python list.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.copy">
-<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.copy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.copy" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/widget.html#UpSetJSWidget.copy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.copy" title="Permalink to this definition">¶</a></dt>
 <dd><p>returns a copy of itself</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetWidget</span></code></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetJSWidget</span></code></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.description">
-<code class="sig-name descname">description</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.description" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.description">
+<code class="sig-name descname">description</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.description" title="Permalink to this definition">¶</a></dt>
 <dd><p>interactivity mode of the widget whether the plot is static, reacts on hover or click events</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.dot_padding">
-<code class="sig-name descname">dot_padding</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.dot_padding" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.dot_padding">
+<code class="sig-name descname">dot_padding</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.dot_padding" title="Permalink to this definition">¶</a></dt>
 <dd><p>A float trait.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.elem_to_index">
-<code class="sig-name descname">elem_to_index</code><em class="property">: Dict[T, int]</em><em class="property"> = {}</em><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.elem_to_index" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.elem_to_index">
+<code class="sig-name descname">elem_to_index</code><em class="property">: Dict[T, int]</em><em class="property"> = {}</em><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.elem_to_index" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.elems">
-<code class="sig-name descname">elems</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.elems" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.elems">
+<code class="sig-name descname">elems</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.elems" title="Permalink to this definition">¶</a></dt>
 <dd><p>An instance of a Python list.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.export_buttons">
-<code class="sig-name descname">export_buttons</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.export_buttons" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.export_buttons">
+<code class="sig-name descname">export_buttons</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.export_buttons" title="Permalink to this definition">¶</a></dt>
 <dd><p>A boolean (True, False) trait.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.font_family">
-<code class="sig-name descname">font_family</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.font_family" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.font_family">
+<code class="sig-name descname">font_family</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.font_family" title="Permalink to this definition">¶</a></dt>
 <dd><p>A trait for unicode strings.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.font_sizes">
-<code class="sig-name descname">font_sizes</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.font_sizes" title="Permalink to this definition">¶</a></dt>
-<dd><p>An instance of a Python dict.</p>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.font_sizes">
+<code class="sig-name descname">font_sizes</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.font_sizes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A trait whose value must be an instance of a specified class.</p>
+<p>The value can also be an instance of a subclass of the specified class.</p>
+<p>Subclasses can declare default classes by overriding the klass attribute</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.from_dataframe">
-<code class="sig-name descname">from_dataframe</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_frame</span></em>, <em class="sig-param"><span class="n">attributes</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.from_dataframe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.from_dataframe" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.from_dataframe">
+<code class="sig-name descname">from_dataframe</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data_frame</span></em>, <em class="sig-param"><span class="n">attributes</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/widget.html#UpSetJSWidget.from_dataframe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.from_dataframe" title="Permalink to this definition">¶</a></dt>
 <dd><p>generates the list of sets from a dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -313,8 +315,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.from_dict">
-<code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sets</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.from_dict" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.from_dict">
+<code class="sig-name descname">from_dict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sets</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/widget.html#UpSetJSWidget.from_dict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.from_dict" title="Permalink to this definition">¶</a></dt>
 <dd><p>generates the list of sets from a dict</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -325,14 +327,14 @@
 </ul>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetWidget</span></code></p>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">UpSetJSWidget</span></code></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.generate_intersections">
-<code class="sig-name descname">generate_intersections</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">min_degree</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">max_degree</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">empty</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.generate_intersections"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.generate_intersections" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.generate_intersections">
+<code class="sig-name descname">generate_intersections</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">min_degree</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">max_degree</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">empty</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/widget.html#UpSetJSWidget.generate_intersections"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.generate_intersections" title="Permalink to this definition">¶</a></dt>
 <dd><p>customize the generation of the sets</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -348,8 +350,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.generate_unions">
-<code class="sig-name descname">generate_unions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">min_degree</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">max_degree</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">empty</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.generate_unions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.generate_unions" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.generate_unions">
+<code class="sig-name descname">generate_unions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">min_degree</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">max_degree</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">empty</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">order_by</span><span class="o">=</span><span class="default_value">'cardinality'</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/widget.html#UpSetJSWidget.generate_unions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.generate_unions" title="Permalink to this definition">¶</a></dt>
 <dd><p>customize the generation of the sets</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -365,16 +367,16 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.get_interact_value">
-<code class="sig-name descname">get_interact_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.get_interact_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.get_interact_value" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.get_interact_value">
+<code class="sig-name descname">get_interact_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/widget.html#UpSetJSWidget.get_interact_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.get_interact_value" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the value for this widget which should be passed to
 interactive functions. Custom widgets can change this method
 to process the raw value <code class="docutils literal notranslate"><span class="pre">self.value</span></code>.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.height">
-<em class="property">property </em><code class="sig-name descname">height</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.height" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.height">
+<em class="property">property </em><code class="sig-name descname">height</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.height" title="Permalink to this definition">¶</a></dt>
 <dd><p>get the widget height</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -384,62 +386,62 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.height_ratios">
-<code class="sig-name descname">height_ratios</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.height_ratios" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.height_ratios">
+<code class="sig-name descname">height_ratios</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.height_ratios" title="Permalink to this definition">¶</a></dt>
 <dd><p>An instance of a Python tuple.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.hover_hint_color">
-<code class="sig-name descname">hover_hint_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.hover_hint_color" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.hover_hint_color">
+<code class="sig-name descname">hover_hint_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.hover_hint_color" title="Permalink to this definition">¶</a></dt>
 <dd><p>A string holding a valid HTML color such as ‘blue’, ‘#060482’, ‘#A80’</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.mode">
-<code class="sig-name descname">mode</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.mode" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.mode">
+<code class="sig-name descname">mode</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.mode" title="Permalink to this definition">¶</a></dt>
 <dd><p>padding within the svg</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.not_member_color">
-<code class="sig-name descname">not_member_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.not_member_color" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.not_member_color">
+<code class="sig-name descname">not_member_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.not_member_color" title="Permalink to this definition">¶</a></dt>
 <dd><p>A string holding a valid HTML color such as ‘blue’, ‘#060482’, ‘#A80’</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.numeric_scale">
-<code class="sig-name descname">numeric_scale</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.numeric_scale" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.numeric_scale">
+<code class="sig-name descname">numeric_scale</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.numeric_scale" title="Permalink to this definition">¶</a></dt>
 <dd><p>An enum whose value must be in a given sequence.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.on_selection_changed">
-<code class="sig-name descname">on_selection_changed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">callback</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/upset.html#UpSetWidget.on_selection_changed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.on_selection_changed" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.on_selection_changed">
+<code class="sig-name descname">on_selection_changed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">callback</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/widget.html#UpSetJSWidget.on_selection_changed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.on_selection_changed" title="Permalink to this definition">¶</a></dt>
 <dd><p>add callback listener to listen for selection changes</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.padding">
-<code class="sig-name descname">padding</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.padding" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.padding">
+<code class="sig-name descname">padding</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.padding" title="Permalink to this definition">¶</a></dt>
 <dd><p>padding argument for scaleBand (0..1)</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.queries">
-<code class="sig-name descname">queries</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.queries" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.queries">
+<code class="sig-name descname">queries</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.queries" title="Permalink to this definition">¶</a></dt>
 <dd><p>An instance of a Python list.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.query_legend">
-<code class="sig-name descname">query_legend</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.query_legend" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.query_legend">
+<code class="sig-name descname">query_legend</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.query_legend" title="Permalink to this definition">¶</a></dt>
 <dd><p>A boolean (True, False) trait.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.selection">
-<em class="property">property </em><code class="sig-name descname">selection</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.selection" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.selection">
+<em class="property">property </em><code class="sig-name descname">selection</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.selection" title="Permalink to this definition">¶</a></dt>
 <dd><p>the current selection</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -449,50 +451,50 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.selection_color">
-<code class="sig-name descname">selection_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.selection_color" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.selection_color">
+<code class="sig-name descname">selection_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.selection_color" title="Permalink to this definition">¶</a></dt>
 <dd><p>A string holding a valid HTML color such as ‘blue’, ‘#060482’, ‘#A80’</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.set_name">
-<code class="sig-name descname">set_name</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.set_name" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.set_name">
+<code class="sig-name descname">set_name</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.set_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>A trait for unicode strings.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.set_name_axis_offset">
-<code class="sig-name descname">set_name_axis_offset</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.set_name_axis_offset" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.set_name_axis_offset">
+<code class="sig-name descname">set_name_axis_offset</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.set_name_axis_offset" title="Permalink to this definition">¶</a></dt>
 <dd><p>A float trait.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.sets">
-<code class="sig-name descname">sets</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.sets" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.sets">
+<code class="sig-name descname">sets</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.sets" title="Permalink to this definition">¶</a></dt>
 <dd><p>An instance of a Python list.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.text_color">
-<code class="sig-name descname">text_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.text_color" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.text_color">
+<code class="sig-name descname">text_color</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.text_color" title="Permalink to this definition">¶</a></dt>
 <dd><p>A string holding a valid HTML color such as ‘blue’, ‘#060482’, ‘#A80’</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.theme">
-<code class="sig-name descname">theme</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.theme" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.theme">
+<code class="sig-name descname">theme</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.theme" title="Permalink to this definition">¶</a></dt>
 <dd><p>An enum whose value must be in a given sequence.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.value">
-<code class="sig-name descname">value</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.value" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.value">
+<code class="sig-name descname">value</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.value" title="Permalink to this definition">¶</a></dt>
 <dd><p>A trait type representing a Union type.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.width">
-<em class="property">property </em><code class="sig-name descname">width</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.width" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.width">
+<em class="property">property </em><code class="sig-name descname">width</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.width" title="Permalink to this definition">¶</a></dt>
 <dd><p>get the widget width</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
@@ -502,8 +504,8 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="upsetjs_jupyter_widget.UpSetWidget.width_ratios">
-<code class="sig-name descname">width_ratios</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetWidget.width_ratios" title="Permalink to this definition">¶</a></dt>
+<dt id="upsetjs_jupyter_widget.UpSetJSWidget.width_ratios">
+<code class="sig-name descname">width_ratios</code><a class="headerlink" href="#upsetjs_jupyter_widget.UpSetJSWidget.width_ratios" title="Permalink to this definition">¶</a></dt>
 <dd><p>An instance of a Python tuple.</p>
 </dd></dl>
 
@@ -543,6 +545,49 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 <dt id="upsetjs_jupyter_widget._model.UpSetBaseSet.set_type">
 <code class="sig-name descname">set_type</code><em class="property">: UpSetSetType</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetBaseSet.set_type" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="upsetjs_jupyter_widget._model.UpSetFontSizes">
+<em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget._model.</code><code class="sig-name descname">UpSetFontSizes</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetFontSizes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetFontSizes" title="Permalink to this definition">¶</a></dt>
+<dd><p>helper structure for specifying font sizes</p>
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetFontSizes.axis_tick">
+<code class="sig-name descname">axis_tick</code><em class="property">: Union[None, str, int]</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetFontSizes.axis_tick" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetFontSizes.bar_label">
+<code class="sig-name descname">bar_label</code><em class="property">: Union[None, str, int]</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetFontSizes.bar_label" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetFontSizes.chart_label">
+<code class="sig-name descname">chart_label</code><em class="property">: Union[None, str, int]</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetFontSizes.chart_label" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget._model.UpSetFontSizes.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetFontSizes.copy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetFontSizes.copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a copy / clone of this instance</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetFontSizes.legend">
+<code class="sig-name descname">legend</code><em class="property">: Union[None, str, int]</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetFontSizes.legend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="upsetjs_jupyter_widget._model.UpSetFontSizes.set_label">
+<code class="sig-name descname">set_label</code><em class="property">: Union[None, str, int]</em><em class="property"> = None</em><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetFontSizes.set_label" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="upsetjs_jupyter_widget._model.UpSetFontSizes.to_json">
+<code class="sig-name descname">to_json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetFontSizes.to_json"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetFontSizes.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>converts this instance to a regular dictionary for transfering</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -620,7 +665,7 @@ to process the raw value <code class="docutils literal notranslate"><span class=
 <dl class="py class">
 <dt id="upsetjs_jupyter_widget._model.UpSetSetCombination">
 <em class="property">class </em><code class="sig-prename descclassname">upsetjs_jupyter_widget._model.</code><code class="sig-name descname">UpSetSetCombination</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">set_type</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">elems</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sets</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="modules/upsetjs_jupyter_widget/_model.html#UpSetSetCombination"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#upsetjs_jupyter_widget._model.UpSetSetCombination" title="Permalink to this definition">¶</a></dt>
-<dd><p>a set combination within UpSet like an intersection</p>
+<dd><p>a set combination within UpSet.js like an intersection</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
