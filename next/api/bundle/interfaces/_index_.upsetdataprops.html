@@ -2372,10 +2372,10 @@ img {
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_index_.upsetdataprops.html#sets" class="tsd-kind-icon">sets</a>
 				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface">
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_index_.upsetdataprops.html#toelemkey" class="tsd-kind-icon">to<wbr>Elem<wbr>Key</a>
 				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface">
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_index_.upsetdataprops.html#tokey" class="tsd-kind-icon">to<wbr>Key</a>
 				</li>
 			</ul>
@@ -2409,13 +2409,8 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetdataprops.html#combinations" class="tsd-kind-icon">combinations</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetdataprops.html#sets" class="tsd-kind-icon">sets</a></li>
-						</ul>
-					</section>
-					<section class="tsd-index-section ">
-						<h3>Methods</h3>
-						<ul class="tsd-index-list">
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_index_.upsetdataprops.html#toelemkey" class="tsd-kind-icon">to<wbr>Elem<wbr>Key</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_index_.upsetdataprops.html#tokey" class="tsd-kind-icon">to<wbr>Key</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetdataprops.html#toelemkey" class="tsd-kind-icon">to<wbr>Elem<wbr>Key</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetdataprops.html#tokey" class="tsd-kind-icon">to<wbr>Key</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2429,12 +2424,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">combinations<span class="tsd-signature-symbol">:</span> <a href="../globals.html#isetcombinations" class="tsd-signature-type">ISetCombinations</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../globals.html#generatesetcombinationsoptions" class="tsd-signature-type">GenerateSetCombinationsOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L68">bundle/src/interfaces.ts:68</a></li>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L31">bundle/src/interfaces.ts:31</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>the combinations to visualize by default all combinations</p>
+						<p>the set combinations to visualize or the generation options to generate the set combinations
+						by default all set intersections are computed</p>
 					</div>
 				</div>
 			</section>
@@ -2444,7 +2440,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">sets<span class="tsd-signature-symbol">:</span> <a href="../globals.html#isets" class="tsd-signature-type">ISets</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L64">bundle/src/interfaces.ts:64</a></li>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L26">bundle/src/interfaces.ts:26</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2453,70 +2449,45 @@ img {
 					</div>
 				</div>
 			</section>
-		</section>
-		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Methods</h2>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="toelemkey" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> to<wbr>Elem<wbr>Key</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">to<wbr>Elem<wbr>Key<span class="tsd-signature-symbol">(</span>elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L80">bundle/src/interfaces.ts:80</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>optional function to identify the same elem</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>elem: <span class="tsd-signature-type">T</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>the element the key for</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-					</li>
-				</ul>
+				<div class="tsd-signature tsd-kind-icon">to<wbr>Elem<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L41">bundle/src/interfaces.ts:41</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>optional function to identify the same element</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>param</dt>
+						<dd><p>the element the key for</p>
+						</dd>
+					</dl>
+				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="tokey" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> to<wbr>Key</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">to<wbr>Key<span class="tsd-signature-symbol">(</span>set<span class="tsd-signature-symbol">: </span><a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L74">bundle/src/interfaces.ts:74</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>optional function to identify the same sets</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>set: <a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>the set to generate a key for</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-					</li>
-				</ul>
+				<div class="tsd-signature tsd-kind-icon">to<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>set<span class="tsd-signature-symbol">: </span><a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L36">bundle/src/interfaces.ts:36</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>optional function to identify the same sets</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>param</dt>
+						<dd><p>the set to generate a key for</p>
+						</dd>
+					</dl>
+				</div>
 			</section>
 		</section>
 		<footer>

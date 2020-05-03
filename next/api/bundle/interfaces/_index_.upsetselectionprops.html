@@ -2367,19 +2367,19 @@ img {
 			<a href="_index_.upsetselectionprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Selection<wbr>Props</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_index_.upsetselectionprops.html#onclick" class="tsd-kind-icon">on<wbr>Click</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_index_.upsetselectionprops.html#oncontextmenu" class="tsd-kind-icon">on<wbr>Context<wbr>Menu</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_index_.upsetselectionprops.html#onhover" class="tsd-kind-icon">on<wbr>Hover</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_index_.upsetselectionprops.html#queries" class="tsd-kind-icon">queries</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_index_.upsetselectionprops.html#selection" class="tsd-kind-icon">selection</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface">
-					<a href="_index_.upsetselectionprops.html#onclick" class="tsd-kind-icon">on<wbr>Click</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface">
-					<a href="_index_.upsetselectionprops.html#oncontextmenu" class="tsd-kind-icon">on<wbr>Context<wbr>Menu</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface">
-					<a href="_index_.upsetselectionprops.html#onhover" class="tsd-kind-icon">on<wbr>Hover</a>
 				</li>
 			</ul>
 		</li>
@@ -2410,16 +2410,11 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetselectionprops.html#onclick" class="tsd-kind-icon">on<wbr>Click</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetselectionprops.html#oncontextmenu" class="tsd-kind-icon">on<wbr>Context<wbr>Menu</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetselectionprops.html#onhover" class="tsd-kind-icon">on<wbr>Hover</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetselectionprops.html#queries" class="tsd-kind-icon">queries</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetselectionprops.html#selection" class="tsd-kind-icon">selection</a></li>
-						</ul>
-					</section>
-					<section class="tsd-index-section ">
-						<h3>Methods</h3>
-						<ul class="tsd-index-list">
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_index_.upsetselectionprops.html#onclick" class="tsd-kind-icon">on<wbr>Click</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_index_.upsetselectionprops.html#oncontextmenu" class="tsd-kind-icon">on<wbr>Context<wbr>Menu</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_index_.upsetselectionprops.html#onhover" class="tsd-kind-icon">on<wbr>Hover</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2428,105 +2423,79 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="onclick" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Click</h3>
+				<div class="tsd-signature tsd-kind-icon">on<wbr>Click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>selection<span class="tsd-signature-symbol">: </span><a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L94">bundle/src/interfaces.ts:94</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>mouse click listener, triggered when the user is clicking on a set (combination)</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="oncontextmenu" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Context<wbr>Menu</h3>
+				<div class="tsd-signature tsd-kind-icon">on<wbr>Context<wbr>Menu<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>selection<span class="tsd-signature-symbol">: </span><a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L98">bundle/src/interfaces.ts:98</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>mouse context menu listener, triggered when the user right clicks on a set (combination)</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="onhover" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Hover</h3>
+				<div class="tsd-signature tsd-kind-icon">on<wbr>Hover<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>selection<span class="tsd-signature-symbol">: </span><a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L90">bundle/src/interfaces.ts:90</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>mouse hover listener, triggered when the user is over a set (combination)</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="queries" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> queries</h3>
 				<div class="tsd-signature tsd-kind-icon">queries<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="../globals.html#upsetquery" class="tsd-signature-type">UpSetQuery</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L89">bundle/src/interfaces.ts:89</a></li>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L102">bundle/src/interfaces.ts:102</a></li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>list of queries as an alternative to provide a single selection</p>
+					</div>
+				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="selection" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> selection</h3>
-				<div class="tsd-signature tsd-kind-icon">selection<span class="tsd-signature-symbol">:</span> <a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<div class="tsd-signature tsd-kind-icon">selection<span class="tsd-signature-symbol">:</span> <a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>s<span class="tsd-signature-symbol">: </span><a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L84">bundle/src/interfaces.ts:84</a></li>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L86">bundle/src/interfaces.ts:86</a></li>
 					</ul>
 				</aside>
-			</section>
-		</section>
-		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Methods</h2>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-				<a name="onclick" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Click</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">on<wbr>Click<span class="tsd-signature-symbol">(</span>selection<span class="tsd-signature-symbol">: </span><a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L86">bundle/src/interfaces.ts:86</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>selection: <a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-							</li>
-							<li>
-								<h5>evt: <span class="tsd-signature-type">MouseEvent</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-				<a name="oncontextmenu" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Context<wbr>Menu</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">on<wbr>Context<wbr>Menu<span class="tsd-signature-symbol">(</span>selection<span class="tsd-signature-symbol">: </span><a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L87">bundle/src/interfaces.ts:87</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>selection: <a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-							</li>
-							<li>
-								<h5>evt: <span class="tsd-signature-type">MouseEvent</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-				<a name="onhover" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Hover</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">on<wbr>Hover<span class="tsd-signature-symbol">(</span>selection<span class="tsd-signature-symbol">: </span><a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L85">bundle/src/interfaces.ts:85</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>selection: <a href="../globals.html#isetlike" class="tsd-signature-type">ISetLike</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-							</li>
-							<li>
-								<h5>evt: <span class="tsd-signature-type">MouseEvent</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>the selection of the plot. Can be a set like (set or set combination), an array of elements, or a function to compute the overlap to a given set</p>
+					</div>
+				</div>
 			</section>
 		</section>
 		<footer>

@@ -2373,16 +2373,16 @@ img {
 					<a href="_index_.upsetaddon.html#position" class="tsd-kind-icon">position</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="_index_.upsetaddon.html#size" class="tsd-kind-icon">size</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface">
 					<a href="_index_.upsetaddon.html#render" class="tsd-kind-icon">render</a>
 				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface">
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_index_.upsetaddon.html#renderquery" class="tsd-kind-icon">render<wbr>Query</a>
 				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface">
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_index_.upsetaddon.html#renderselection" class="tsd-kind-icon">render<wbr>Selection</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_index_.upsetaddon.html#size" class="tsd-kind-icon">size</a>
 				</li>
 			</ul>
 		</li>
@@ -2418,15 +2418,10 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetaddon.html#name" class="tsd-kind-icon">name</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetaddon.html#position" class="tsd-kind-icon">position</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetaddon.html#render" class="tsd-kind-icon">render</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetaddon.html#renderquery" class="tsd-kind-icon">render<wbr>Query</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetaddon.html#renderselection" class="tsd-kind-icon">render<wbr>Selection</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.upsetaddon.html#size" class="tsd-kind-icon">size</a></li>
-						</ul>
-					</section>
-					<section class="tsd-index-section ">
-						<h3>Methods</h3>
-						<ul class="tsd-index-list">
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_index_.upsetaddon.html#render" class="tsd-kind-icon">render</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_index_.upsetaddon.html#renderquery" class="tsd-kind-icon">render<wbr>Query</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_index_.upsetaddon.html#renderselection" class="tsd-kind-icon">render<wbr>Selection</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2440,9 +2435,14 @@ img {
 				<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L203">bundle/src/interfaces.ts:203</a></li>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L311">bundle/src/interfaces.ts:311</a></li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>addon name</p>
+					</div>
+				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="position" class="tsd-anchor"></a>
@@ -2450,10 +2450,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"before"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"after"</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L207">bundle/src/interfaces.ts:207</a></li>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L316">bundle/src/interfaces.ts:316</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>addon position before or after the bar</p>
+					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
 						<dd><p>after</p>
@@ -2462,12 +2465,78 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="render" class="tsd-anchor"></a>
+				<h3>render</h3>
+				<div class="tsd-signature tsd-kind-icon">render<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="_index_.upsetaddonprops.html" class="tsd-signature-type">UpSetAddonProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../globals.html#upsetreactelement" class="tsd-signature-type">UpSetReactElement</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L325">bundle/src/interfaces.ts:325</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>react component to render the addon</p>
+					</div>
+				</div>
+				<div class="tsd-type-declaration">
+					<h4>Type declaration</h4>
+					<ul class="tsd-parameters">
+						<li class="tsd-parameter-signature">
+							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="_index_.upsetaddonprops.html" class="tsd-signature-type">UpSetAddonProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#upsetreactelement" class="tsd-signature-type">UpSetReactElement</a></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>props: <a href="_index_.upsetaddonprops.html" class="tsd-signature-type">UpSetAddonProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <a href="../globals.html#upsetreactelement" class="tsd-signature-type">UpSetReactElement</a></h4>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="renderquery" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> render<wbr>Query</h3>
+				<div class="tsd-signature tsd-kind-icon">render<wbr>Query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="_index_.upsetqueryaddonprops.html" class="tsd-signature-type">UpSetQueryAddonProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../globals.html#upsetreactelement" class="tsd-signature-type">UpSetReactElement</a><span class="tsd-signature-symbol">)</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L333">bundle/src/interfaces.ts:333</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>optional react component to render a query</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="renderselection" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> render<wbr>Selection</h3>
+				<div class="tsd-signature tsd-kind-icon">render<wbr>Selection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="_index_.upsetselectionaddonprops.html" class="tsd-signature-type">UpSetSelectionAddonProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../globals.html#upsetreactelement" class="tsd-signature-type">UpSetReactElement</a><span class="tsd-signature-symbol">)</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L329">bundle/src/interfaces.ts:329</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>optional react component to render the selection</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="size" class="tsd-anchor"></a>
 				<h3>size</h3>
 				<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L211">bundle/src/interfaces.ts:211</a></li>
+						<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/2a77662/packages/bundle/src/interfaces.ts#L320">bundle/src/interfaces.ts:320</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2475,78 +2544,6 @@ img {
 						<p>size of this addon in pixel</p>
 					</div>
 				</div>
-			</section>
-		</section>
-		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Methods</h2>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-				<a name="render" class="tsd-anchor"></a>
-				<h3>render</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">render<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="_index_.upsetaddonprops.html" class="tsd-signature-type">UpSetAddonProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#upsetreactelement" class="tsd-signature-type">UpSetReactElement</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L213">bundle/src/interfaces.ts:213</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>props: <a href="_index_.upsetaddonprops.html" class="tsd-signature-type">UpSetAddonProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="../globals.html#upsetreactelement" class="tsd-signature-type">UpSetReactElement</a></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-				<a name="renderquery" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> render<wbr>Query</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">render<wbr>Query<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="_index_.upsetqueryaddonprops.html" class="tsd-signature-type">UpSetQueryAddonProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#upsetreactelement" class="tsd-signature-type">UpSetReactElement</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L217">bundle/src/interfaces.ts:217</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>props: <a href="_index_.upsetqueryaddonprops.html" class="tsd-signature-type">UpSetQueryAddonProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="../globals.html#upsetreactelement" class="tsd-signature-type">UpSetReactElement</a></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-				<a name="renderselection" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> render<wbr>Selection</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">render<wbr>Selection<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="_index_.upsetselectionaddonprops.html" class="tsd-signature-type">UpSetSelectionAddonProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#upsetreactelement" class="tsd-signature-type">UpSetReactElement</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/upsetjs/upsetjs/blob/a02136a/packages/bundle/src/interfaces.ts#L215">bundle/src/interfaces.ts:215</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>props: <a href="_index_.upsetselectionaddonprops.html" class="tsd-signature-type">UpSetSelectionAddonProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="../globals.html#upsetreactelement" class="tsd-signature-type">UpSetReactElement</a></h4>
-					</li>
-				</ul>
 			</section>
 		</section>
 		<footer>
