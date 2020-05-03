@@ -2,9 +2,9 @@
 
 [![NPM Package][npm-image]][npm-url] [![Github Actions][github-actions-image]][github-actions-url]
 
-UpSet.js is a JavaScript re-implementation of [UpSetR](https://www.rdocumentation.org/packages/UpSetR/) which itself is based on [UpSet](http://vcg.github.io/upset/about/) to create interactive set visualizations for more than three sets. The core library is written in React but provides also bundle editions for plain JavaScript use. The `UpSet` React component is implemented as a pure functional component solely depending on the given properties.
+UpSet.js is a JavaScript re-implementation of [UpSetR](https://www.rdocumentation.org/packages/UpSetR/) which itself is based on [UpSet](http://vcg.github.io/upset/about/) to create interactive set visualizations for more than three sets. The core library is written in React but provides also bundle editions for plain JavaScript use. The `UpSetJS` React component is implemented as a pure functional component solely depending on the given properties.
 
-![interactions](https://user-images.githubusercontent.com/4129778/79372064-b262f980-7f55-11ea-872e-6e6857c0df82.png)
+![interactions](https://user-images.githubusercontent.com/4129778/80863076-f0f8f380-8c79-11ea-8790-f6ad86738b28.png)
 
 This monorepo contains following packages:
 
@@ -52,7 +52,7 @@ npm install @upsetjs/react react react-dom
 
 ```ts
 import React from 'react';
-import UpSet, { extractSets, generateIntersections, ISetLike } from '@upsetjs/react';
+import UpSetJS, { extractSets, generateIntersections, ISetLike } from '@upsetjs/react';
 
 const elems = [
   { name: 'A', sets: ['S1', 'S2'] },
@@ -64,19 +64,19 @@ const elems = [
 const sets = extractSets(elems);
 const combinations = generateIntersections(sets);
 
-<UpSet sets={sets} combinations={combinations} width={500} height={300} />;
+<UpSetJS sets={sets} combinations={combinations} width={500} height={300} />;
 ```
 
 with stored selection
 
 ```ts
-const UpSetSelection = (props: any) => {
+const UpSetJSSelection = (props: any) => {
   [selection, setSelection] = React.useState(null as ISetLike<any> | null);
 
-  return <UpSet {...props} selection={selection} onHover={setSelection} />;
+  return <UpSetJS {...props} selection={selection} onHover={setSelection} />;
 };
 
-<UpSetSelection sets={sets} combinations={combinations} />;
+<UpSetJSSelection sets={sets} combinations={combinations} />;
 ```
 
 ![simple](https://user-images.githubusercontent.com/4129778/79372711-4cc33d00-7f56-11ea-865e-e1f74261ccb2.png)
@@ -90,7 +90,7 @@ npm install @upsetjs/bundle
 ```
 
 ```js
-import { extractSets, generateIntersections, renderUpSet } from '@upsetjs/bundle';
+import { extractSets, generateIntersections, render } from '@upsetjs/bundle';
 
 const elems = [
   { name: 'A', sets: ['S1', 'S2'] },
@@ -102,7 +102,7 @@ const elems = [
 const sets = extractSets(elems);
 const combinations = generateIntersections(sets);
 
-renderUpSet(document.body, { sets, combinations, width: 500, height: 300 });
+render(document.body, { sets, combinations, width: 500, height: 300 });
 ```
 
 with stored selection
@@ -112,15 +112,15 @@ let selection = null;
 
 function onHover(set) {
   selection = set;
-  render();
+  rerender();
 }
 
-function render() {
-  const props = { sets, combinations, width: 500, height: 300, selection, onHover };
-  renderUpSet(document.body, props);
+function rerender() {
+  const props = { sets, combinations, width: 1000, height: 300, selection, onHover };
+  render(document.body, props);
 }
 
-render();
+rerender();
 ```
 
 ![simple](https://user-images.githubusercontent.com/4129778/79372711-4cc33d00-7f56-11ea-865e-e1f74261ccb2.png)
@@ -131,13 +131,13 @@ see also [![Open in CodePen][codepen]](https://codepen.io/sgratzl/pen/GRpoMZY)
 
 **Interactivity**
 
-By specifying `onHover` and `selection` `UpSet` is fully interactive. As an alternative there is also the `onClick` property.
+By specifying `onHover` and `selection` UpSet.js is fully interactive. As an alternative there is also the `onClick` property.
 
-![interactions](https://user-images.githubusercontent.com/4129778/79372064-b262f980-7f55-11ea-872e-6e6857c0df82.png)
+![interactions](https://user-images.githubusercontent.com/4129778/80863076-f0f8f380-8c79-11ea-8790-f6ad86738b28.png)
 
 **Queries**
 
-Similar to the original UpSetR, `UpSet` allows to specify queries by a set of elements which are then highlighted in the plot.
+Similar to the original UpSetR, UpSet.js allows to specify queries by a set of elements which are then highlighted in the plot.
 The first query is shown in full detail while others are shown using small indicators.
 
 ```ts
@@ -146,10 +146,10 @@ const queries = [
   { name: 'Q2', color: 'red', elems: elems.filter(() => Math.random() > 0.8) },
 ];
 
-renderUpSet(document.body, { sets, combinations, width: 500, height: 300, queries });
+render(document.body, { sets, width: 1000, height: 500, queries });
 ```
 
-![queries](https://user-images.githubusercontent.com/4129778/79373208-9a3faa00-7f56-11ea-8281-47dabb9b42b9.png)
+![queries](https://user-images.githubusercontent.com/4129778/80863309-a2e4ef80-8c7b-11ea-834d-9c5da34a386a.png)
 
 see also [![Open in CodePen][codepen]](https://codepen.io/sgratzl/pen/BaNmpJq)
 
@@ -158,7 +158,7 @@ see also [![Open in CodePen][codepen]](https://codepen.io/sgratzl/pen/BaNmpJq)
 Similar to the original UpSet and UpSetR, `UpSet` allows to render boxplot for showing numerical aggregates of sets and set combinations.
 
 ```ts
-import { extractSets, renderUpSet, boxplotAddon } from '@upsetjs/bundle';
+import { extractSets, render, boxplotAddon } from '@upsetjs/bundle';
 
 const elems = [
   { name: '1', sets: ['one', 'two', 'three'], value: Math.random() },
@@ -177,7 +177,7 @@ const elems = [
 ];
 const sets = extractSets(elems);
 
-renderUpSet(document.body, {
+render(document.body, {
   sets,
   width: 500,
   height: 300,
@@ -192,15 +192,15 @@ renderUpSet(document.body, {
 
 The UpSet.js App is an web application for exploring sets and set intersections. It is the counterpart to the original [UpSet](http://vcg.github.io/upset/about/) and [UpSet2](https://vdl.sci.utah.edu/upset2/). The app is deployed at [https://upset.js.org/app](https://upset.js.org/app).
 
-![upset_app1](https://user-images.githubusercontent.com/4129778/79368561-e3d8c680-7f4f-11ea-9a87-f4421a3846cf.png)
+![upset_app1](https://user-images.githubusercontent.com/4129778/80863152-97dd8f80-8c7a-11ea-8677-c86598fc6161.png)
 
 ## Components
 
 see [Storybook](https://upset.js.org/api/?path=/docs/upset--default) for demos and properties.
 
-### UpSet
+### UpSetJS
 
-The most relevant and required properties of the `UpSet` component are:
+The most relevant and required properties of the `UpSetJS` component are:
 
 ```ts
 {
@@ -221,12 +221,12 @@ The most relevant and required properties of the `UpSet` component are:
 
 ## Data
 
-`UpSet` requires sets and optionally combinations of sets as input. There are some utility function to help creating the required data structures:
+`UpSetJS` requires sets and optionally combinations of sets as input. There are some utility function to help creating the required data structures:
 
 - `extractSets<T extends { sets: string[] }>(elements: ReadonlyArray<T>): ISet<T>[]`
   given an array of elements where each is having a property called `.sets` containing a list of set names in which this element is part of. e.g. `{ sets: ['Blue Hair', 'Female']}`. The return value is a list of sets in the required data structures and having a `.elems` with an array of the input elements.
 - `asSets<T, S extends { name: string; elems: ReadonlyArray<T> }>(sets: ReadonlyArray<S>): (S & ISet<T>)[]`
-  extends the given basic set objects (`name` and `elems`) with the required attributes for `UpSet`
+  extends the given basic set objects (`name` and `elems`) with the required attributes for `UpSetJS`
 - `generateIntersections<T>(sets: ISets<T>, { min = 0, max = Infinity, empty = false } = {}): ISetIntersection<T>[]`
   one needs to generate the list of the intersections to show in case of customized sorting or filtering. This function takes the array of sets as input and computed all possible set intersections (aka. power set). The options allow to limit the generation to skip `empty` set intersections or enforce a minimum/maximum amount of sets in the intersection.
 - `generateUnions<T>(sets: ISets<T>, { min = 2, max = Infinity } = {}): ISetUnion<T>[]`
@@ -242,13 +242,13 @@ A [ObservableHQ](https://observablehq.com/) wrapper is located at [upset-js](htt
 
 ```js
 data = fetch(
-  'https://raw.githubusercontent.com/upsetjs/upsetjs/master/packages/bundle/example/simpsons.json'
+  'https://raw.githubusercontent.com/upsetjs/upsetjs/master/packages/bundle/example/got.json'
 ).then(r => r.json())
 }
 ```
 
 ```js
-import { extractSets, UpSet, generateIntersections } from '@sgratzl/upset-js';
+import { extractSets, UpSetJSElement, generateIntersections } from '@sgratzl/upset-js';
 ```
 
 ```js
@@ -260,7 +260,7 @@ intersections = generateIntersections(sets);
 ```
 
 ```js
-viewof selection = UpSet(sets, intersections)
+viewof selection = UpSetJSElement(sets, intersections)
 ```
 
 ```js
@@ -304,11 +304,11 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager@3.0.0-alpha.0
 ```
 
 ```python
-from upsetjs_jupyter_widget import UpSetWidget
+from upsetjs_jupyter_widget import UpSetJSWidget
 ```
 
 ```python
-w = UpSetWidget[str]()
+w = UpSetJSWidget[str]()
 w.from_dict(dict(one = ['a', 'b', 'c', 'e', 'g', 'h', 'k', 'l', 'm'], two = ['a', 'b', 'd', 'e', 'j'], three = ['a', 'e', 'f', 'g', 'h', 'i', 'j', 'l', 'm']))
 w
 ```
@@ -321,7 +321,7 @@ A [PowerBI Custom Visual](https://powerbi.microsoft.com/en-us/developers/custom-
 
 Download the latest package from [https://github.com/upsetjs/upsetjs_powerbi_visuals/releases/latest/download/upsetjs.pbiviz](https://github.com/upsetjs/upsetjs_powerbi_visuals/releases/latest/download/upsetjs.pbiviz) and install into your PowerBI environment.
 
-![UpSet.js Report](https://user-images.githubusercontent.com/4129778/79641879-808ea480-819a-11ea-87f9-441c3647812f.png)
+![UpSet.js Report](https://user-images.githubusercontent.com/4129778/80864985-9b771380-8c86-11ea-809c-a4473b32ed3b.png)
 
 ### Tableau
 
@@ -332,7 +332,7 @@ A [Tableau](https://tableau.com) extension is located at [upsetjs_tableau_extens
 1. Follow [https://tableau.github.io/extensions-api/docs/trex_overview.html](https://tableau.github.io/extensions-api/docs/trex_overview.html) and choose the downloaded file
 1. Use the `configure` button or the `configure` menu entry to specify the input data
 
-![image](https://user-images.githubusercontent.com/4129778/80474503-d3f5b500-8947-11ea-8397-345a5efb5a65.png)
+![image](https://user-images.githubusercontent.com/4129778/80864773-04f62280-8c85-11ea-8db5-6df21683de0f.png)
 
 ## Dev Environment
 
@@ -340,7 +340,8 @@ A [Tableau](https://tableau.com) extension is located at [upsetjs_tableau_extens
 npm i -g yarn
 yarn set version berry
 yarn plugin import version
-yarn plugin import plugin-workspace-tools
+yarn plugin import workspace-tools
+cat .yarnrc_patch.yml >> .yarnrc.yml
 yarn install
 yarn pnpify --sdk
 ```
