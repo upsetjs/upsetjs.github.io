@@ -1,6 +1,6 @@
 # UpSet.js as Tableau Extension
 
-[![Github Actions][github-actions-image]][github-actions-url]
+[![Github Actions][github-actions-image]][github-actions-url] [![Tableau Community][tableau-image]][tableau-url]
 
 This repository contains a [Tableau](https://tableau.com) extension for showing UpSet.js plots in Tableau dashboards.
 
@@ -21,7 +21,7 @@ Due to the restrictions of the dashboard extension system, you need to have at l
 
 ## Example
 
-see https://github.com/upsetjs/upsetjs_tableau_extension/examples/simpsowns.twb
+see https://github.com/upsetjs/upsetjs_tableau_extension/examples/got.twb
 
 ## Dev Environment
 
@@ -73,3 +73,5 @@ This library is released under the `GNU AGPLv3` version to be used for private a
 [github-actions-image]: https://github.com/upsetjs/upsetjs_tableau_extension/workflows/ci/badge.svg
 [github-actions-url]: https://github.com/upsetjs/upsetjs_tableau_extension/actions
 [codepen]: https://img.shields.io/badge/CodePen-open-blue?logo=codepen
+[tableau-image]: https://img.shields.io/badge/Tableau-Community-blue?logo=tableau
+[tableau-url]: https://tableau.github.io/extensions-api/community/
