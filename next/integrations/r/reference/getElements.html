@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>upsetjs sizing policy — upsetjsSizingPolicy • upsetjs</title>
+<title>extract the vector of elements — getElements • upsetjs</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="upsetjs sizing policy — upsetjsSizingPolicy" />
-<meta property="og:description" content="upsetjs sizing policy" />
+<meta property="og:title" content="extract the vector of elements — getElements" />
+<meta property="og:description" content="extract the vector of elements" />
 
 
 
@@ -120,54 +120,33 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>upsetjs sizing policy</h1>
-    <small class="dont-index">Source: <a href='https://github.com/upsetjs/upsetjs_r/blob/master/R/upsetjs.R'><code>R/upsetjs.R</code></a></small>
-    <div class="hidden name"><code>upsetjsSizingPolicy.Rd</code></div>
+    <h1>extract the vector of elements</h1>
+    <small class="dont-index">Source: <a href='https://github.com/upsetjs/upsetjs_r/blob/master/R/data.R'><code>R/data.R</code></a></small>
+    <div class="hidden name"><code>getElements.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>upsetjs sizing policy</p>
+    <p>extract the vector of elements</p>
     </div>
 
-    <pre class="usage"><span class='fu'>upsetjsSizingPolicy</span>(
-  <span class='kw'>defaultWidth</span> <span class='kw'>=</span> <span class='st'>"100%"</span>,
-  <span class='kw'>defaultHeight</span> <span class='kw'>=</span> <span class='fl'>400</span>,
-  <span class='kw'>padding</span> <span class='kw'>=</span> <span class='fl'>0</span>,
-  <span class='kw'>browser.fill</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
-  <span class='no'>...</span>
-)</pre>
+    <pre class="usage"><span class='fu'>getElements</span>(<span class='no'>upsetjs</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>defaultWidth</th>
-      <td><p>defaults to <code>"100%"</code> of the available width</p></td>
-    </tr>
-    <tr>
-      <th>defaultHeight</th>
-      <td><p>defaults to 400px tall</p></td>
-    </tr>
-    <tr>
-      <th>padding</th>
-      <td><p>defaults to 0px</p></td>
-    </tr>
-    <tr>
-      <th>browser.fill</th>
-      <td><p>defaults to <code>TRUE</code></p></td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td><p>all other arguments supplied to <code>htmlwidgets::<a href='https://rdrr.io/pkg/htmlwidgets/man/sizingPolicy.html'>sizingPolicy</a></code></p></td>
+      <th>upsetjs</th>
+      <td><p>an object of class <code>upsetjs</code> or <code>upsetjs_proxy</code></p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>An <code><a href='https://rdrr.io/pkg/htmlwidgets/man/sizingPolicy.html'>htmlwidgets::sizingPolicy</a></code> object</p>
+    <p>vector of elements</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='upsetjs.html'>upsetjs</a></span>(<span class='kw'>sizingPolicy</span><span class='kw'>=</span><span class='fu'>upsetjsSizingPolicy</span>(<span class='kw'>padding</span><span class='kw'>=</span><span class='fl'>20</span>)) <span class='kw'>%&gt;%</span> <span class='fu'><a href='fromList.html'>fromList</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>a</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span>,<span class='fl'>2</span>,<span class='fl'>3</span>), <span class='kw'>b</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>,<span class='fl'>3</span>)))</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'><a href='upsetjs.html'>upsetjs</a></span>() <span class='kw'>%&gt;%</span> <span class='fu'><a href='fromList.html'>fromList</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>a</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span>,<span class='fl'>2</span>,<span class='fl'>3</span>), <span class='kw'>b</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>,<span class='fl'>3</span>))) <span class='kw'>%&gt;%</span> <span class='fu'>getElements</span>()</div><div class='output co'>#&gt; [1] 1 2 3</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

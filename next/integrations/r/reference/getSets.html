@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>extract the vector of elements — getSets • upsetjs</title>
+<title>extract the vector of sets — getSets • upsetjs</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,8 @@
 
 
 
-<meta property="og:title" content="extract the vector of elements — getSets" />
-<meta property="og:description" content="extract the vector of elements
-extract the vector of sets" />
+<meta property="og:title" content="extract the vector of sets — getSets" />
+<meta property="og:description" content="extract the vector of sets" />
 
 
 
@@ -121,34 +120,52 @@ extract the vector of sets" />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>extract the vector of elements</h1>
+    <h1>extract the vector of sets</h1>
     <small class="dont-index">Source: <a href='https://github.com/upsetjs/upsetjs_r/blob/master/R/data.R'><code>R/data.R</code></a></small>
     <div class="hidden name"><code>getSets.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>extract the vector of elements</p>
-<p>extract the vector of sets</p>
+    <p>extract the vector of sets</p>
     </div>
 
-    <pre class="usage"><span class='fu'>getSets</span>(<span class='no'>upsetjs</span>)
-
-<span class='fu'>getSets</span>(<span class='no'>upsetjs</span>)</pre>
+    <pre class="usage"><span class='fu'>getSets</span>(<span class='no'>upsetjs</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>upsetjs</th>
-      <td><p>the upsetjs instance</p></td>
+      <td><p>an object of class <code>upsetjs</code></p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>vector of elements</p>
-<p>vector of sets</p>
+    <p>vector of sets</p>
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='upsetjs.html'>upsetjs</a></span>() <span class='kw'>%&gt;%</span> <span class='fu'><a href='fromList.html'>fromList</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>a</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span>,<span class='fl'>2</span>,<span class='fl'>3</span>), <span class='kw'>b</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>,<span class='fl'>3</span>))) <span class='kw'>%&gt;%</span> <span class='fu'>getSets</span>()</div><div class='output co'>#&gt; [[1]]
+#&gt; $name
+#&gt; [1] "a"
+#&gt; 
+#&gt; $elems
+#&gt; [1] 1 2 3
+#&gt; 
+#&gt; attr(,"class")
+#&gt; [1] "upsetjs_set"
+#&gt; 
+#&gt; [[2]]
+#&gt; $name
+#&gt; [1] "b"
+#&gt; 
+#&gt; $elems
+#&gt; [1] 2 3
+#&gt; 
+#&gt; attr(,"class")
+#&gt; [1] "upsetjs_set"
+#&gt; </div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

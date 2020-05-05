@@ -136,7 +136,7 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>upsetjs</th>
-      <td><p>the upsetjs instance</p></td>
+      <td><p>an object of class <code>upsetjs</code></p></td>
     </tr>
     </table>
 
@@ -144,6 +144,56 @@
 
     <p>vector of sets</p>
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='upsetjs.html'>upsetjs</a></span>() <span class='kw'>%&gt;%</span> <span class='fu'><a href='fromList.html'>fromList</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>a</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span>,<span class='fl'>2</span>,<span class='fl'>3</span>), <span class='kw'>b</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>,<span class='fl'>3</span>))) <span class='kw'>%&gt;%</span> <span class='fu'>getCombinations</span>()</div><div class='output co'>#&gt; [[1]]
+#&gt; $name
+#&gt; [1] "a"
+#&gt; 
+#&gt; $type
+#&gt; [1] "intersection"
+#&gt; 
+#&gt; $elems
+#&gt; [1] 1 2 3
+#&gt; 
+#&gt; $setNames
+#&gt; [1] "a"
+#&gt; 
+#&gt; attr(,"class")
+#&gt; [1] "upsetjs_combination"
+#&gt; 
+#&gt; [[2]]
+#&gt; $name
+#&gt; [1] "a&amp;b"
+#&gt; 
+#&gt; $type
+#&gt; [1] "intersection"
+#&gt; 
+#&gt; $elems
+#&gt; [1] 2 3
+#&gt; 
+#&gt; $setNames
+#&gt; [1] "a" "b"
+#&gt; 
+#&gt; attr(,"class")
+#&gt; [1] "upsetjs_combination"
+#&gt; 
+#&gt; [[3]]
+#&gt; $name
+#&gt; [1] "b"
+#&gt; 
+#&gt; $type
+#&gt; [1] "intersection"
+#&gt; 
+#&gt; $elems
+#&gt; [1] 2 3
+#&gt; 
+#&gt; $setNames
+#&gt; [1] "b"
+#&gt; 
+#&gt; attr(,"class")
+#&gt; [1] "upsetjs_combination"
+#&gt; </div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

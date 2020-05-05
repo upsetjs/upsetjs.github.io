@@ -144,7 +144,7 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>upsetjs</th>
-      <td><p>the upsetjs (proxy) instance</p></td>
+      <td><p>an object of class <code>upsetjs</code> or <code>upsetjs_proxy</code></p></td>
     </tr>
     <tr>
       <th>font.family</th>
@@ -174,8 +174,10 @@
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>upsetjs</p>
+    <p>the object given as first argument</p>
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='upsetjs.html'>upsetjs</a></span>() <span class='kw'>%&gt;%</span> <span class='fu'><a href='fromList.html'>fromList</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>a</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span>,<span class='fl'>2</span>,<span class='fl'>3</span>), <span class='kw'>b</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>,<span class='fl'>3</span>))) <span class='kw'>%&gt;%</span> <span class='fu'>chartFontSizes</span>(<span class='kw'>font.family</span><span class='kw'>=</span><span class='st'>"serif"</span>)</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
