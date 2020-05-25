@@ -82,13 +82,17 @@
 <div id="upsetjs-as-r-htmlwidget" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#upsetjs-as-r-htmlwidget" class="anchor"></a>UpSet.js as R HTMLWidget</h1></div>
-
+<p><a href="https://www.rdocumentation.org/packages/upsetjs">[CRAN][cran-image]</a> <a href="https://github.com/upsetjs/upsetjs_r/actions"><img src="https://github.com/upsetjs/upsetjs_r/workflows/ci/badge.svg" alt="Github Actions"></a> <a href="https://mybinder.org/v2/gh/upsetjs/upsetjs_r/master?urlpath=rstudio"><img src="https://mybinder.org/badge_logo.svg" alt="Open in Binder"></a> <a href="https://upset.js.org/integrations/r"><img src="https://img.shields.io/badge/API-open-blue" alt="Open Docs"></a> <a href="https://upset.js.org/integrations/r/articles/basic"><img src="https://img.shields.io/badge/Example-open-red" alt="Open example"></a></p>
 <p>This is a <a href="http://www.htmlwidgets.org/">HTMLWidget</a> wrapper around the JavaScript library <a href="https://github.com/upsetjs/upsetjs">UpSet.js</a> and an alternative implementation of <a href="https://www.rdocumentation.org/packages/UpSetR">UpSetR</a>.</p>
 <p>This package is part of the UpSet.js ecosystem located at the main <a href="https://github.com/upsetjs/upsetjs">Github Monorepo</a>.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_url</a></span>(<span class="st">"https://github.com/upsetjs/upsetjs_r/releases/latest/download/upsetjs.tar.gz"</span>)
+<div class="sourceCode" id="cb1"><pre class="r"><span class="co"># CRAN version</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">'upsetjs'</span>)
+<span class="co"># or</span>
+<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_url</a></span>(<span class="st">"https://github.com/upsetjs/upsetjs_r/releases/latest/download/upsetjs.tar.gz"</span>)
+
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">upsetjs</span>)</pre></div>
 </div>
 <div id="example" class="section level2">
@@ -195,6 +199,8 @@
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
+<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=upsetjs">https://​cloud.r-project.org/​package=upsetjs</a>
+</li>
 <li>Browse source code at <br><a href="https://github.com/upsetjs/upsetjs_r/">https://​github.com/​upsetjs/​upsetjs_r/​</a>
 </li>
 <li>Report a bug at <br><a href="https://github.com/upsetjs/upsetjs_r/issues">https://​github.com/​upsetjs/​upsetjs_r/​issues</a>
@@ -216,16 +222,7 @@
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
-<ul class="list-unstyled">
-<li><a href="https://github.com/upsetjs/upsetjs_r/actions"><img src="https://github.com/upsetjs/upsetjs_r/workflows/ci/badge.svg" alt="Github Actions"></a></li>
-<li><a href="https://mybinder.org/v2/gh/upsetjs/upsetjs_r/master?urlpath=rstudio"><img src="https://mybinder.org/badge_logo.svg" alt="Open in Binder"></a></li>
-<li><a href="https://upset.js.org/integrations/r"><img src="https://img.shields.io/badge/API-open-blue" alt="Open Docs"></a></li>
-<li><a href="https://upset.js.org/integrations/r/articles/basic"><img src="https://img.shields.io/badge/Example-open-red" alt="Open example"></a></li>
-</ul>
-</div>
-</div>
+  </div>
 </div>
 
 
