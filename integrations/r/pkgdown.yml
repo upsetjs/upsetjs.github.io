@@ -1,0 +1,12 @@
+pandoc: 2.7.3
+pkgdown: 1.5.1
+pkgdown_sha: ~
+articles:
+  basic: basic.html
+  colors: colors.html
+  combinationModes: combinationModes.html
+  got: got.html
+  kmap: kmap.html
+  venn: venn.html
+last_built: 2020-07-02T11:05Z
+
