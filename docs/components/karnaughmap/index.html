@@ -7,19 +7,19 @@
 <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="UpSet.js Blog RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="UpSet.js Blog Atom Feed"><title data-react-helmet="true">Karnaugh Map | UpSet.js</title><meta data-react-helmet="true" name="msapplication-TileColor" content="#ffffff"><meta data-react-helmet="true" name="theme-color" content="#ffffff"><meta data-react-helmet="true" property="og:image" content="https://upset.js.org/img/preview.png"><meta data-react-helmet="true" name="twitter:image" content="https://upset.js.org/img/preview.png"><meta data-react-helmet="true" name="twitter:image:alt" content="Image for UpSet.js"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_version" content="current"><meta data-react-helmet="true" name="docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" property="og:title" content="Karnaugh Map | UpSet.js"><meta data-react-helmet="true" name="description" content="UpSet.js also has a variant of a Karnaugh Map for rendering set intersections in a dense matrix way."><meta data-react-helmet="true" property="og:description" content="UpSet.js also has a variant of a Karnaugh Map for rendering set intersections in a dense matrix way."><meta data-react-helmet="true" property="og:url" content="https://upset.js.org/docs/components/karnaughmap"><link data-react-helmet="true" rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png"><link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png"><link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png"><link data-react-helmet="true" rel="manifest" href="/img/site.webmanifest"><link data-react-helmet="true" rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="alternate" href="https://upset.js.org/docs/components/karnaughmap" hreflang="x-default"><link data-react-helmet="true" rel="canonical" href="https://upset.js.org/docs/components/karnaughmap"><link rel="stylesheet" href="/assets/css/styles.43c22ae2.css">
 <link rel="preload" href="/assets/js/styles.94993567.js" as="script">
-<link rel="preload" href="/assets/js/runtime~main.d1a1b716.js" as="script">
-<link rel="preload" href="/assets/js/main.059acddd.js" as="script">
+<link rel="preload" href="/assets/js/runtime~main.c6ecbeb8.js" as="script">
+<link rel="preload" href="/assets/js/main.fff3bcfd.js" as="script">
 <link rel="preload" href="/assets/js/1.2759cd06.js" as="script">
 <link rel="preload" href="/assets/js/2.672eb4c3.js" as="script">
 <link rel="preload" href="/assets/js/1be78505.1c747291.js" as="script">
 <link rel="preload" href="/assets/js/45.81a53572.js" as="script">
-<link rel="preload" href="/assets/js/935f2afb.575d182e.js" as="script">
+<link rel="preload" href="/assets/js/935f2afb.0eb1b240.js" as="script">
 <link rel="preload" href="/assets/js/44.ae0258d0.js" as="script">
 <link rel="preload" href="/assets/js/abc08fe8.d4954ce5.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
-<nav aria-label="Skip navigation links"><button type="button" tabindex="0" class="skipToContent_d0Wj">Skip to main content</button></nav><nav class="navbar navbar--fixed-top navbarHideable_3SMa navbarHidden_2ff0"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg aria-label="Menu" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a class="navbar__brand" href="/"><img src="/img/logo.svg" alt="UpSet.js" class="themedImage_3ejj themedImage--light_2p37 navbar__logo"><img src="/img/logo.svg" alt="UpSet.js" class="themedImage_3ejj themedImage--dark_3U7d navbar__logo"><strong class="navbar__title">UpSet.js</strong></a><a class="navbar__item navbar__link" href="/app/">Demo App</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs">Docs</a><a class="navbar__item navbar__link" href="/api">API</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/upsetjs/upsetjs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub</a><a href="https://github.com/sgratzl" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">@sgratzl</a><div class="react-toggle react-toggle--disabled displayOnlyInLargeViewport_2KJr"><div class="react-toggle-track"><div class="react-toggle-track-check"><span class="toggle_2YUs">🌜</span></div><div class="react-toggle-track-x"><span class="toggle_2YUs">🌞</span></div></div><div class="react-toggle-thumb"></div><input type="checkbox" disabled="" aria-label="Dark mode toggle" class="react-toggle-screenreader-only"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a class="navbar__brand" href="/"><img src="/img/logo.svg" alt="UpSet.js" class="themedImage_3ejj themedImage--light_2p37 navbar__logo"><img src="/img/logo.svg" alt="UpSet.js" class="themedImage_3ejj themedImage--dark_3U7d navbar__logo"><strong class="navbar__title">UpSet.js</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/app/">Demo App</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link navbar__link--active" href="/docs">Docs</a></li><li class="menu__list-item"><a class="menu__link" href="/api">API</a></li><li class="menu__list-item"><a href="https://github.com/upsetjs/upsetjs" target="_blank" rel="noopener noreferrer" class="menu__link">GitHub</a></li><li class="menu__list-item"><a href="https://github.com/sgratzl" target="_blank" rel="noopener noreferrer" class="menu__link">@sgratzl</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="docPage_eq7e"><div class="docSidebarContainer_6-JO" role="complementary"><div class="sidebar_1OCX sidebarWithHideableNavbar_RpTP"><a tabindex="-1" class="sidebarLogo_2TwX" href="/"><img src="/img/logo.svg" alt="UpSet.js" class="themedImage_3ejj themedImage--light_2p37"><img src="/img/logo.svg" alt="UpSet.js" class="themedImage_3ejj themedImage--dark_3U7d"><strong>UpSet.js</strong></a><div class="menu menu--responsive thin-scrollbar menu_3_Hl"><button aria-label="Open Menu" aria-haspopup="true" class="button button--secondary button--sm menu__button" type="button"><svg aria-label="Menu" class="sidebarMenuIcon_7B_j" width="24" height="24" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><ul class="menu__list"><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">UpSet.js</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/">Overview</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/design-principles">Design Principles</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/data">Data</a></li></ul></li><li class="menu__list-item"><a class="menu__link menu__link--sublist" href="#!">Getting started</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/getting-started">Quick Start</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/getting-started/venndiagram">Venn Diagrams</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/getting-started/karnaughmap">Karnaugh Map</a></li></ul></li><li class="menu__list-item"><a class="menu__link menu__link--sublist menu__link--active" href="#!">Components</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/components">Components</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/components/upsetjs">UpSet.js Plot</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/components/venndiagram">Venn Diagram</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link menu__link--active active" tabindex="0" href="/docs/components/karnaughmap">Karnaugh Map</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/components/modes">Combination Modes</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/components/themes">Themes + Colors</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Addons</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/addons">Addons</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/addons/boxplot">BoxPlot</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/addons/categorical">Categorical</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Plots</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/plots">Plots</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/plots/barchart">Bar Chart</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/plots/histogram">Histogram</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/plots/piechart">PieChart</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/plots/scatterplot">Scatterplot</a></li></ul></li><li class="menu__list-item"><a class="menu__link menu__link--sublist" href="#!">Integrations</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/integrations">Overview</a></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!" tabindex="0">Web Frameworks</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/react">React.js</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/vanilla">Vanilla Bundle</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/vue">Vue.js</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!" tabindex="0">Data Science</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/observablehq">Observable HQ</a></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!" tabindex="-1">R/RMarkdown/RShiny</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/r">R/RMarkdown/RShiny</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/integrations/r/">Package Docs</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/integrations/r/articles/basic">Introduction Rmd</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/integrations/r/articles/combinationModes">Combination Modes Rmd</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/integrations/r/articles/colors">Colors Rmd</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/integrations/r/articles/venn">VennDiagram Rmd</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/integrations/r/articles/kmap">KarnaughMap Rmd</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!" tabindex="-1">Python Jupyter</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/jupyter">Python Jupyter</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/integrations/jupyter/">Introduction NB</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/integrations/jupyter/colors">Colors NB</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/integrations/jupyter/venn">Venn Diagram NB</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/integrations/jupyter/kmap">Karnaugh Map NB</a></li></ul></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/powerbi">PowerBI</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/tableau">Tableau</a></li></ul></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Examples</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/examples">Basic</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/examples/vue">Vue.js</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">API</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/api/model">Model</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/api/react">React</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/api/bundle">Bundle</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/api/math">Math</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/api/addons">Addons</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/api/plots">Plots</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/integrations/r">R/RMarkdown/RShiny</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/api/jupyter">Python Jupyter</a></li></ul></li><li class="menu__list-item"><a class="menu__link" href="/docs/faq">FAQ</a></li></ul></div><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_b1aL"><svg width="20" height="20" role="img" class="collapseSidebarButtonIcon_xAbl" aria-label="Collapse sidebar"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div><main class="docMainContainer_hrqD"><div class="container padding-vert--lg docItemWrapper_27j6"><div class="row"><div class="col docItemCol_GjZO"><div class="docItemContainer_3pF-"><article><header><h1 class="docTitle_2Igo">Karnaugh Map</h1></header><div class="markdown"><p>UpSet.js also has a variant of a Karnaugh Map for rendering set intersections in a dense matrix way.</p><div class="mdxCodeBlock_Qi7t"><div class="playgroundHeader_3FDm playgroundEditorHeader_3dt6">Live Editor</div><div class="playgroundEditor_1rpd" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:monospace;color:#bfc7d5;background-color:#292d3e"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px" class="npm__react-simple-code-editor__textarea" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false">// import React from &#x27;react&#x27;;
+<nav aria-label="Skip navigation links"><button type="button" tabindex="0" class="skipToContent_d0Wj">Skip to main content</button></nav><nav class="navbar navbar--fixed-top navbarHideable_3SMa navbarHidden_2ff0"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg aria-label="Menu" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a class="navbar__brand" href="/"><img src="/img/logo.svg" alt="UpSet.js" class="themedImage_3ejj themedImage--light_2p37 navbar__logo"><img src="/img/logo.svg" alt="UpSet.js" class="themedImage_3ejj themedImage--dark_3U7d navbar__logo"><strong class="navbar__title">UpSet.js</strong></a><a href="https://upset.js.org/app/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Demo App</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs">Docs</a><a class="navbar__item navbar__link" href="/api">API</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/upsetjs/upsetjs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub</a><a href="https://github.com/sgratzl" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">@sgratzl</a><div class="react-toggle react-toggle--disabled displayOnlyInLargeViewport_2KJr"><div class="react-toggle-track"><div class="react-toggle-track-check"><span class="toggle_2YUs">🌜</span></div><div class="react-toggle-track-x"><span class="toggle_2YUs">🌞</span></div></div><div class="react-toggle-thumb"></div><input type="checkbox" disabled="" aria-label="Dark mode toggle" class="react-toggle-screenreader-only"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a class="navbar__brand" href="/"><img src="/img/logo.svg" alt="UpSet.js" class="themedImage_3ejj themedImage--light_2p37 navbar__logo"><img src="/img/logo.svg" alt="UpSet.js" class="themedImage_3ejj themedImage--dark_3U7d navbar__logo"><strong class="navbar__title">UpSet.js</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a href="https://upset.js.org/app/" target="_blank" rel="noopener noreferrer" class="menu__link">Demo App</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link navbar__link--active" href="/docs">Docs</a></li><li class="menu__list-item"><a class="menu__link" href="/api">API</a></li><li class="menu__list-item"><a href="https://github.com/upsetjs/upsetjs" target="_blank" rel="noopener noreferrer" class="menu__link">GitHub</a></li><li class="menu__list-item"><a href="https://github.com/sgratzl" target="_blank" rel="noopener noreferrer" class="menu__link">@sgratzl</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="docPage_eq7e"><div class="docSidebarContainer_6-JO" role="complementary"><div class="sidebar_1OCX sidebarWithHideableNavbar_RpTP"><a tabindex="-1" class="sidebarLogo_2TwX" href="/"><img src="/img/logo.svg" alt="UpSet.js" class="themedImage_3ejj themedImage--light_2p37"><img src="/img/logo.svg" alt="UpSet.js" class="themedImage_3ejj themedImage--dark_3U7d"><strong>UpSet.js</strong></a><div class="menu menu--responsive thin-scrollbar menu_3_Hl"><button aria-label="Open Menu" aria-haspopup="true" class="button button--secondary button--sm menu__button" type="button"><svg aria-label="Menu" class="sidebarMenuIcon_7B_j" width="24" height="24" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><ul class="menu__list"><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">UpSet.js</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/">Overview</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/design-principles">Design Principles</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/data">Data</a></li></ul></li><li class="menu__list-item"><a class="menu__link menu__link--sublist" href="#!">Getting started</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/getting-started">Quick Start</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/getting-started/venndiagram">Venn Diagrams</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/getting-started/karnaughmap">Karnaugh Map</a></li></ul></li><li class="menu__list-item"><a class="menu__link menu__link--sublist menu__link--active" href="#!">Components</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/components">Components</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/components/upsetjs">UpSet.js Plot</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/components/venndiagram">Venn Diagram</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link menu__link--active active" tabindex="0" href="/docs/components/karnaughmap">Karnaugh Map</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/components/modes">Combination Modes</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/components/themes">Themes + Colors</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Addons</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/addons">Addons</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/addons/boxplot">BoxPlot</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/addons/categorical">Categorical</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Plots</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/plots">Plots</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/plots/barchart">Bar Chart</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/plots/histogram">Histogram</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/plots/piechart">PieChart</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/plots/scatterplot">Scatterplot</a></li></ul></li><li class="menu__list-item"><a class="menu__link menu__link--sublist" href="#!">Integrations</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/integrations">Overview</a></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!" tabindex="0">Web Frameworks</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/react">React.js</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/vanilla">Vanilla Bundle</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/vue">Vue.js</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!" tabindex="0">Data Science</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/observablehq">Observable HQ</a></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!" tabindex="-1">R/RMarkdown/RShiny</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/r">R/RMarkdown/RShiny</a></li><li class="menu__list-item"><a href="https://upset.js.org/integrations/r/" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Package Docs</a></li><li class="menu__list-item"><a href="https://upset.js.org/integrations/r/articles/basic" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Introduction Rmd</a></li><li class="menu__list-item"><a href="https://upset.js.org/integrations/r/articles/combinationModes" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Combination Modes Rmd</a></li><li class="menu__list-item"><a href="https://upset.js.org/integrations/r/articles/colors" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Colors Rmd</a></li><li class="menu__list-item"><a href="https://upset.js.org/integrations/r/articles/venn" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">VennDiagram Rmd</a></li><li class="menu__list-item"><a href="https://upset.js.org/integrations/r/articles/kmap" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">KarnaughMap Rmd</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!" tabindex="-1">Python Jupyter</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/jupyter">Python Jupyter</a></li><li class="menu__list-item"><a href="https://upset.js.org/integrations/jupyter/" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Introduction NB</a></li><li class="menu__list-item"><a href="https://upset.js.org/integrations/jupyter/colors" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Colors NB</a></li><li class="menu__list-item"><a href="https://upset.js.org/integrations/jupyter/venn" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Venn Diagram NB</a></li><li class="menu__list-item"><a href="https://upset.js.org/integrations/jupyter/kmap" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Karnaugh Map NB</a></li></ul></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/powerbi">PowerBI</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/integrations/tableau">Tableau</a></li></ul></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Examples</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/examples">Basic</a></li><li class="menu__list-item"><a class="menu__link" tabindex="-1" href="/docs/examples/vue">Vue.js</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">API</a><ul class="menu__list"><li class="menu__list-item"><a href="https://upset.js.org/api/model" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Model</a></li><li class="menu__list-item"><a href="https://upset.js.org/api/react" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">React</a></li><li class="menu__list-item"><a href="https://upset.js.org/api/bundle" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Bundle</a></li><li class="menu__list-item"><a href="https://upset.js.org/api/math" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Math</a></li><li class="menu__list-item"><a href="https://upset.js.org/api/addons" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Addons</a></li><li class="menu__list-item"><a href="https://upset.js.org/api/plots" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Plots</a></li><li class="menu__list-item"><a href="https://upset.js.org/integrations/r" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">R/RMarkdown/RShiny</a></li><li class="menu__list-item"><a href="https://upset.js.org/api/jupyter" target="_blank" rel="noreferrer noopener" class="menu__link" tabindex="-1">Python Jupyter</a></li></ul></li><li class="menu__list-item"><a class="menu__link" href="/docs/faq">FAQ</a></li></ul></div><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_b1aL"><svg width="20" height="20" role="img" class="collapseSidebarButtonIcon_xAbl" aria-label="Collapse sidebar"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div><main class="docMainContainer_hrqD"><div class="container padding-vert--lg docItemWrapper_27j6"><div class="row"><div class="col docItemCol_GjZO"><div class="docItemContainer_3pF-"><article><header><h1 class="docTitle_2Igo">Karnaugh Map</h1></header><div class="markdown"><p>UpSet.js also has a variant of a Karnaugh Map for rendering set intersections in a dense matrix way.</p><div class="mdxCodeBlock_Qi7t"><div class="playgroundHeader_3FDm playgroundEditorHeader_3dt6">Live Editor</div><div class="playgroundEditor_1rpd" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:monospace;color:#bfc7d5;background-color:#292d3e"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px" class="npm__react-simple-code-editor__textarea" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false">// import React from &#x27;react&#x27;;
 
 function Default() {
   return &lt;KarnaughMap sets={GameOfThronesDataSet.sets} width={780} height={500} /&gt;;
@@ -49,23 +49,23 @@ function Default() {
     color: transparent !important;
   }
 }
-</style></div><div class="playgroundHeader_3FDm playgroundPreviewHeader_3Owj">Result</div><div class="playgroundPreview_6Czn"><div><svg class="root-upset-g8w9r6h5q" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
+</style></div><div class="playgroundHeader_3FDm playgroundPreviewHeader_3Owj">Result</div><div class="playgroundPreview_6Czn"><div><svg class="root-upset-b3yu3lfs6" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
   
-  .root-upset-g8w9r6h5q {
+  .root-upset-b3yu3lfs6 {
     font-family: sans-serif;
   }
   
   
-  .titleTextStyle-upset-g8w9r6h5q {
+  .titleTextStyle-upset-b3yu3lfs6 {
     fill: #000000;
     font-size: 24px;
   }
-  .descTextStyle-upset-g8w9r6h5q {
+  .descTextStyle-upset-b3yu3lfs6 {
     fill: #000000;
     font-size: 16px;
   }
 
-  .legendTextStyle-upset-g8w9r6h5q {
+  .legendTextStyle-upset-b3yu3lfs6 {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
@@ -74,98 +74,98 @@ function Default() {
   }
   
 
-  .axisTextStyle-upset-g8w9r6h5q {
+  .axisTextStyle-upset-b3yu3lfs6 {
     fill: #000000;
     font-size: 10px;
     text-anchor: end;
   }
-  .barTextStyle-upset-g8w9r6h5q {
+  .barTextStyle-upset-b3yu3lfs6 {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
   }
-  .setTextStyle-upset-g8w9r6h5q {
+  .setTextStyle-upset-b3yu3lfs6 {
     fill: #000000;
     font-size: 16px;
     text-anchor: middle;
     dominant-baseline: central;
   }
-  .cChartTextStyle-upset-g8w9r6h5q {
+  .cChartTextStyle-upset-b3yu3lfs6 {
     fill: #000000;
     font-size: 16px;
   }
 
-  .not-upset-g8w9r6h5q {
+  .not-upset-b3yu3lfs6 {
     text-decoration: overline;
   }
 
-  .axisLine-upset-g8w9r6h5q {
+  .axisLine-upset-b3yu3lfs6 {
     fill: none;
     stroke: #000000;
   }
 
-  .gridStyle-upset-g8w9r6h5q {
+  .gridStyle-upset-b3yu3lfs6 {
     fill: none;
     stroke: #000000;
     stroke-linecap: round;
   }
-  .gridStyle-upset-g8w9r6h5q-1 {
+  .gridStyle-upset-b3yu3lfs6-1 {
     stroke-width: 2;
   }
-  .gridStyle-upset-g8w9r6h5q-2 {
+  .gridStyle-upset-b3yu3lfs6-2 {
     stroke-width: 3;
   }
 
   
-  .fillPrimary-upset-g8w9r6h5q { fill: #000000; fill-opacity: 1; }
-  .fillOverflow1-upset-g8w9r6h5q { fill-opacity: 0.7; }
-  .fillOverflow2-upset-g8w9r6h5q { fill-opacity: 0.4; }
+  .fillPrimary-upset-b3yu3lfs6 { fill: #000000; fill-opacity: 1; }
+  .fillOverflow1-upset-b3yu3lfs6 { fill-opacity: 0.7; }
+  .fillOverflow2-upset-b3yu3lfs6 { fill-opacity: 0.4; }
   
   
-  .fillSelection-upset-g8w9r6h5q { fill: #ffa500; }
-  .fillTransparent-upset-g8w9r6h5q { fill: transparent; }
+  .fillSelection-upset-b3yu3lfs6 { fill: #ffa500; }
+  .fillTransparent-upset-b3yu3lfs6 { fill: transparent; }
 
-  .selectionHint-upset-g8w9r6h5q {
+  .selectionHint-upset-b3yu3lfs6 {
     fill: transparent;
     pointer-events: none;
     stroke: #ffa500;
   }
-  .clickAble-upset-g8w9r6h5q {
+  .clickAble-upset-b3yu3lfs6 {
     cursor: pointer;
   }
 
-  .startText-upset-g8w9r6h5q {
+  .startText-upset-b3yu3lfs6 {
     text-anchor: start;
   }
-  .endText-upset-g8w9r6h5q {
+  .endText-upset-b3yu3lfs6 {
     text-anchor: end;
   }
-  .pnone-upset-g8w9r6h5q {
+  .pnone-upset-b3yu3lfs6 {
     pointer-events: none;
   }
   
-  .exportTextStyle-upset-g8w9r6h5q {
+  .exportTextStyle-upset-b3yu3lfs6 {
     fill: #000000;
     font-size: 10px;
   }
-  .exportButtons-upset-g8w9r6h5q {
+  .exportButtons-upset-b3yu3lfs6 {
     text-anchor: middle;
   }
-  .exportButton-upset-g8w9r6h5q {
+  .exportButton-upset-b3yu3lfs6 {
     cursor: pointer;
     opacity: 0.5;
   }
-  .exportButton-upset-g8w9r6h5q:hover {
+  .exportButton-upset-b3yu3lfs6:hover {
     opacity: 1;
   }
-  .exportButton-upset-g8w9r6h5q &gt; rect {
+  .exportButton-upset-b3yu3lfs6 &gt; rect {
     fill: none;
     stroke: #000000;
   }
   
 
   
-  </style><g class="exportButtons-upset-g8w9r6h5q" transform="translate(778,497)"><g class="exportButton-upset-g8w9r6h5q" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-g8w9r6h5q" x="13">SVG</text></g><g class="exportButton-upset-g8w9r6h5q" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-g8w9r6h5q" x="13">PNG</text></g><g class="exportButton-upset-g8w9r6h5q" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-g8w9r6h5q" x="17">DUMP</text></g><g class="exportButton-upset-g8w9r6h5q" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-g8w9r6h5q" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><g><g transform="translate(758, 400)"><g><g transform="translate(0, 50.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-g8w9r6h5q endText-upset-g8w9r6h5q">0</text><line x2="-6" class="axisLine-upset-g8w9r6h5q"></line></g><g transform="translate(0, 23.357142857142858)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-g8w9r6h5q endText-upset-g8w9r6h5q">5</text><line x2="-6" class="axisLine-upset-g8w9r6h5q"></line></g><path class="axisLine-upset-g8w9r6h5q" d="M-6,12H0.5V50H-6"></path></g><text class="cChartTextStyle-upset-g8w9r6h5q" transform="translate(-20, 50)rotate(-90)">Intersection Size</text></g><g><g><text transform="translate(280,10)" class="setTextStyle-upset-g8w9r6h5q">was killed</text></g><g><text transform="translate(150,140)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q">male</text></g><g><text transform="translate(230,450)" class="setTextStyle-upset-g8w9r6h5q">Stark</text><text transform="translate(530,450)" class="setTextStyle-upset-g8w9r6h5q">Stark</text></g><g><text transform="translate(590,90)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q">Lannister</text><text transform="translate(590,390)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q">Lannister</text></g><g><text transform="translate(205,30)" class="setTextStyle-upset-g8w9r6h5q">female</text><text transform="translate(355,30)" class="setTextStyle-upset-g8w9r6h5q">female</text><text transform="translate(405,30)" class="setTextStyle-upset-g8w9r6h5q">female</text><text transform="translate(555,30)" class="setTextStyle-upset-g8w9r6h5q">female</text></g><g><text transform="translate(170,65)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q">royal</text><text transform="translate(170,215)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q">royal</text><text transform="translate(170,265)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q">royal</text><text transform="translate(170,415)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q">royal</text></g><text transform="translate(480,10)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">was killed</text><text transform="translate(150,340)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">male</text><text transform="translate(330,450)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">Stark</text><text transform="translate(430,450)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">Stark</text><text transform="translate(590,190)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">Lannister</text><text transform="translate(590,290)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">Lannister</text><text transform="translate(255,30)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">female</text><text transform="translate(305,30)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">female</text><text transform="translate(455,30)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">female</text><text transform="translate(505,30)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">female</text><text transform="translate(170,115)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">royal</text><text transform="translate(170,165)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">royal</text><text transform="translate(170,315)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">royal</text><text transform="translate(170,365)rotate(-90)" class="setTextStyle-upset-g8w9r6h5q not-upset-g8w9r6h5q">royal</text></g><g><g transform="translate(230, 290)" data-cardinality="1"><title>(was killed ∩ Stark): 1</title><rect width="50" height="50" class="fillTransparent-upset-g8w9r6h5q"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-g8w9r6h5q"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-g8w9r6h5q">1</text></g><g transform="translate(230, 140)" data-cardinality="4"><title>(was killed ∩ male ∩ Stark): 4</title><rect width="50" height="50" class="fillTransparent-upset-g8w9r6h5q"></rect><rect x="7.5" y="28.28571428571429" height="21.71428571428571" width="35" class="fillPrimary-upset-g8w9r6h5q"></rect><text y="26.28571428571429" x="25" class="barTextStyle-upset-g8w9r6h5q">4</text></g><g transform="translate(280, 90)" data-cardinality="7"><title>(was killed ∩ male ∩ Lannister): 7</title><rect width="50" height="50" class="fillTransparent-upset-g8w9r6h5q"></rect><rect x="7.5" y="12" height="38" width="35" class="fillPrimary-upset-g8w9r6h5q"></rect><text y="10" x="25" class="barTextStyle-upset-g8w9r6h5q">7</text></g><g transform="translate(230, 190)" data-cardinality="2"><title>(was killed ∩ male ∩ Stark ∩ royal): 2</title><rect width="50" height="50" class="fillTransparent-upset-g8w9r6h5q"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-g8w9r6h5q"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-g8w9r6h5q">2</text></g><g transform="translate(180, 290)" data-cardinality="2"><title>(was killed ∩ Stark ∩ female): 2</title><rect width="50" height="50" class="fillTransparent-upset-g8w9r6h5q"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-g8w9r6h5q"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-g8w9r6h5q">2</text></g><g transform="translate(330, 390)" data-cardinality="1"><title>(was killed ∩ Lannister ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-g8w9r6h5q"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-g8w9r6h5q"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-g8w9r6h5q">1</text></g><g transform="translate(430, 90)" data-cardinality="1"><title>(male ∩ Lannister): 1</title><rect width="50" height="50" class="fillTransparent-upset-g8w9r6h5q"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-g8w9r6h5q"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-g8w9r6h5q">1</text></g><g transform="translate(480, 190)" data-cardinality="1"><title>(male ∩ Stark ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-g8w9r6h5q"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-g8w9r6h5q"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-g8w9r6h5q">1</text></g><g transform="translate(530, 290)" data-cardinality="1"><title>(Stark ∩ female): 1</title><rect width="50" height="50" class="fillTransparent-upset-g8w9r6h5q"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-g8w9r6h5q"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-g8w9r6h5q">1</text></g><g transform="translate(530, 240)" data-cardinality="1"><title>(Stark ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-g8w9r6h5q"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-g8w9r6h5q"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-g8w9r6h5q">1</text></g></g><g transform="translate(180, 40)"><path d="M 50,0 l0,400 M 150,0 l0,400 M 250,0 l0,400 M 350,0 l0,400 M 0,50 l400,0 M 0,150 l400,0 M 0,250 l400,0 M 0,350 l400,0" class="gridStyle-upset-g8w9r6h5q gridStyle-upset-g8w9r6h5q-0"></path><path d="M 100,0 l0,400 M 300,0 l0,400 M 0,100 l400,0 M 0,300 l400,0" class="gridStyle-upset-g8w9r6h5q gridStyle-upset-g8w9r6h5q-1"></path><path d="M 0,0 l0,400 M 200,0 l0,400 M 400,0 l0,400 M 0,0 l400,0 M 0,200 l400,0 M 0,400 l400,0" class="gridStyle-upset-g8w9r6h5q gridStyle-upset-g8w9r6h5q-2"></path></g></g><g></g><g></g></g></svg></div></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="skeleton"></a>Skeleton<a class="hash-link" href="#skeleton" title="Direct link to heading">#</a></h2><div class="mdxCodeBlock_Qi7t"><div class="playgroundHeader_3FDm playgroundEditorHeader_3dt6">Live Editor</div><div class="playgroundEditor_1rpd" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:monospace;color:#bfc7d5;background-color:#292d3e"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px" class="npm__react-simple-code-editor__textarea" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false">// import React from &#x27;react&#x27;;
+  </style><g class="exportButtons-upset-b3yu3lfs6" transform="translate(778,497)"><g class="exportButton-upset-b3yu3lfs6" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-b3yu3lfs6" x="13">SVG</text></g><g class="exportButton-upset-b3yu3lfs6" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-b3yu3lfs6" x="13">PNG</text></g><g class="exportButton-upset-b3yu3lfs6" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-b3yu3lfs6" x="17">DUMP</text></g><g class="exportButton-upset-b3yu3lfs6" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-b3yu3lfs6" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><g><g transform="translate(758, 400)"><g><g transform="translate(0, 50.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-b3yu3lfs6 endText-upset-b3yu3lfs6">0</text><line x2="-6" class="axisLine-upset-b3yu3lfs6"></line></g><g transform="translate(0, 23.357142857142858)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-b3yu3lfs6 endText-upset-b3yu3lfs6">5</text><line x2="-6" class="axisLine-upset-b3yu3lfs6"></line></g><path class="axisLine-upset-b3yu3lfs6" d="M-6,12H0.5V50H-6"></path></g><text class="cChartTextStyle-upset-b3yu3lfs6" transform="translate(-20, 50)rotate(-90)">Intersection Size</text></g><g><g><text transform="translate(280,10)" class="setTextStyle-upset-b3yu3lfs6">was killed</text></g><g><text transform="translate(150,140)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6">male</text></g><g><text transform="translate(230,450)" class="setTextStyle-upset-b3yu3lfs6">Stark</text><text transform="translate(530,450)" class="setTextStyle-upset-b3yu3lfs6">Stark</text></g><g><text transform="translate(590,90)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6">Lannister</text><text transform="translate(590,390)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6">Lannister</text></g><g><text transform="translate(205,30)" class="setTextStyle-upset-b3yu3lfs6">female</text><text transform="translate(355,30)" class="setTextStyle-upset-b3yu3lfs6">female</text><text transform="translate(405,30)" class="setTextStyle-upset-b3yu3lfs6">female</text><text transform="translate(555,30)" class="setTextStyle-upset-b3yu3lfs6">female</text></g><g><text transform="translate(170,65)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6">royal</text><text transform="translate(170,215)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6">royal</text><text transform="translate(170,265)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6">royal</text><text transform="translate(170,415)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6">royal</text></g><text transform="translate(480,10)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">was killed</text><text transform="translate(150,340)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">male</text><text transform="translate(330,450)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">Stark</text><text transform="translate(430,450)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">Stark</text><text transform="translate(590,190)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">Lannister</text><text transform="translate(590,290)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">Lannister</text><text transform="translate(255,30)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">female</text><text transform="translate(305,30)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">female</text><text transform="translate(455,30)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">female</text><text transform="translate(505,30)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">female</text><text transform="translate(170,115)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">royal</text><text transform="translate(170,165)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">royal</text><text transform="translate(170,315)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">royal</text><text transform="translate(170,365)rotate(-90)" class="setTextStyle-upset-b3yu3lfs6 not-upset-b3yu3lfs6">royal</text></g><g><g transform="translate(230, 290)" data-cardinality="1"><title>(was killed ∩ Stark): 1</title><rect width="50" height="50" class="fillTransparent-upset-b3yu3lfs6"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-b3yu3lfs6"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-b3yu3lfs6">1</text></g><g transform="translate(230, 140)" data-cardinality="4"><title>(was killed ∩ male ∩ Stark): 4</title><rect width="50" height="50" class="fillTransparent-upset-b3yu3lfs6"></rect><rect x="7.5" y="28.28571428571429" height="21.71428571428571" width="35" class="fillPrimary-upset-b3yu3lfs6"></rect><text y="26.28571428571429" x="25" class="barTextStyle-upset-b3yu3lfs6">4</text></g><g transform="translate(280, 90)" data-cardinality="7"><title>(was killed ∩ male ∩ Lannister): 7</title><rect width="50" height="50" class="fillTransparent-upset-b3yu3lfs6"></rect><rect x="7.5" y="12" height="38" width="35" class="fillPrimary-upset-b3yu3lfs6"></rect><text y="10" x="25" class="barTextStyle-upset-b3yu3lfs6">7</text></g><g transform="translate(230, 190)" data-cardinality="2"><title>(was killed ∩ male ∩ Stark ∩ royal): 2</title><rect width="50" height="50" class="fillTransparent-upset-b3yu3lfs6"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-b3yu3lfs6"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-b3yu3lfs6">2</text></g><g transform="translate(180, 290)" data-cardinality="2"><title>(was killed ∩ Stark ∩ female): 2</title><rect width="50" height="50" class="fillTransparent-upset-b3yu3lfs6"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-b3yu3lfs6"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-b3yu3lfs6">2</text></g><g transform="translate(330, 390)" data-cardinality="1"><title>(was killed ∩ Lannister ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-b3yu3lfs6"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-b3yu3lfs6"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-b3yu3lfs6">1</text></g><g transform="translate(430, 90)" data-cardinality="1"><title>(male ∩ Lannister): 1</title><rect width="50" height="50" class="fillTransparent-upset-b3yu3lfs6"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-b3yu3lfs6"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-b3yu3lfs6">1</text></g><g transform="translate(480, 190)" data-cardinality="1"><title>(male ∩ Stark ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-b3yu3lfs6"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-b3yu3lfs6"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-b3yu3lfs6">1</text></g><g transform="translate(530, 290)" data-cardinality="1"><title>(Stark ∩ female): 1</title><rect width="50" height="50" class="fillTransparent-upset-b3yu3lfs6"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-b3yu3lfs6"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-b3yu3lfs6">1</text></g><g transform="translate(530, 240)" data-cardinality="1"><title>(Stark ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-b3yu3lfs6"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-b3yu3lfs6"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-b3yu3lfs6">1</text></g></g><g transform="translate(180, 40)"><path d="M 50,0 l0,400 M 150,0 l0,400 M 250,0 l0,400 M 350,0 l0,400 M 0,50 l400,0 M 0,150 l400,0 M 0,250 l400,0 M 0,350 l400,0" class="gridStyle-upset-b3yu3lfs6 gridStyle-upset-b3yu3lfs6-0"></path><path d="M 100,0 l0,400 M 300,0 l0,400 M 0,100 l400,0 M 0,300 l400,0" class="gridStyle-upset-b3yu3lfs6 gridStyle-upset-b3yu3lfs6-1"></path><path d="M 0,0 l0,400 M 200,0 l0,400 M 400,0 l0,400 M 0,0 l400,0 M 0,200 l400,0 M 0,400 l400,0" class="gridStyle-upset-b3yu3lfs6 gridStyle-upset-b3yu3lfs6-2"></path></g></g><g></g><g></g></g></svg></div></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="skeleton"></a>Skeleton<a class="hash-link" href="#skeleton" title="Direct link to heading">#</a></h2><div class="mdxCodeBlock_Qi7t"><div class="playgroundHeader_3FDm playgroundEditorHeader_3dt6">Live Editor</div><div class="playgroundEditor_1rpd" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:monospace;color:#bfc7d5;background-color:#292d3e"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px" class="npm__react-simple-code-editor__textarea" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false">// import React from &#x27;react&#x27;;
 
 function Skeleton() {
   return &lt;KarnaughMapSkeleton width={780} height={500} /&gt;;
@@ -233,23 +233,23 @@ function Title() {
     color: transparent !important;
   }
 }
-</style></div><div class="playgroundHeader_3FDm playgroundPreviewHeader_3Owj">Result</div><div class="playgroundPreview_6Czn"><div><svg class="root-upset-t18tjqz2x" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
+</style></div><div class="playgroundHeader_3FDm playgroundPreviewHeader_3Owj">Result</div><div class="playgroundPreview_6Czn"><div><svg class="root-upset-lfjh21r8" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
   
-  .root-upset-t18tjqz2x {
+  .root-upset-lfjh21r8 {
     font-family: sans-serif;
   }
   
   
-  .titleTextStyle-upset-t18tjqz2x {
+  .titleTextStyle-upset-lfjh21r8 {
     fill: #000000;
     font-size: 24px;
   }
-  .descTextStyle-upset-t18tjqz2x {
+  .descTextStyle-upset-lfjh21r8 {
     fill: #000000;
     font-size: 16px;
   }
 
-  .legendTextStyle-upset-t18tjqz2x {
+  .legendTextStyle-upset-lfjh21r8 {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
@@ -258,98 +258,98 @@ function Title() {
   }
   
 
-  .axisTextStyle-upset-t18tjqz2x {
+  .axisTextStyle-upset-lfjh21r8 {
     fill: #000000;
     font-size: 10px;
     text-anchor: end;
   }
-  .barTextStyle-upset-t18tjqz2x {
+  .barTextStyle-upset-lfjh21r8 {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
   }
-  .setTextStyle-upset-t18tjqz2x {
+  .setTextStyle-upset-lfjh21r8 {
     fill: #000000;
     font-size: 16px;
     text-anchor: middle;
     dominant-baseline: central;
   }
-  .cChartTextStyle-upset-t18tjqz2x {
+  .cChartTextStyle-upset-lfjh21r8 {
     fill: #000000;
     font-size: 16px;
   }
 
-  .not-upset-t18tjqz2x {
+  .not-upset-lfjh21r8 {
     text-decoration: overline;
   }
 
-  .axisLine-upset-t18tjqz2x {
+  .axisLine-upset-lfjh21r8 {
     fill: none;
     stroke: #000000;
   }
 
-  .gridStyle-upset-t18tjqz2x {
+  .gridStyle-upset-lfjh21r8 {
     fill: none;
     stroke: #000000;
     stroke-linecap: round;
   }
-  .gridStyle-upset-t18tjqz2x-1 {
+  .gridStyle-upset-lfjh21r8-1 {
     stroke-width: 2;
   }
-  .gridStyle-upset-t18tjqz2x-2 {
+  .gridStyle-upset-lfjh21r8-2 {
     stroke-width: 3;
   }
 
   
-  .fillPrimary-upset-t18tjqz2x { fill: #000000; fill-opacity: 1; }
-  .fillOverflow1-upset-t18tjqz2x { fill-opacity: 0.7; }
-  .fillOverflow2-upset-t18tjqz2x { fill-opacity: 0.4; }
+  .fillPrimary-upset-lfjh21r8 { fill: #000000; fill-opacity: 1; }
+  .fillOverflow1-upset-lfjh21r8 { fill-opacity: 0.7; }
+  .fillOverflow2-upset-lfjh21r8 { fill-opacity: 0.4; }
   
   
-  .fillSelection-upset-t18tjqz2x { fill: #ffa500; }
-  .fillTransparent-upset-t18tjqz2x { fill: transparent; }
+  .fillSelection-upset-lfjh21r8 { fill: #ffa500; }
+  .fillTransparent-upset-lfjh21r8 { fill: transparent; }
 
-  .selectionHint-upset-t18tjqz2x {
+  .selectionHint-upset-lfjh21r8 {
     fill: transparent;
     pointer-events: none;
     stroke: #ffa500;
   }
-  .clickAble-upset-t18tjqz2x {
+  .clickAble-upset-lfjh21r8 {
     cursor: pointer;
   }
 
-  .startText-upset-t18tjqz2x {
+  .startText-upset-lfjh21r8 {
     text-anchor: start;
   }
-  .endText-upset-t18tjqz2x {
+  .endText-upset-lfjh21r8 {
     text-anchor: end;
   }
-  .pnone-upset-t18tjqz2x {
+  .pnone-upset-lfjh21r8 {
     pointer-events: none;
   }
   
-  .exportTextStyle-upset-t18tjqz2x {
+  .exportTextStyle-upset-lfjh21r8 {
     fill: #000000;
     font-size: 10px;
   }
-  .exportButtons-upset-t18tjqz2x {
+  .exportButtons-upset-lfjh21r8 {
     text-anchor: middle;
   }
-  .exportButton-upset-t18tjqz2x {
+  .exportButton-upset-lfjh21r8 {
     cursor: pointer;
     opacity: 0.5;
   }
-  .exportButton-upset-t18tjqz2x:hover {
+  .exportButton-upset-lfjh21r8:hover {
     opacity: 1;
   }
-  .exportButton-upset-t18tjqz2x &gt; rect {
+  .exportButton-upset-lfjh21r8 &gt; rect {
     fill: none;
     stroke: #000000;
   }
   
 
   
-  </style><g class="exportButtons-upset-t18tjqz2x" transform="translate(778,497)"><g class="exportButton-upset-t18tjqz2x" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-t18tjqz2x" x="13">SVG</text></g><g class="exportButton-upset-t18tjqz2x" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-t18tjqz2x" x="13">PNG</text></g><g class="exportButton-upset-t18tjqz2x" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-t18tjqz2x" x="17">DUMP</text></g><g class="exportButton-upset-t18tjqz2x" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-t18tjqz2x" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><text><tspan dy="10px" class="titleTextStyle-upset-t18tjqz2x">Game of Thrones</tspan><tspan dy="2em" x="0" class="descTextStyle-upset-t18tjqz2x">Information about the characters of the tv series Game of Thrones</tspan></text><g><g transform="translate(758, 400)"><g><g transform="translate(0, 50.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-t18tjqz2x endText-upset-t18tjqz2x">0</text><line x2="-6" class="axisLine-upset-t18tjqz2x"></line></g><g transform="translate(0, 23.357142857142858)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-t18tjqz2x endText-upset-t18tjqz2x">5</text><line x2="-6" class="axisLine-upset-t18tjqz2x"></line></g><path class="axisLine-upset-t18tjqz2x" d="M-6,12H0.5V50H-6"></path></g><text class="cChartTextStyle-upset-t18tjqz2x" transform="translate(-20, 50)rotate(-90)">Intersection Size</text></g><g><g><text transform="translate(280,10)" class="setTextStyle-upset-t18tjqz2x">was killed</text></g><g><text transform="translate(150,140)rotate(-90)" class="setTextStyle-upset-t18tjqz2x">male</text></g><g><text transform="translate(230,450)" class="setTextStyle-upset-t18tjqz2x">Stark</text><text transform="translate(530,450)" class="setTextStyle-upset-t18tjqz2x">Stark</text></g><g><text transform="translate(590,90)rotate(-90)" class="setTextStyle-upset-t18tjqz2x">Lannister</text><text transform="translate(590,390)rotate(-90)" class="setTextStyle-upset-t18tjqz2x">Lannister</text></g><g><text transform="translate(205,30)" class="setTextStyle-upset-t18tjqz2x">female</text><text transform="translate(355,30)" class="setTextStyle-upset-t18tjqz2x">female</text><text transform="translate(405,30)" class="setTextStyle-upset-t18tjqz2x">female</text><text transform="translate(555,30)" class="setTextStyle-upset-t18tjqz2x">female</text></g><g><text transform="translate(170,65)rotate(-90)" class="setTextStyle-upset-t18tjqz2x">royal</text><text transform="translate(170,215)rotate(-90)" class="setTextStyle-upset-t18tjqz2x">royal</text><text transform="translate(170,265)rotate(-90)" class="setTextStyle-upset-t18tjqz2x">royal</text><text transform="translate(170,415)rotate(-90)" class="setTextStyle-upset-t18tjqz2x">royal</text></g><text transform="translate(480,10)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">was killed</text><text transform="translate(150,340)rotate(-90)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">male</text><text transform="translate(330,450)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">Stark</text><text transform="translate(430,450)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">Stark</text><text transform="translate(590,190)rotate(-90)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">Lannister</text><text transform="translate(590,290)rotate(-90)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">Lannister</text><text transform="translate(255,30)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">female</text><text transform="translate(305,30)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">female</text><text transform="translate(455,30)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">female</text><text transform="translate(505,30)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">female</text><text transform="translate(170,115)rotate(-90)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">royal</text><text transform="translate(170,165)rotate(-90)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">royal</text><text transform="translate(170,315)rotate(-90)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">royal</text><text transform="translate(170,365)rotate(-90)" class="setTextStyle-upset-t18tjqz2x not-upset-t18tjqz2x">royal</text></g><g><g transform="translate(230, 290)" data-cardinality="1"><title>(was killed ∩ Stark): 1</title><rect width="50" height="50" class="fillTransparent-upset-t18tjqz2x"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-t18tjqz2x"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-t18tjqz2x">1</text></g><g transform="translate(230, 140)" data-cardinality="4"><title>(was killed ∩ male ∩ Stark): 4</title><rect width="50" height="50" class="fillTransparent-upset-t18tjqz2x"></rect><rect x="7.5" y="28.28571428571429" height="21.71428571428571" width="35" class="fillPrimary-upset-t18tjqz2x"></rect><text y="26.28571428571429" x="25" class="barTextStyle-upset-t18tjqz2x">4</text></g><g transform="translate(280, 90)" data-cardinality="7"><title>(was killed ∩ male ∩ Lannister): 7</title><rect width="50" height="50" class="fillTransparent-upset-t18tjqz2x"></rect><rect x="7.5" y="12" height="38" width="35" class="fillPrimary-upset-t18tjqz2x"></rect><text y="10" x="25" class="barTextStyle-upset-t18tjqz2x">7</text></g><g transform="translate(230, 190)" data-cardinality="2"><title>(was killed ∩ male ∩ Stark ∩ royal): 2</title><rect width="50" height="50" class="fillTransparent-upset-t18tjqz2x"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-t18tjqz2x"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-t18tjqz2x">2</text></g><g transform="translate(180, 290)" data-cardinality="2"><title>(was killed ∩ Stark ∩ female): 2</title><rect width="50" height="50" class="fillTransparent-upset-t18tjqz2x"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-t18tjqz2x"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-t18tjqz2x">2</text></g><g transform="translate(330, 390)" data-cardinality="1"><title>(was killed ∩ Lannister ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-t18tjqz2x"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-t18tjqz2x"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-t18tjqz2x">1</text></g><g transform="translate(430, 90)" data-cardinality="1"><title>(male ∩ Lannister): 1</title><rect width="50" height="50" class="fillTransparent-upset-t18tjqz2x"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-t18tjqz2x"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-t18tjqz2x">1</text></g><g transform="translate(480, 190)" data-cardinality="1"><title>(male ∩ Stark ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-t18tjqz2x"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-t18tjqz2x"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-t18tjqz2x">1</text></g><g transform="translate(530, 290)" data-cardinality="1"><title>(Stark ∩ female): 1</title><rect width="50" height="50" class="fillTransparent-upset-t18tjqz2x"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-t18tjqz2x"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-t18tjqz2x">1</text></g><g transform="translate(530, 240)" data-cardinality="1"><title>(Stark ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-t18tjqz2x"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-t18tjqz2x"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-t18tjqz2x">1</text></g></g><g transform="translate(180, 40)"><path d="M 50,0 l0,400 M 150,0 l0,400 M 250,0 l0,400 M 350,0 l0,400 M 0,50 l400,0 M 0,150 l400,0 M 0,250 l400,0 M 0,350 l400,0" class="gridStyle-upset-t18tjqz2x gridStyle-upset-t18tjqz2x-0"></path><path d="M 100,0 l0,400 M 300,0 l0,400 M 0,100 l400,0 M 0,300 l400,0" class="gridStyle-upset-t18tjqz2x gridStyle-upset-t18tjqz2x-1"></path><path d="M 0,0 l0,400 M 200,0 l0,400 M 400,0 l0,400 M 0,0 l400,0 M 0,200 l400,0 M 0,400 l400,0" class="gridStyle-upset-t18tjqz2x gridStyle-upset-t18tjqz2x-2"></path></g></g><g></g><g></g></g></svg></div></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="interactivity"></a>Interactivity<a class="hash-link" href="#interactivity" title="Direct link to heading">#</a></h2><div class="mdxCodeBlock_Qi7t"><div class="playgroundHeader_3FDm playgroundEditorHeader_3dt6">Live Editor</div><div class="playgroundEditor_1rpd" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:monospace;color:#bfc7d5;background-color:#292d3e"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px" class="npm__react-simple-code-editor__textarea" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false">// import React from &#x27;react&#x27;;
+  </style><g class="exportButtons-upset-lfjh21r8" transform="translate(778,497)"><g class="exportButton-upset-lfjh21r8" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-lfjh21r8" x="13">SVG</text></g><g class="exportButton-upset-lfjh21r8" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-lfjh21r8" x="13">PNG</text></g><g class="exportButton-upset-lfjh21r8" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-lfjh21r8" x="17">DUMP</text></g><g class="exportButton-upset-lfjh21r8" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-lfjh21r8" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><text><tspan dy="10px" class="titleTextStyle-upset-lfjh21r8">Game of Thrones</tspan><tspan dy="2em" x="0" class="descTextStyle-upset-lfjh21r8">Information about the characters of the tv series Game of Thrones</tspan></text><g><g transform="translate(758, 400)"><g><g transform="translate(0, 50.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-lfjh21r8 endText-upset-lfjh21r8">0</text><line x2="-6" class="axisLine-upset-lfjh21r8"></line></g><g transform="translate(0, 23.357142857142858)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-lfjh21r8 endText-upset-lfjh21r8">5</text><line x2="-6" class="axisLine-upset-lfjh21r8"></line></g><path class="axisLine-upset-lfjh21r8" d="M-6,12H0.5V50H-6"></path></g><text class="cChartTextStyle-upset-lfjh21r8" transform="translate(-20, 50)rotate(-90)">Intersection Size</text></g><g><g><text transform="translate(280,10)" class="setTextStyle-upset-lfjh21r8">was killed</text></g><g><text transform="translate(150,140)rotate(-90)" class="setTextStyle-upset-lfjh21r8">male</text></g><g><text transform="translate(230,450)" class="setTextStyle-upset-lfjh21r8">Stark</text><text transform="translate(530,450)" class="setTextStyle-upset-lfjh21r8">Stark</text></g><g><text transform="translate(590,90)rotate(-90)" class="setTextStyle-upset-lfjh21r8">Lannister</text><text transform="translate(590,390)rotate(-90)" class="setTextStyle-upset-lfjh21r8">Lannister</text></g><g><text transform="translate(205,30)" class="setTextStyle-upset-lfjh21r8">female</text><text transform="translate(355,30)" class="setTextStyle-upset-lfjh21r8">female</text><text transform="translate(405,30)" class="setTextStyle-upset-lfjh21r8">female</text><text transform="translate(555,30)" class="setTextStyle-upset-lfjh21r8">female</text></g><g><text transform="translate(170,65)rotate(-90)" class="setTextStyle-upset-lfjh21r8">royal</text><text transform="translate(170,215)rotate(-90)" class="setTextStyle-upset-lfjh21r8">royal</text><text transform="translate(170,265)rotate(-90)" class="setTextStyle-upset-lfjh21r8">royal</text><text transform="translate(170,415)rotate(-90)" class="setTextStyle-upset-lfjh21r8">royal</text></g><text transform="translate(480,10)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">was killed</text><text transform="translate(150,340)rotate(-90)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">male</text><text transform="translate(330,450)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">Stark</text><text transform="translate(430,450)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">Stark</text><text transform="translate(590,190)rotate(-90)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">Lannister</text><text transform="translate(590,290)rotate(-90)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">Lannister</text><text transform="translate(255,30)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">female</text><text transform="translate(305,30)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">female</text><text transform="translate(455,30)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">female</text><text transform="translate(505,30)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">female</text><text transform="translate(170,115)rotate(-90)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">royal</text><text transform="translate(170,165)rotate(-90)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">royal</text><text transform="translate(170,315)rotate(-90)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">royal</text><text transform="translate(170,365)rotate(-90)" class="setTextStyle-upset-lfjh21r8 not-upset-lfjh21r8">royal</text></g><g><g transform="translate(230, 290)" data-cardinality="1"><title>(was killed ∩ Stark): 1</title><rect width="50" height="50" class="fillTransparent-upset-lfjh21r8"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-lfjh21r8"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-lfjh21r8">1</text></g><g transform="translate(230, 140)" data-cardinality="4"><title>(was killed ∩ male ∩ Stark): 4</title><rect width="50" height="50" class="fillTransparent-upset-lfjh21r8"></rect><rect x="7.5" y="28.28571428571429" height="21.71428571428571" width="35" class="fillPrimary-upset-lfjh21r8"></rect><text y="26.28571428571429" x="25" class="barTextStyle-upset-lfjh21r8">4</text></g><g transform="translate(280, 90)" data-cardinality="7"><title>(was killed ∩ male ∩ Lannister): 7</title><rect width="50" height="50" class="fillTransparent-upset-lfjh21r8"></rect><rect x="7.5" y="12" height="38" width="35" class="fillPrimary-upset-lfjh21r8"></rect><text y="10" x="25" class="barTextStyle-upset-lfjh21r8">7</text></g><g transform="translate(230, 190)" data-cardinality="2"><title>(was killed ∩ male ∩ Stark ∩ royal): 2</title><rect width="50" height="50" class="fillTransparent-upset-lfjh21r8"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-lfjh21r8"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-lfjh21r8">2</text></g><g transform="translate(180, 290)" data-cardinality="2"><title>(was killed ∩ Stark ∩ female): 2</title><rect width="50" height="50" class="fillTransparent-upset-lfjh21r8"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-lfjh21r8"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-lfjh21r8">2</text></g><g transform="translate(330, 390)" data-cardinality="1"><title>(was killed ∩ Lannister ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-lfjh21r8"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-lfjh21r8"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-lfjh21r8">1</text></g><g transform="translate(430, 90)" data-cardinality="1"><title>(male ∩ Lannister): 1</title><rect width="50" height="50" class="fillTransparent-upset-lfjh21r8"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-lfjh21r8"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-lfjh21r8">1</text></g><g transform="translate(480, 190)" data-cardinality="1"><title>(male ∩ Stark ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-lfjh21r8"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-lfjh21r8"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-lfjh21r8">1</text></g><g transform="translate(530, 290)" data-cardinality="1"><title>(Stark ∩ female): 1</title><rect width="50" height="50" class="fillTransparent-upset-lfjh21r8"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-lfjh21r8"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-lfjh21r8">1</text></g><g transform="translate(530, 240)" data-cardinality="1"><title>(Stark ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-lfjh21r8"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-lfjh21r8"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-lfjh21r8">1</text></g></g><g transform="translate(180, 40)"><path d="M 50,0 l0,400 M 150,0 l0,400 M 250,0 l0,400 M 350,0 l0,400 M 0,50 l400,0 M 0,150 l400,0 M 0,250 l400,0 M 0,350 l400,0" class="gridStyle-upset-lfjh21r8 gridStyle-upset-lfjh21r8-0"></path><path d="M 100,0 l0,400 M 300,0 l0,400 M 0,100 l400,0 M 0,300 l400,0" class="gridStyle-upset-lfjh21r8 gridStyle-upset-lfjh21r8-1"></path><path d="M 0,0 l0,400 M 200,0 l0,400 M 400,0 l0,400 M 0,0 l400,0 M 0,200 l400,0 M 0,400 l400,0" class="gridStyle-upset-lfjh21r8 gridStyle-upset-lfjh21r8-2"></path></g></g><g></g><g></g></g></svg></div></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="interactivity"></a>Interactivity<a class="hash-link" href="#interactivity" title="Direct link to heading">#</a></h2><div class="mdxCodeBlock_Qi7t"><div class="playgroundHeader_3FDm playgroundEditorHeader_3dt6">Live Editor</div><div class="playgroundEditor_1rpd" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:monospace;color:#bfc7d5;background-color:#292d3e"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px" class="npm__react-simple-code-editor__textarea" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false">// import React from &#x27;react&#x27;;
 
 function Interactivity() {
   const [selection, setSelection] = React.useState(null);
@@ -388,23 +388,23 @@ function Interactivity() {
     color: transparent !important;
   }
 }
-</style></div><div class="playgroundHeader_3FDm playgroundPreviewHeader_3Owj">Result</div><div class="playgroundPreview_6Czn"><div><svg class="root-upset-az5uq8wle" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
+</style></div><div class="playgroundHeader_3FDm playgroundPreviewHeader_3Owj">Result</div><div class="playgroundPreview_6Czn"><div><svg class="root-upset-qot2kio1" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
   
-  .root-upset-az5uq8wle {
+  .root-upset-qot2kio1 {
     font-family: sans-serif;
   }
   
   
-  .titleTextStyle-upset-az5uq8wle {
+  .titleTextStyle-upset-qot2kio1 {
     fill: #000000;
     font-size: 24px;
   }
-  .descTextStyle-upset-az5uq8wle {
+  .descTextStyle-upset-qot2kio1 {
     fill: #000000;
     font-size: 16px;
   }
 
-  .legendTextStyle-upset-az5uq8wle {
+  .legendTextStyle-upset-qot2kio1 {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
@@ -413,98 +413,98 @@ function Interactivity() {
   }
   
 
-  .axisTextStyle-upset-az5uq8wle {
+  .axisTextStyle-upset-qot2kio1 {
     fill: #000000;
     font-size: 10px;
     text-anchor: end;
   }
-  .barTextStyle-upset-az5uq8wle {
+  .barTextStyle-upset-qot2kio1 {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
   }
-  .setTextStyle-upset-az5uq8wle {
+  .setTextStyle-upset-qot2kio1 {
     fill: #000000;
     font-size: 16px;
     text-anchor: middle;
     dominant-baseline: central;
   }
-  .cChartTextStyle-upset-az5uq8wle {
+  .cChartTextStyle-upset-qot2kio1 {
     fill: #000000;
     font-size: 16px;
   }
 
-  .not-upset-az5uq8wle {
+  .not-upset-qot2kio1 {
     text-decoration: overline;
   }
 
-  .axisLine-upset-az5uq8wle {
+  .axisLine-upset-qot2kio1 {
     fill: none;
     stroke: #000000;
   }
 
-  .gridStyle-upset-az5uq8wle {
+  .gridStyle-upset-qot2kio1 {
     fill: none;
     stroke: #000000;
     stroke-linecap: round;
   }
-  .gridStyle-upset-az5uq8wle-1 {
+  .gridStyle-upset-qot2kio1-1 {
     stroke-width: 2;
   }
-  .gridStyle-upset-az5uq8wle-2 {
+  .gridStyle-upset-qot2kio1-2 {
     stroke-width: 3;
   }
 
   
-  .fillPrimary-upset-az5uq8wle { fill: #000000; fill-opacity: 1; }
-  .fillOverflow1-upset-az5uq8wle { fill-opacity: 0.7; }
-  .fillOverflow2-upset-az5uq8wle { fill-opacity: 0.4; }
+  .fillPrimary-upset-qot2kio1 { fill: #000000; fill-opacity: 1; }
+  .fillOverflow1-upset-qot2kio1 { fill-opacity: 0.7; }
+  .fillOverflow2-upset-qot2kio1 { fill-opacity: 0.4; }
   
   
-  .fillSelection-upset-az5uq8wle { fill: #ffa500; }
-  .fillTransparent-upset-az5uq8wle { fill: transparent; }
+  .fillSelection-upset-qot2kio1 { fill: #ffa500; }
+  .fillTransparent-upset-qot2kio1 { fill: transparent; }
 
-  .selectionHint-upset-az5uq8wle {
+  .selectionHint-upset-qot2kio1 {
     fill: transparent;
     pointer-events: none;
     stroke: #ffa500;
   }
-  .clickAble-upset-az5uq8wle {
+  .clickAble-upset-qot2kio1 {
     cursor: pointer;
   }
 
-  .startText-upset-az5uq8wle {
+  .startText-upset-qot2kio1 {
     text-anchor: start;
   }
-  .endText-upset-az5uq8wle {
+  .endText-upset-qot2kio1 {
     text-anchor: end;
   }
-  .pnone-upset-az5uq8wle {
+  .pnone-upset-qot2kio1 {
     pointer-events: none;
   }
   
-  .exportTextStyle-upset-az5uq8wle {
+  .exportTextStyle-upset-qot2kio1 {
     fill: #000000;
     font-size: 10px;
   }
-  .exportButtons-upset-az5uq8wle {
+  .exportButtons-upset-qot2kio1 {
     text-anchor: middle;
   }
-  .exportButton-upset-az5uq8wle {
+  .exportButton-upset-qot2kio1 {
     cursor: pointer;
     opacity: 0.5;
   }
-  .exportButton-upset-az5uq8wle:hover {
+  .exportButton-upset-qot2kio1:hover {
     opacity: 1;
   }
-  .exportButton-upset-az5uq8wle &gt; rect {
+  .exportButton-upset-qot2kio1 &gt; rect {
     fill: none;
     stroke: #000000;
   }
   
 
   
-  </style><g class="exportButtons-upset-az5uq8wle" transform="translate(778,497)"><g class="exportButton-upset-az5uq8wle" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-az5uq8wle" x="13">SVG</text></g><g class="exportButton-upset-az5uq8wle" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-az5uq8wle" x="13">PNG</text></g><g class="exportButton-upset-az5uq8wle" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-az5uq8wle" x="17">DUMP</text></g><g class="exportButton-upset-az5uq8wle" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-az5uq8wle" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><g><g transform="translate(758, 400)"><g><g transform="translate(0, 50.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-az5uq8wle endText-upset-az5uq8wle">0</text><line x2="-6" class="axisLine-upset-az5uq8wle"></line></g><g transform="translate(0, 23.357142857142858)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-az5uq8wle endText-upset-az5uq8wle">5</text><line x2="-6" class="axisLine-upset-az5uq8wle"></line></g><path class="axisLine-upset-az5uq8wle" d="M-6,12H0.5V50H-6"></path></g><text class="cChartTextStyle-upset-az5uq8wle" transform="translate(-20, 50)rotate(-90)">Intersection Size</text></g><g><g><text transform="translate(280,10)" class="setTextStyle-upset-az5uq8wle">was killed</text></g><g><text transform="translate(150,140)rotate(-90)" class="setTextStyle-upset-az5uq8wle">male</text></g><g><text transform="translate(230,450)" class="setTextStyle-upset-az5uq8wle">Stark</text><text transform="translate(530,450)" class="setTextStyle-upset-az5uq8wle">Stark</text></g><g><text transform="translate(590,90)rotate(-90)" class="setTextStyle-upset-az5uq8wle">Lannister</text><text transform="translate(590,390)rotate(-90)" class="setTextStyle-upset-az5uq8wle">Lannister</text></g><g><text transform="translate(205,30)" class="setTextStyle-upset-az5uq8wle">female</text><text transform="translate(355,30)" class="setTextStyle-upset-az5uq8wle">female</text><text transform="translate(405,30)" class="setTextStyle-upset-az5uq8wle">female</text><text transform="translate(555,30)" class="setTextStyle-upset-az5uq8wle">female</text></g><g><text transform="translate(170,65)rotate(-90)" class="setTextStyle-upset-az5uq8wle">royal</text><text transform="translate(170,215)rotate(-90)" class="setTextStyle-upset-az5uq8wle">royal</text><text transform="translate(170,265)rotate(-90)" class="setTextStyle-upset-az5uq8wle">royal</text><text transform="translate(170,415)rotate(-90)" class="setTextStyle-upset-az5uq8wle">royal</text></g><text transform="translate(480,10)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">was killed</text><text transform="translate(150,340)rotate(-90)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">male</text><text transform="translate(330,450)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">Stark</text><text transform="translate(430,450)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">Stark</text><text transform="translate(590,190)rotate(-90)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">Lannister</text><text transform="translate(590,290)rotate(-90)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">Lannister</text><text transform="translate(255,30)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">female</text><text transform="translate(305,30)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">female</text><text transform="translate(455,30)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">female</text><text transform="translate(505,30)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">female</text><text transform="translate(170,115)rotate(-90)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">royal</text><text transform="translate(170,165)rotate(-90)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">royal</text><text transform="translate(170,315)rotate(-90)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">royal</text><text transform="translate(170,365)rotate(-90)" class="setTextStyle-upset-az5uq8wle not-upset-az5uq8wle">royal</text></g><g><g transform="translate(230, 290)" data-cardinality="1"><title>(was killed ∩ Stark): 1</title><rect width="50" height="50" class="fillTransparent-upset-az5uq8wle"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-az5uq8wle"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-az5uq8wle">1</text></g><g transform="translate(230, 140)" data-cardinality="4"><title>(was killed ∩ male ∩ Stark): 4</title><rect width="50" height="50" class="fillTransparent-upset-az5uq8wle"></rect><rect x="7.5" y="28.28571428571429" height="21.71428571428571" width="35" class="fillPrimary-upset-az5uq8wle"></rect><text y="26.28571428571429" x="25" class="barTextStyle-upset-az5uq8wle">4</text></g><g transform="translate(280, 90)" data-cardinality="7"><title>(was killed ∩ male ∩ Lannister): 7</title><rect width="50" height="50" class="fillTransparent-upset-az5uq8wle"></rect><rect x="7.5" y="12" height="38" width="35" class="fillPrimary-upset-az5uq8wle"></rect><text y="10" x="25" class="barTextStyle-upset-az5uq8wle">7</text></g><g transform="translate(230, 190)" data-cardinality="2"><title>(was killed ∩ male ∩ Stark ∩ royal): 2</title><rect width="50" height="50" class="fillTransparent-upset-az5uq8wle"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-az5uq8wle"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-az5uq8wle">2</text></g><g transform="translate(180, 290)" data-cardinality="2"><title>(was killed ∩ Stark ∩ female): 2</title><rect width="50" height="50" class="fillTransparent-upset-az5uq8wle"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-az5uq8wle"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-az5uq8wle">2</text></g><g transform="translate(330, 390)" data-cardinality="1"><title>(was killed ∩ Lannister ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-az5uq8wle"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-az5uq8wle"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-az5uq8wle">1</text></g><g transform="translate(430, 90)" data-cardinality="1"><title>(male ∩ Lannister): 1</title><rect width="50" height="50" class="fillTransparent-upset-az5uq8wle"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-az5uq8wle"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-az5uq8wle">1</text></g><g transform="translate(480, 190)" data-cardinality="1"><title>(male ∩ Stark ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-az5uq8wle"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-az5uq8wle"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-az5uq8wle">1</text></g><g transform="translate(530, 290)" data-cardinality="1"><title>(Stark ∩ female): 1</title><rect width="50" height="50" class="fillTransparent-upset-az5uq8wle"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-az5uq8wle"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-az5uq8wle">1</text></g><g transform="translate(530, 240)" data-cardinality="1"><title>(Stark ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-az5uq8wle"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-az5uq8wle"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-az5uq8wle">1</text></g></g><g transform="translate(180, 40)"><path d="M 50,0 l0,400 M 150,0 l0,400 M 250,0 l0,400 M 350,0 l0,400 M 0,50 l400,0 M 0,150 l400,0 M 0,250 l400,0 M 0,350 l400,0" class="gridStyle-upset-az5uq8wle gridStyle-upset-az5uq8wle-0"></path><path d="M 100,0 l0,400 M 300,0 l0,400 M 0,100 l400,0 M 0,300 l400,0" class="gridStyle-upset-az5uq8wle gridStyle-upset-az5uq8wle-1"></path><path d="M 0,0 l0,400 M 200,0 l0,400 M 400,0 l0,400 M 0,0 l400,0 M 0,200 l400,0 M 0,400 l400,0" class="gridStyle-upset-az5uq8wle gridStyle-upset-az5uq8wle-2"></path></g></g><g class="pnone-upset-az5uq8wle"></g><g></g></g></svg></div></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="click"></a>Click<a class="hash-link" href="#click" title="Direct link to heading">#</a></h2><div class="mdxCodeBlock_Qi7t"><div class="playgroundHeader_3FDm playgroundEditorHeader_3dt6">Live Editor</div><div class="playgroundEditor_1rpd" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:monospace;color:#bfc7d5;background-color:#292d3e"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px" class="npm__react-simple-code-editor__textarea" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false">// import React from &#x27;react&#x27;;
+  </style><g class="exportButtons-upset-qot2kio1" transform="translate(778,497)"><g class="exportButton-upset-qot2kio1" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-qot2kio1" x="13">SVG</text></g><g class="exportButton-upset-qot2kio1" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-qot2kio1" x="13">PNG</text></g><g class="exportButton-upset-qot2kio1" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-qot2kio1" x="17">DUMP</text></g><g class="exportButton-upset-qot2kio1" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-qot2kio1" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><g><g transform="translate(758, 400)"><g><g transform="translate(0, 50.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-qot2kio1 endText-upset-qot2kio1">0</text><line x2="-6" class="axisLine-upset-qot2kio1"></line></g><g transform="translate(0, 23.357142857142858)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-qot2kio1 endText-upset-qot2kio1">5</text><line x2="-6" class="axisLine-upset-qot2kio1"></line></g><path class="axisLine-upset-qot2kio1" d="M-6,12H0.5V50H-6"></path></g><text class="cChartTextStyle-upset-qot2kio1" transform="translate(-20, 50)rotate(-90)">Intersection Size</text></g><g><g><text transform="translate(280,10)" class="setTextStyle-upset-qot2kio1">was killed</text></g><g><text transform="translate(150,140)rotate(-90)" class="setTextStyle-upset-qot2kio1">male</text></g><g><text transform="translate(230,450)" class="setTextStyle-upset-qot2kio1">Stark</text><text transform="translate(530,450)" class="setTextStyle-upset-qot2kio1">Stark</text></g><g><text transform="translate(590,90)rotate(-90)" class="setTextStyle-upset-qot2kio1">Lannister</text><text transform="translate(590,390)rotate(-90)" class="setTextStyle-upset-qot2kio1">Lannister</text></g><g><text transform="translate(205,30)" class="setTextStyle-upset-qot2kio1">female</text><text transform="translate(355,30)" class="setTextStyle-upset-qot2kio1">female</text><text transform="translate(405,30)" class="setTextStyle-upset-qot2kio1">female</text><text transform="translate(555,30)" class="setTextStyle-upset-qot2kio1">female</text></g><g><text transform="translate(170,65)rotate(-90)" class="setTextStyle-upset-qot2kio1">royal</text><text transform="translate(170,215)rotate(-90)" class="setTextStyle-upset-qot2kio1">royal</text><text transform="translate(170,265)rotate(-90)" class="setTextStyle-upset-qot2kio1">royal</text><text transform="translate(170,415)rotate(-90)" class="setTextStyle-upset-qot2kio1">royal</text></g><text transform="translate(480,10)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">was killed</text><text transform="translate(150,340)rotate(-90)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">male</text><text transform="translate(330,450)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">Stark</text><text transform="translate(430,450)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">Stark</text><text transform="translate(590,190)rotate(-90)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">Lannister</text><text transform="translate(590,290)rotate(-90)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">Lannister</text><text transform="translate(255,30)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">female</text><text transform="translate(305,30)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">female</text><text transform="translate(455,30)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">female</text><text transform="translate(505,30)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">female</text><text transform="translate(170,115)rotate(-90)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">royal</text><text transform="translate(170,165)rotate(-90)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">royal</text><text transform="translate(170,315)rotate(-90)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">royal</text><text transform="translate(170,365)rotate(-90)" class="setTextStyle-upset-qot2kio1 not-upset-qot2kio1">royal</text></g><g><g transform="translate(230, 290)" data-cardinality="1"><title>(was killed ∩ Stark): 1</title><rect width="50" height="50" class="fillTransparent-upset-qot2kio1"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-qot2kio1"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-qot2kio1">1</text></g><g transform="translate(230, 140)" data-cardinality="4"><title>(was killed ∩ male ∩ Stark): 4</title><rect width="50" height="50" class="fillTransparent-upset-qot2kio1"></rect><rect x="7.5" y="28.28571428571429" height="21.71428571428571" width="35" class="fillPrimary-upset-qot2kio1"></rect><text y="26.28571428571429" x="25" class="barTextStyle-upset-qot2kio1">4</text></g><g transform="translate(280, 90)" data-cardinality="7"><title>(was killed ∩ male ∩ Lannister): 7</title><rect width="50" height="50" class="fillTransparent-upset-qot2kio1"></rect><rect x="7.5" y="12" height="38" width="35" class="fillPrimary-upset-qot2kio1"></rect><text y="10" x="25" class="barTextStyle-upset-qot2kio1">7</text></g><g transform="translate(230, 190)" data-cardinality="2"><title>(was killed ∩ male ∩ Stark ∩ royal): 2</title><rect width="50" height="50" class="fillTransparent-upset-qot2kio1"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-qot2kio1"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-qot2kio1">2</text></g><g transform="translate(180, 290)" data-cardinality="2"><title>(was killed ∩ Stark ∩ female): 2</title><rect width="50" height="50" class="fillTransparent-upset-qot2kio1"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-qot2kio1"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-qot2kio1">2</text></g><g transform="translate(330, 390)" data-cardinality="1"><title>(was killed ∩ Lannister ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-qot2kio1"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-qot2kio1"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-qot2kio1">1</text></g><g transform="translate(430, 90)" data-cardinality="1"><title>(male ∩ Lannister): 1</title><rect width="50" height="50" class="fillTransparent-upset-qot2kio1"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-qot2kio1"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-qot2kio1">1</text></g><g transform="translate(480, 190)" data-cardinality="1"><title>(male ∩ Stark ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-qot2kio1"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-qot2kio1"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-qot2kio1">1</text></g><g transform="translate(530, 290)" data-cardinality="1"><title>(Stark ∩ female): 1</title><rect width="50" height="50" class="fillTransparent-upset-qot2kio1"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-qot2kio1"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-qot2kio1">1</text></g><g transform="translate(530, 240)" data-cardinality="1"><title>(Stark ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-qot2kio1"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-qot2kio1"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-qot2kio1">1</text></g></g><g transform="translate(180, 40)"><path d="M 50,0 l0,400 M 150,0 l0,400 M 250,0 l0,400 M 350,0 l0,400 M 0,50 l400,0 M 0,150 l400,0 M 0,250 l400,0 M 0,350 l400,0" class="gridStyle-upset-qot2kio1 gridStyle-upset-qot2kio1-0"></path><path d="M 100,0 l0,400 M 300,0 l0,400 M 0,100 l400,0 M 0,300 l400,0" class="gridStyle-upset-qot2kio1 gridStyle-upset-qot2kio1-1"></path><path d="M 0,0 l0,400 M 200,0 l0,400 M 400,0 l0,400 M 0,0 l400,0 M 0,200 l400,0 M 0,400 l400,0" class="gridStyle-upset-qot2kio1 gridStyle-upset-qot2kio1-2"></path></g></g><g class="pnone-upset-qot2kio1"></g><g></g></g></svg></div></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="click"></a>Click<a class="hash-link" href="#click" title="Direct link to heading">#</a></h2><div class="mdxCodeBlock_Qi7t"><div class="playgroundHeader_3FDm playgroundEditorHeader_3dt6">Live Editor</div><div class="playgroundEditor_1rpd" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:monospace;color:#bfc7d5;background-color:#292d3e"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px" class="npm__react-simple-code-editor__textarea" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false">// import React from &#x27;react&#x27;;
 
 function Click() {
   const [selection, setSelection] = React.useState(null);
@@ -543,23 +543,23 @@ function Click() {
     color: transparent !important;
   }
 }
-</style></div><div class="playgroundHeader_3FDm playgroundPreviewHeader_3Owj">Result</div><div class="playgroundPreview_6Czn"><div><svg class="root-upset-qgwldt2yf" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
+</style></div><div class="playgroundHeader_3FDm playgroundPreviewHeader_3Owj">Result</div><div class="playgroundPreview_6Czn"><div><svg class="root-upset-o28ww0oh9" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
   
-  .root-upset-qgwldt2yf {
+  .root-upset-o28ww0oh9 {
     font-family: sans-serif;
   }
   
   
-  .titleTextStyle-upset-qgwldt2yf {
+  .titleTextStyle-upset-o28ww0oh9 {
     fill: #000000;
     font-size: 24px;
   }
-  .descTextStyle-upset-qgwldt2yf {
+  .descTextStyle-upset-o28ww0oh9 {
     fill: #000000;
     font-size: 16px;
   }
 
-  .legendTextStyle-upset-qgwldt2yf {
+  .legendTextStyle-upset-o28ww0oh9 {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
@@ -568,98 +568,98 @@ function Click() {
   }
   
 
-  .axisTextStyle-upset-qgwldt2yf {
+  .axisTextStyle-upset-o28ww0oh9 {
     fill: #000000;
     font-size: 10px;
     text-anchor: end;
   }
-  .barTextStyle-upset-qgwldt2yf {
+  .barTextStyle-upset-o28ww0oh9 {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
   }
-  .setTextStyle-upset-qgwldt2yf {
+  .setTextStyle-upset-o28ww0oh9 {
     fill: #000000;
     font-size: 16px;
     text-anchor: middle;
     dominant-baseline: central;
   }
-  .cChartTextStyle-upset-qgwldt2yf {
+  .cChartTextStyle-upset-o28ww0oh9 {
     fill: #000000;
     font-size: 16px;
   }
 
-  .not-upset-qgwldt2yf {
+  .not-upset-o28ww0oh9 {
     text-decoration: overline;
   }
 
-  .axisLine-upset-qgwldt2yf {
+  .axisLine-upset-o28ww0oh9 {
     fill: none;
     stroke: #000000;
   }
 
-  .gridStyle-upset-qgwldt2yf {
+  .gridStyle-upset-o28ww0oh9 {
     fill: none;
     stroke: #000000;
     stroke-linecap: round;
   }
-  .gridStyle-upset-qgwldt2yf-1 {
+  .gridStyle-upset-o28ww0oh9-1 {
     stroke-width: 2;
   }
-  .gridStyle-upset-qgwldt2yf-2 {
+  .gridStyle-upset-o28ww0oh9-2 {
     stroke-width: 3;
   }
 
   
-  .fillPrimary-upset-qgwldt2yf { fill: #000000; fill-opacity: 1; }
-  .fillOverflow1-upset-qgwldt2yf { fill-opacity: 0.7; }
-  .fillOverflow2-upset-qgwldt2yf { fill-opacity: 0.4; }
+  .fillPrimary-upset-o28ww0oh9 { fill: #000000; fill-opacity: 1; }
+  .fillOverflow1-upset-o28ww0oh9 { fill-opacity: 0.7; }
+  .fillOverflow2-upset-o28ww0oh9 { fill-opacity: 0.4; }
   
   
-  .fillSelection-upset-qgwldt2yf { fill: #ffa500; }
-  .fillTransparent-upset-qgwldt2yf { fill: transparent; }
+  .fillSelection-upset-o28ww0oh9 { fill: #ffa500; }
+  .fillTransparent-upset-o28ww0oh9 { fill: transparent; }
 
-  .selectionHint-upset-qgwldt2yf {
+  .selectionHint-upset-o28ww0oh9 {
     fill: transparent;
     pointer-events: none;
     stroke: #ffa500;
   }
-  .clickAble-upset-qgwldt2yf {
+  .clickAble-upset-o28ww0oh9 {
     cursor: pointer;
   }
 
-  .startText-upset-qgwldt2yf {
+  .startText-upset-o28ww0oh9 {
     text-anchor: start;
   }
-  .endText-upset-qgwldt2yf {
+  .endText-upset-o28ww0oh9 {
     text-anchor: end;
   }
-  .pnone-upset-qgwldt2yf {
+  .pnone-upset-o28ww0oh9 {
     pointer-events: none;
   }
   
-  .exportTextStyle-upset-qgwldt2yf {
+  .exportTextStyle-upset-o28ww0oh9 {
     fill: #000000;
     font-size: 10px;
   }
-  .exportButtons-upset-qgwldt2yf {
+  .exportButtons-upset-o28ww0oh9 {
     text-anchor: middle;
   }
-  .exportButton-upset-qgwldt2yf {
+  .exportButton-upset-o28ww0oh9 {
     cursor: pointer;
     opacity: 0.5;
   }
-  .exportButton-upset-qgwldt2yf:hover {
+  .exportButton-upset-o28ww0oh9:hover {
     opacity: 1;
   }
-  .exportButton-upset-qgwldt2yf &gt; rect {
+  .exportButton-upset-o28ww0oh9 &gt; rect {
     fill: none;
     stroke: #000000;
   }
   
 
   
-  </style><rect width="780" height="500" class="fillTransparent-upset-qgwldt2yf"></rect><g class="exportButtons-upset-qgwldt2yf" transform="translate(778,497)"><g class="exportButton-upset-qgwldt2yf" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-qgwldt2yf" x="13">SVG</text></g><g class="exportButton-upset-qgwldt2yf" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-qgwldt2yf" x="13">PNG</text></g><g class="exportButton-upset-qgwldt2yf" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-qgwldt2yf" x="17">DUMP</text></g><g class="exportButton-upset-qgwldt2yf" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-qgwldt2yf" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><g><g transform="translate(758, 400)"><g><g transform="translate(0, 50.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-qgwldt2yf endText-upset-qgwldt2yf">0</text><line x2="-6" class="axisLine-upset-qgwldt2yf"></line></g><g transform="translate(0, 23.357142857142858)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-qgwldt2yf endText-upset-qgwldt2yf">5</text><line x2="-6" class="axisLine-upset-qgwldt2yf"></line></g><path class="axisLine-upset-qgwldt2yf" d="M-6,12H0.5V50H-6"></path></g><text class="cChartTextStyle-upset-qgwldt2yf" transform="translate(-20, 50)rotate(-90)">Intersection Size</text></g><g><g class="clickAble-upset-qgwldt2yf"><text transform="translate(280,10)" class="setTextStyle-upset-qgwldt2yf">was killed</text></g><g class="clickAble-upset-qgwldt2yf"><text transform="translate(150,140)rotate(-90)" class="setTextStyle-upset-qgwldt2yf">male</text></g><g class="clickAble-upset-qgwldt2yf"><text transform="translate(230,450)" class="setTextStyle-upset-qgwldt2yf">Stark</text><text transform="translate(530,450)" class="setTextStyle-upset-qgwldt2yf">Stark</text></g><g class="clickAble-upset-qgwldt2yf"><text transform="translate(590,90)rotate(-90)" class="setTextStyle-upset-qgwldt2yf">Lannister</text><text transform="translate(590,390)rotate(-90)" class="setTextStyle-upset-qgwldt2yf">Lannister</text></g><g class="clickAble-upset-qgwldt2yf"><text transform="translate(205,30)" class="setTextStyle-upset-qgwldt2yf">female</text><text transform="translate(355,30)" class="setTextStyle-upset-qgwldt2yf">female</text><text transform="translate(405,30)" class="setTextStyle-upset-qgwldt2yf">female</text><text transform="translate(555,30)" class="setTextStyle-upset-qgwldt2yf">female</text></g><g class="clickAble-upset-qgwldt2yf"><text transform="translate(170,65)rotate(-90)" class="setTextStyle-upset-qgwldt2yf">royal</text><text transform="translate(170,215)rotate(-90)" class="setTextStyle-upset-qgwldt2yf">royal</text><text transform="translate(170,265)rotate(-90)" class="setTextStyle-upset-qgwldt2yf">royal</text><text transform="translate(170,415)rotate(-90)" class="setTextStyle-upset-qgwldt2yf">royal</text></g><text transform="translate(480,10)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">was killed</text><text transform="translate(150,340)rotate(-90)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">male</text><text transform="translate(330,450)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">Stark</text><text transform="translate(430,450)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">Stark</text><text transform="translate(590,190)rotate(-90)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">Lannister</text><text transform="translate(590,290)rotate(-90)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">Lannister</text><text transform="translate(255,30)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">female</text><text transform="translate(305,30)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">female</text><text transform="translate(455,30)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">female</text><text transform="translate(505,30)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">female</text><text transform="translate(170,115)rotate(-90)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">royal</text><text transform="translate(170,165)rotate(-90)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">royal</text><text transform="translate(170,315)rotate(-90)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">royal</text><text transform="translate(170,365)rotate(-90)" class="setTextStyle-upset-qgwldt2yf not-upset-qgwldt2yf">royal</text></g><g class="clickAble-upset-qgwldt2yf"><g transform="translate(230, 290)" data-cardinality="1"><title>(was killed ∩ Stark): 1</title><rect width="50" height="50" class="fillTransparent-upset-qgwldt2yf"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-qgwldt2yf"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-qgwldt2yf">1</text></g><g transform="translate(230, 140)" data-cardinality="4"><title>(was killed ∩ male ∩ Stark): 4</title><rect width="50" height="50" class="fillTransparent-upset-qgwldt2yf"></rect><rect x="7.5" y="28.28571428571429" height="21.71428571428571" width="35" class="fillPrimary-upset-qgwldt2yf"></rect><text y="26.28571428571429" x="25" class="barTextStyle-upset-qgwldt2yf">4</text></g><g transform="translate(280, 90)" data-cardinality="7"><title>(was killed ∩ male ∩ Lannister): 7</title><rect width="50" height="50" class="fillTransparent-upset-qgwldt2yf"></rect><rect x="7.5" y="12" height="38" width="35" class="fillPrimary-upset-qgwldt2yf"></rect><text y="10" x="25" class="barTextStyle-upset-qgwldt2yf">7</text></g><g transform="translate(230, 190)" data-cardinality="2"><title>(was killed ∩ male ∩ Stark ∩ royal): 2</title><rect width="50" height="50" class="fillTransparent-upset-qgwldt2yf"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-qgwldt2yf"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-qgwldt2yf">2</text></g><g transform="translate(180, 290)" data-cardinality="2"><title>(was killed ∩ Stark ∩ female): 2</title><rect width="50" height="50" class="fillTransparent-upset-qgwldt2yf"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-qgwldt2yf"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-qgwldt2yf">2</text></g><g transform="translate(330, 390)" data-cardinality="1"><title>(was killed ∩ Lannister ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-qgwldt2yf"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-qgwldt2yf"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-qgwldt2yf">1</text></g><g transform="translate(430, 90)" data-cardinality="1"><title>(male ∩ Lannister): 1</title><rect width="50" height="50" class="fillTransparent-upset-qgwldt2yf"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-qgwldt2yf"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-qgwldt2yf">1</text></g><g transform="translate(480, 190)" data-cardinality="1"><title>(male ∩ Stark ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-qgwldt2yf"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-qgwldt2yf"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-qgwldt2yf">1</text></g><g transform="translate(530, 290)" data-cardinality="1"><title>(Stark ∩ female): 1</title><rect width="50" height="50" class="fillTransparent-upset-qgwldt2yf"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-qgwldt2yf"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-qgwldt2yf">1</text></g><g transform="translate(530, 240)" data-cardinality="1"><title>(Stark ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-qgwldt2yf"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-qgwldt2yf"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-qgwldt2yf">1</text></g></g><g transform="translate(180, 40)"><path d="M 50,0 l0,400 M 150,0 l0,400 M 250,0 l0,400 M 350,0 l0,400 M 0,50 l400,0 M 0,150 l400,0 M 0,250 l400,0 M 0,350 l400,0" class="gridStyle-upset-qgwldt2yf gridStyle-upset-qgwldt2yf-0"></path><path d="M 100,0 l0,400 M 300,0 l0,400 M 0,100 l400,0 M 0,300 l400,0" class="gridStyle-upset-qgwldt2yf gridStyle-upset-qgwldt2yf-1"></path><path d="M 0,0 l0,400 M 200,0 l0,400 M 400,0 l0,400 M 0,0 l400,0 M 0,200 l400,0 M 0,400 l400,0" class="gridStyle-upset-qgwldt2yf gridStyle-upset-qgwldt2yf-2"></path></g></g><g></g><g></g></g></svg></div></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="queries"></a>Queries<a class="hash-link" href="#queries" title="Direct link to heading">#</a></h2><div class="mdxCodeBlock_Qi7t"><div class="playgroundHeader_3FDm playgroundEditorHeader_3dt6">Live Editor</div><div class="playgroundEditor_1rpd" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:monospace;color:#bfc7d5;background-color:#292d3e"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px" class="npm__react-simple-code-editor__textarea" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false">// import React from &#x27;react&#x27;;
+  </style><rect width="780" height="500" class="fillTransparent-upset-o28ww0oh9"></rect><g class="exportButtons-upset-o28ww0oh9" transform="translate(778,497)"><g class="exportButton-upset-o28ww0oh9" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-o28ww0oh9" x="13">SVG</text></g><g class="exportButton-upset-o28ww0oh9" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-o28ww0oh9" x="13">PNG</text></g><g class="exportButton-upset-o28ww0oh9" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-o28ww0oh9" x="17">DUMP</text></g><g class="exportButton-upset-o28ww0oh9" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-o28ww0oh9" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><g><g transform="translate(758, 400)"><g><g transform="translate(0, 50.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-o28ww0oh9 endText-upset-o28ww0oh9">0</text><line x2="-6" class="axisLine-upset-o28ww0oh9"></line></g><g transform="translate(0, 23.357142857142858)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-o28ww0oh9 endText-upset-o28ww0oh9">5</text><line x2="-6" class="axisLine-upset-o28ww0oh9"></line></g><path class="axisLine-upset-o28ww0oh9" d="M-6,12H0.5V50H-6"></path></g><text class="cChartTextStyle-upset-o28ww0oh9" transform="translate(-20, 50)rotate(-90)">Intersection Size</text></g><g><g class="clickAble-upset-o28ww0oh9"><text transform="translate(280,10)" class="setTextStyle-upset-o28ww0oh9">was killed</text></g><g class="clickAble-upset-o28ww0oh9"><text transform="translate(150,140)rotate(-90)" class="setTextStyle-upset-o28ww0oh9">male</text></g><g class="clickAble-upset-o28ww0oh9"><text transform="translate(230,450)" class="setTextStyle-upset-o28ww0oh9">Stark</text><text transform="translate(530,450)" class="setTextStyle-upset-o28ww0oh9">Stark</text></g><g class="clickAble-upset-o28ww0oh9"><text transform="translate(590,90)rotate(-90)" class="setTextStyle-upset-o28ww0oh9">Lannister</text><text transform="translate(590,390)rotate(-90)" class="setTextStyle-upset-o28ww0oh9">Lannister</text></g><g class="clickAble-upset-o28ww0oh9"><text transform="translate(205,30)" class="setTextStyle-upset-o28ww0oh9">female</text><text transform="translate(355,30)" class="setTextStyle-upset-o28ww0oh9">female</text><text transform="translate(405,30)" class="setTextStyle-upset-o28ww0oh9">female</text><text transform="translate(555,30)" class="setTextStyle-upset-o28ww0oh9">female</text></g><g class="clickAble-upset-o28ww0oh9"><text transform="translate(170,65)rotate(-90)" class="setTextStyle-upset-o28ww0oh9">royal</text><text transform="translate(170,215)rotate(-90)" class="setTextStyle-upset-o28ww0oh9">royal</text><text transform="translate(170,265)rotate(-90)" class="setTextStyle-upset-o28ww0oh9">royal</text><text transform="translate(170,415)rotate(-90)" class="setTextStyle-upset-o28ww0oh9">royal</text></g><text transform="translate(480,10)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">was killed</text><text transform="translate(150,340)rotate(-90)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">male</text><text transform="translate(330,450)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">Stark</text><text transform="translate(430,450)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">Stark</text><text transform="translate(590,190)rotate(-90)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">Lannister</text><text transform="translate(590,290)rotate(-90)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">Lannister</text><text transform="translate(255,30)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">female</text><text transform="translate(305,30)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">female</text><text transform="translate(455,30)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">female</text><text transform="translate(505,30)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">female</text><text transform="translate(170,115)rotate(-90)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">royal</text><text transform="translate(170,165)rotate(-90)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">royal</text><text transform="translate(170,315)rotate(-90)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">royal</text><text transform="translate(170,365)rotate(-90)" class="setTextStyle-upset-o28ww0oh9 not-upset-o28ww0oh9">royal</text></g><g class="clickAble-upset-o28ww0oh9"><g transform="translate(230, 290)" data-cardinality="1"><title>(was killed ∩ Stark): 1</title><rect width="50" height="50" class="fillTransparent-upset-o28ww0oh9"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-o28ww0oh9"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-o28ww0oh9">1</text></g><g transform="translate(230, 140)" data-cardinality="4"><title>(was killed ∩ male ∩ Stark): 4</title><rect width="50" height="50" class="fillTransparent-upset-o28ww0oh9"></rect><rect x="7.5" y="28.28571428571429" height="21.71428571428571" width="35" class="fillPrimary-upset-o28ww0oh9"></rect><text y="26.28571428571429" x="25" class="barTextStyle-upset-o28ww0oh9">4</text></g><g transform="translate(280, 90)" data-cardinality="7"><title>(was killed ∩ male ∩ Lannister): 7</title><rect width="50" height="50" class="fillTransparent-upset-o28ww0oh9"></rect><rect x="7.5" y="12" height="38" width="35" class="fillPrimary-upset-o28ww0oh9"></rect><text y="10" x="25" class="barTextStyle-upset-o28ww0oh9">7</text></g><g transform="translate(230, 190)" data-cardinality="2"><title>(was killed ∩ male ∩ Stark ∩ royal): 2</title><rect width="50" height="50" class="fillTransparent-upset-o28ww0oh9"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-o28ww0oh9"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-o28ww0oh9">2</text></g><g transform="translate(180, 290)" data-cardinality="2"><title>(was killed ∩ Stark ∩ female): 2</title><rect width="50" height="50" class="fillTransparent-upset-o28ww0oh9"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-o28ww0oh9"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-o28ww0oh9">2</text></g><g transform="translate(330, 390)" data-cardinality="1"><title>(was killed ∩ Lannister ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-o28ww0oh9"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-o28ww0oh9"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-o28ww0oh9">1</text></g><g transform="translate(430, 90)" data-cardinality="1"><title>(male ∩ Lannister): 1</title><rect width="50" height="50" class="fillTransparent-upset-o28ww0oh9"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-o28ww0oh9"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-o28ww0oh9">1</text></g><g transform="translate(480, 190)" data-cardinality="1"><title>(male ∩ Stark ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-o28ww0oh9"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-o28ww0oh9"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-o28ww0oh9">1</text></g><g transform="translate(530, 290)" data-cardinality="1"><title>(Stark ∩ female): 1</title><rect width="50" height="50" class="fillTransparent-upset-o28ww0oh9"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-o28ww0oh9"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-o28ww0oh9">1</text></g><g transform="translate(530, 240)" data-cardinality="1"><title>(Stark ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-o28ww0oh9"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-o28ww0oh9"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-o28ww0oh9">1</text></g></g><g transform="translate(180, 40)"><path d="M 50,0 l0,400 M 150,0 l0,400 M 250,0 l0,400 M 350,0 l0,400 M 0,50 l400,0 M 0,150 l400,0 M 0,250 l400,0 M 0,350 l400,0" class="gridStyle-upset-o28ww0oh9 gridStyle-upset-o28ww0oh9-0"></path><path d="M 100,0 l0,400 M 300,0 l0,400 M 0,100 l400,0 M 0,300 l400,0" class="gridStyle-upset-o28ww0oh9 gridStyle-upset-o28ww0oh9-1"></path><path d="M 0,0 l0,400 M 200,0 l0,400 M 400,0 l0,400 M 0,0 l400,0 M 0,200 l400,0 M 0,400 l400,0" class="gridStyle-upset-o28ww0oh9 gridStyle-upset-o28ww0oh9-2"></path></g></g><g></g><g></g></g></svg></div></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="queries"></a>Queries<a class="hash-link" href="#queries" title="Direct link to heading">#</a></h2><div class="mdxCodeBlock_Qi7t"><div class="playgroundHeader_3FDm playgroundEditorHeader_3dt6">Live Editor</div><div class="playgroundEditor_1rpd" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:monospace;color:#bfc7d5;background-color:#292d3e"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px" class="npm__react-simple-code-editor__textarea" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false">// import React from &#x27;react&#x27;;
 
 function Queries() {
   return (
@@ -697,23 +697,23 @@ function Queries() {
     color: transparent !important;
   }
 }
-</style></div><div class="playgroundHeader_3FDm playgroundPreviewHeader_3Owj">Result</div><div class="playgroundPreview_6Czn"><div><svg class="root-upset-fyvp5g2lr" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
+</style></div><div class="playgroundHeader_3FDm playgroundPreviewHeader_3Owj">Result</div><div class="playgroundPreview_6Czn"><div><svg class="root-upset-1rijrv323" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
   
-  .root-upset-fyvp5g2lr {
+  .root-upset-1rijrv323 {
     font-family: sans-serif;
   }
   
   
-  .titleTextStyle-upset-fyvp5g2lr {
+  .titleTextStyle-upset-1rijrv323 {
     fill: #000000;
     font-size: 24px;
   }
-  .descTextStyle-upset-fyvp5g2lr {
+  .descTextStyle-upset-1rijrv323 {
     fill: #000000;
     font-size: 16px;
   }
 
-  .legendTextStyle-upset-fyvp5g2lr {
+  .legendTextStyle-upset-1rijrv323 {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
@@ -722,103 +722,103 @@ function Queries() {
   }
   
 
-  .axisTextStyle-upset-fyvp5g2lr {
+  .axisTextStyle-upset-1rijrv323 {
     fill: #000000;
     font-size: 10px;
     text-anchor: end;
   }
-  .barTextStyle-upset-fyvp5g2lr {
+  .barTextStyle-upset-1rijrv323 {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
   }
-  .setTextStyle-upset-fyvp5g2lr {
+  .setTextStyle-upset-1rijrv323 {
     fill: #000000;
     font-size: 16px;
     text-anchor: middle;
     dominant-baseline: central;
   }
-  .cChartTextStyle-upset-fyvp5g2lr {
+  .cChartTextStyle-upset-1rijrv323 {
     fill: #000000;
     font-size: 16px;
   }
 
-  .not-upset-fyvp5g2lr {
+  .not-upset-1rijrv323 {
     text-decoration: overline;
   }
 
-  .axisLine-upset-fyvp5g2lr {
+  .axisLine-upset-1rijrv323 {
     fill: none;
     stroke: #000000;
   }
 
-  .gridStyle-upset-fyvp5g2lr {
+  .gridStyle-upset-1rijrv323 {
     fill: none;
     stroke: #000000;
     stroke-linecap: round;
   }
-  .gridStyle-upset-fyvp5g2lr-1 {
+  .gridStyle-upset-1rijrv323-1 {
     stroke-width: 2;
   }
-  .gridStyle-upset-fyvp5g2lr-2 {
+  .gridStyle-upset-1rijrv323-2 {
     stroke-width: 3;
   }
 
   
-  .fillPrimary-upset-fyvp5g2lr { fill: #000000; fill-opacity: 1; }
-  .fillOverflow1-upset-fyvp5g2lr { fill-opacity: 0.7; }
-  .fillOverflow2-upset-fyvp5g2lr { fill-opacity: 0.4; }
+  .fillPrimary-upset-1rijrv323 { fill: #000000; fill-opacity: 1; }
+  .fillOverflow1-upset-1rijrv323 { fill-opacity: 0.7; }
+  .fillOverflow2-upset-1rijrv323 { fill-opacity: 0.4; }
   
   
-  .fillSelection-upset-fyvp5g2lr { fill: #ffa500; }
-  .fillTransparent-upset-fyvp5g2lr { fill: transparent; }
+  .fillSelection-upset-1rijrv323 { fill: #ffa500; }
+  .fillTransparent-upset-1rijrv323 { fill: transparent; }
 
-  .selectionHint-upset-fyvp5g2lr {
+  .selectionHint-upset-1rijrv323 {
     fill: transparent;
     pointer-events: none;
     stroke: #ffa500;
   }
-  .clickAble-upset-fyvp5g2lr {
+  .clickAble-upset-1rijrv323 {
     cursor: pointer;
   }
 
-  .startText-upset-fyvp5g2lr {
+  .startText-upset-1rijrv323 {
     text-anchor: start;
   }
-  .endText-upset-fyvp5g2lr {
+  .endText-upset-1rijrv323 {
     text-anchor: end;
   }
-  .pnone-upset-fyvp5g2lr {
+  .pnone-upset-1rijrv323 {
     pointer-events: none;
   }
   
-  .exportTextStyle-upset-fyvp5g2lr {
+  .exportTextStyle-upset-1rijrv323 {
     fill: #000000;
     font-size: 10px;
   }
-  .exportButtons-upset-fyvp5g2lr {
+  .exportButtons-upset-1rijrv323 {
     text-anchor: middle;
   }
-  .exportButton-upset-fyvp5g2lr {
+  .exportButton-upset-1rijrv323 {
     cursor: pointer;
     opacity: 0.5;
   }
-  .exportButton-upset-fyvp5g2lr:hover {
+  .exportButton-upset-1rijrv323:hover {
     opacity: 1;
   }
-  .exportButton-upset-fyvp5g2lr &gt; rect {
+  .exportButton-upset-1rijrv323 &gt; rect {
     fill: none;
     stroke: #000000;
   }
   
 
-  .fillQ0-upset-c79xbf9p {
+  .fillQ0-upset-aamnds0m9 {
     fill: steelblue;
   }
-.fillQ1-upset-c79xbf9p {
+.fillQ1-upset-aamnds0m9 {
     fill: red;
   }
-  </style><text transform="translate(390,4)" class="legendTextStyle-upset-fyvp5g2lr"><tspan class="fillQ0-upset-c79xbf9p">  ⬤ </tspan><tspan>Q1: 9</tspan><tspan class="fillQ1-upset-c79xbf9p">  ⬤ </tspan><tspan>Q2: 3</tspan></text><g class="exportButtons-upset-fyvp5g2lr" transform="translate(778,497)"><g class="exportButton-upset-fyvp5g2lr" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-fyvp5g2lr" x="13">SVG</text></g><g class="exportButton-upset-fyvp5g2lr" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-fyvp5g2lr" x="13">PNG</text></g><g class="exportButton-upset-fyvp5g2lr" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-fyvp5g2lr" x="17">DUMP</text></g><g class="exportButton-upset-fyvp5g2lr" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-fyvp5g2lr" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><g><g transform="translate(758, 400)"><g><g transform="translate(0, 50.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-fyvp5g2lr endText-upset-fyvp5g2lr">0</text><line x2="-6" class="axisLine-upset-fyvp5g2lr"></line></g><g transform="translate(0, 23.357142857142858)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-fyvp5g2lr endText-upset-fyvp5g2lr">5</text><line x2="-6" class="axisLine-upset-fyvp5g2lr"></line></g><path class="axisLine-upset-fyvp5g2lr" d="M-6,12H0.5V50H-6"></path></g><text class="cChartTextStyle-upset-fyvp5g2lr" transform="translate(-20, 50)rotate(-90)">Intersection Size</text></g><g><g><text transform="translate(280,10)" class="setTextStyle-upset-fyvp5g2lr">was killed</text></g><g><text transform="translate(150,140)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr">male</text></g><g><text transform="translate(230,450)" class="setTextStyle-upset-fyvp5g2lr">Stark</text><text transform="translate(530,450)" class="setTextStyle-upset-fyvp5g2lr">Stark</text></g><g><text transform="translate(590,90)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr">Lannister</text><text transform="translate(590,390)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr">Lannister</text></g><g><text transform="translate(205,30)" class="setTextStyle-upset-fyvp5g2lr">female</text><text transform="translate(355,30)" class="setTextStyle-upset-fyvp5g2lr">female</text><text transform="translate(405,30)" class="setTextStyle-upset-fyvp5g2lr">female</text><text transform="translate(555,30)" class="setTextStyle-upset-fyvp5g2lr">female</text></g><g><text transform="translate(170,65)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr">royal</text><text transform="translate(170,215)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr">royal</text><text transform="translate(170,265)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr">royal</text><text transform="translate(170,415)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr">royal</text></g><text transform="translate(480,10)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">was killed</text><text transform="translate(150,340)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">male</text><text transform="translate(330,450)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">Stark</text><text transform="translate(430,450)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">Stark</text><text transform="translate(590,190)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">Lannister</text><text transform="translate(590,290)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">Lannister</text><text transform="translate(255,30)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">female</text><text transform="translate(305,30)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">female</text><text transform="translate(455,30)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">female</text><text transform="translate(505,30)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">female</text><text transform="translate(170,115)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">royal</text><text transform="translate(170,165)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">royal</text><text transform="translate(170,315)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">royal</text><text transform="translate(170,365)rotate(-90)" class="setTextStyle-upset-fyvp5g2lr not-upset-fyvp5g2lr">royal</text></g><g><g transform="translate(230, 290)" data-cardinality="1"><title>(was killed ∩ Stark): 1</title><rect width="50" height="50" class="fillTransparent-upset-fyvp5g2lr"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-fyvp5g2lr"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-fyvp5g2lr">1</text></g><g transform="translate(230, 140)" data-cardinality="4"><title>(was killed ∩ male ∩ Stark): 4</title><rect width="50" height="50" class="fillTransparent-upset-fyvp5g2lr"></rect><rect x="7.5" y="28.28571428571429" height="21.71428571428571" width="35" class="fillPrimary-upset-fyvp5g2lr"></rect><text y="26.28571428571429" x="25" class="barTextStyle-upset-fyvp5g2lr">4</text></g><g transform="translate(280, 90)" data-cardinality="7"><title>(was killed ∩ male ∩ Lannister): 7</title><rect width="50" height="50" class="fillTransparent-upset-fyvp5g2lr"></rect><rect x="7.5" y="12" height="38" width="35" class="fillPrimary-upset-fyvp5g2lr"></rect><text y="10" x="25" class="barTextStyle-upset-fyvp5g2lr">7</text></g><g transform="translate(230, 190)" data-cardinality="2"><title>(was killed ∩ male ∩ Stark ∩ royal): 2</title><rect width="50" height="50" class="fillTransparent-upset-fyvp5g2lr"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-fyvp5g2lr"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-fyvp5g2lr">2</text></g><g transform="translate(180, 290)" data-cardinality="2"><title>(was killed ∩ Stark ∩ female): 2</title><rect width="50" height="50" class="fillTransparent-upset-fyvp5g2lr"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-fyvp5g2lr"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-fyvp5g2lr">2</text></g><g transform="translate(330, 390)" data-cardinality="1"><title>(was killed ∩ Lannister ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-fyvp5g2lr"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-fyvp5g2lr"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-fyvp5g2lr">1</text></g><g transform="translate(430, 90)" data-cardinality="1"><title>(male ∩ Lannister): 1</title><rect width="50" height="50" class="fillTransparent-upset-fyvp5g2lr"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-fyvp5g2lr"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-fyvp5g2lr">1</text></g><g transform="translate(480, 190)" data-cardinality="1"><title>(male ∩ Stark ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-fyvp5g2lr"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-fyvp5g2lr"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-fyvp5g2lr">1</text></g><g transform="translate(530, 290)" data-cardinality="1"><title>(Stark ∩ female): 1</title><rect width="50" height="50" class="fillTransparent-upset-fyvp5g2lr"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-fyvp5g2lr"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-fyvp5g2lr">1</text></g><g transform="translate(530, 240)" data-cardinality="1"><title>(Stark ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-fyvp5g2lr"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-fyvp5g2lr"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-fyvp5g2lr">1</text></g></g><g transform="translate(180, 40)"><path d="M 50,0 l0,400 M 150,0 l0,400 M 250,0 l0,400 M 350,0 l0,400 M 0,50 l400,0 M 0,150 l400,0 M 0,250 l400,0 M 0,350 l400,0" class="gridStyle-upset-fyvp5g2lr gridStyle-upset-fyvp5g2lr-0"></path><path d="M 100,0 l0,400 M 300,0 l0,400 M 0,100 l400,0 M 0,300 l400,0" class="gridStyle-upset-fyvp5g2lr gridStyle-upset-fyvp5g2lr-1"></path><path d="M 0,0 l0,400 M 200,0 l0,400 M 400,0 l0,400 M 0,0 l400,0 M 0,200 l400,0 M 0,400 l400,0" class="gridStyle-upset-fyvp5g2lr gridStyle-upset-fyvp5g2lr-2"></path></g></g><g></g><g><g data-upset="cs-s"><rect x="237.5" y="184.57142857142856" height="5.428571428571431" data-i="1" data-cardinality="1" width="35" class="fillQ0-upset-c79xbf9p"><title>(was killed ∩ male ∩ Stark) ∩ Q1: 1</title></rect><rect x="287.5" y="107.42857142857143" height="32.57142857142857" data-i="2" data-cardinality="6" width="35" class="fillQ0-upset-c79xbf9p"><title>(was killed ∩ male ∩ Lannister) ∩ Q1: 6</title></rect><rect x="187.5" y="334.57142857142856" height="5.428571428571431" data-i="4" data-cardinality="1" width="35" class="fillQ0-upset-c79xbf9p"><title>(was killed ∩ Stark ∩ female) ∩ Q1: 1</title></rect><rect x="487.5" y="234.57142857142856" height="5.428571428571431" data-i="7" data-cardinality="1" width="35" class="fillQ0-upset-c79xbf9p"><title>(male ∩ Stark ∩ royal) ∩ Q1: 1</title></rect></g><g data-upset="cs-q"><path transform="translate(287.5, 134.57142857142856)" d="M0,-1 l35,0 l0,2 l-35,0 L-5,-5 L-5,5 Z" class="fillQ1-upset-c79xbf9p" data-i="2" data-cardinality="1"><title>(was killed ∩ male ∩ Lannister) ∩ Q2: 1</title></path><path transform="translate(487.5, 234.57142857142856)" d="M0,-1 l35,0 l0,2 l-35,0 L-5,-5 L-5,5 Z" class="fillQ1-upset-c79xbf9p" data-i="7" data-cardinality="1"><title>(male ∩ Stark ∩ royal) ∩ Q2: 1</title></path><path transform="translate(537.5, 284.57142857142856)" d="M0,-1 l35,0 l0,2 l-35,0 L-5,-5 L-5,5 Z" class="fillQ1-upset-c79xbf9p" data-i="9" data-cardinality="1"><title>(Stark ∩ female ∩ royal) ∩ Q2: 1</title></path></g></g></g></svg></div></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="small-sets"></a>Small Sets<a class="hash-link" href="#small-sets" title="Direct link to heading">#</a></h2><div class="mdxCodeBlock_Qi7t"><div class="playgroundHeader_3FDm playgroundEditorHeader_3dt6">Live Editor</div><div class="playgroundEditor_1rpd" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:monospace;color:#bfc7d5;background-color:#292d3e"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px" class="npm__react-simple-code-editor__textarea" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false">// import React from &#x27;react&#x27;;
+  </style><text transform="translate(390,4)" class="legendTextStyle-upset-1rijrv323"><tspan class="fillQ0-upset-aamnds0m9">  ⬤ </tspan><tspan>Q1: 8</tspan><tspan class="fillQ1-upset-aamnds0m9">  ⬤ </tspan><tspan>Q2: 4</tspan></text><g class="exportButtons-upset-1rijrv323" transform="translate(778,497)"><g class="exportButton-upset-1rijrv323" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-1rijrv323" x="13">SVG</text></g><g class="exportButton-upset-1rijrv323" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-1rijrv323" x="13">PNG</text></g><g class="exportButton-upset-1rijrv323" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-1rijrv323" x="17">DUMP</text></g><g class="exportButton-upset-1rijrv323" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-1rijrv323" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><g><g transform="translate(758, 400)"><g><g transform="translate(0, 50.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-1rijrv323 endText-upset-1rijrv323">0</text><line x2="-6" class="axisLine-upset-1rijrv323"></line></g><g transform="translate(0, 23.357142857142858)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-1rijrv323 endText-upset-1rijrv323">5</text><line x2="-6" class="axisLine-upset-1rijrv323"></line></g><path class="axisLine-upset-1rijrv323" d="M-6,12H0.5V50H-6"></path></g><text class="cChartTextStyle-upset-1rijrv323" transform="translate(-20, 50)rotate(-90)">Intersection Size</text></g><g><g><text transform="translate(280,10)" class="setTextStyle-upset-1rijrv323">was killed</text></g><g><text transform="translate(150,140)rotate(-90)" class="setTextStyle-upset-1rijrv323">male</text></g><g><text transform="translate(230,450)" class="setTextStyle-upset-1rijrv323">Stark</text><text transform="translate(530,450)" class="setTextStyle-upset-1rijrv323">Stark</text></g><g><text transform="translate(590,90)rotate(-90)" class="setTextStyle-upset-1rijrv323">Lannister</text><text transform="translate(590,390)rotate(-90)" class="setTextStyle-upset-1rijrv323">Lannister</text></g><g><text transform="translate(205,30)" class="setTextStyle-upset-1rijrv323">female</text><text transform="translate(355,30)" class="setTextStyle-upset-1rijrv323">female</text><text transform="translate(405,30)" class="setTextStyle-upset-1rijrv323">female</text><text transform="translate(555,30)" class="setTextStyle-upset-1rijrv323">female</text></g><g><text transform="translate(170,65)rotate(-90)" class="setTextStyle-upset-1rijrv323">royal</text><text transform="translate(170,215)rotate(-90)" class="setTextStyle-upset-1rijrv323">royal</text><text transform="translate(170,265)rotate(-90)" class="setTextStyle-upset-1rijrv323">royal</text><text transform="translate(170,415)rotate(-90)" class="setTextStyle-upset-1rijrv323">royal</text></g><text transform="translate(480,10)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">was killed</text><text transform="translate(150,340)rotate(-90)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">male</text><text transform="translate(330,450)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">Stark</text><text transform="translate(430,450)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">Stark</text><text transform="translate(590,190)rotate(-90)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">Lannister</text><text transform="translate(590,290)rotate(-90)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">Lannister</text><text transform="translate(255,30)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">female</text><text transform="translate(305,30)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">female</text><text transform="translate(455,30)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">female</text><text transform="translate(505,30)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">female</text><text transform="translate(170,115)rotate(-90)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">royal</text><text transform="translate(170,165)rotate(-90)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">royal</text><text transform="translate(170,315)rotate(-90)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">royal</text><text transform="translate(170,365)rotate(-90)" class="setTextStyle-upset-1rijrv323 not-upset-1rijrv323">royal</text></g><g><g transform="translate(230, 290)" data-cardinality="1"><title>(was killed ∩ Stark): 1</title><rect width="50" height="50" class="fillTransparent-upset-1rijrv323"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-1rijrv323"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-1rijrv323">1</text></g><g transform="translate(230, 140)" data-cardinality="4"><title>(was killed ∩ male ∩ Stark): 4</title><rect width="50" height="50" class="fillTransparent-upset-1rijrv323"></rect><rect x="7.5" y="28.28571428571429" height="21.71428571428571" width="35" class="fillPrimary-upset-1rijrv323"></rect><text y="26.28571428571429" x="25" class="barTextStyle-upset-1rijrv323">4</text></g><g transform="translate(280, 90)" data-cardinality="7"><title>(was killed ∩ male ∩ Lannister): 7</title><rect width="50" height="50" class="fillTransparent-upset-1rijrv323"></rect><rect x="7.5" y="12" height="38" width="35" class="fillPrimary-upset-1rijrv323"></rect><text y="10" x="25" class="barTextStyle-upset-1rijrv323">7</text></g><g transform="translate(230, 190)" data-cardinality="2"><title>(was killed ∩ male ∩ Stark ∩ royal): 2</title><rect width="50" height="50" class="fillTransparent-upset-1rijrv323"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-1rijrv323"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-1rijrv323">2</text></g><g transform="translate(180, 290)" data-cardinality="2"><title>(was killed ∩ Stark ∩ female): 2</title><rect width="50" height="50" class="fillTransparent-upset-1rijrv323"></rect><rect x="7.5" y="39.142857142857146" height="10.857142857142854" width="35" class="fillPrimary-upset-1rijrv323"></rect><text y="37.142857142857146" x="25" class="barTextStyle-upset-1rijrv323">2</text></g><g transform="translate(330, 390)" data-cardinality="1"><title>(was killed ∩ Lannister ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-1rijrv323"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-1rijrv323"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-1rijrv323">1</text></g><g transform="translate(430, 90)" data-cardinality="1"><title>(male ∩ Lannister): 1</title><rect width="50" height="50" class="fillTransparent-upset-1rijrv323"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-1rijrv323"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-1rijrv323">1</text></g><g transform="translate(480, 190)" data-cardinality="1"><title>(male ∩ Stark ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-1rijrv323"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-1rijrv323"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-1rijrv323">1</text></g><g transform="translate(530, 290)" data-cardinality="1"><title>(Stark ∩ female): 1</title><rect width="50" height="50" class="fillTransparent-upset-1rijrv323"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-1rijrv323"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-1rijrv323">1</text></g><g transform="translate(530, 240)" data-cardinality="1"><title>(Stark ∩ female ∩ royal): 1</title><rect width="50" height="50" class="fillTransparent-upset-1rijrv323"></rect><rect x="7.5" y="44.57142857142857" height="5.428571428571431" width="35" class="fillPrimary-upset-1rijrv323"></rect><text y="42.57142857142857" x="25" class="barTextStyle-upset-1rijrv323">1</text></g></g><g transform="translate(180, 40)"><path d="M 50,0 l0,400 M 150,0 l0,400 M 250,0 l0,400 M 350,0 l0,400 M 0,50 l400,0 M 0,150 l400,0 M 0,250 l400,0 M 0,350 l400,0" class="gridStyle-upset-1rijrv323 gridStyle-upset-1rijrv323-0"></path><path d="M 100,0 l0,400 M 300,0 l0,400 M 0,100 l400,0 M 0,300 l400,0" class="gridStyle-upset-1rijrv323 gridStyle-upset-1rijrv323-1"></path><path d="M 0,0 l0,400 M 200,0 l0,400 M 400,0 l0,400 M 0,0 l400,0 M 0,200 l400,0 M 0,400 l400,0" class="gridStyle-upset-1rijrv323 gridStyle-upset-1rijrv323-2"></path></g></g><g></g><g><g data-upset="cs-s"><rect x="237.5" y="334.57142857142856" height="5.428571428571431" data-i="0" data-cardinality="1" width="35" class="fillQ0-upset-aamnds0m9"><title>(was killed ∩ Stark) ∩ Q1: 1</title></rect><rect x="237.5" y="179.14285714285714" height="10.857142857142854" data-i="1" data-cardinality="2" width="35" class="fillQ0-upset-aamnds0m9"><title>(was killed ∩ male ∩ Stark) ∩ Q1: 2</title></rect><rect x="287.5" y="123.71428571428572" height="16.285714285714285" data-i="2" data-cardinality="3" width="35" class="fillQ0-upset-aamnds0m9"><title>(was killed ∩ male ∩ Lannister) ∩ Q1: 3</title></rect><rect x="237.5" y="234.57142857142856" height="5.428571428571431" data-i="3" data-cardinality="1" width="35" class="fillQ0-upset-aamnds0m9"><title>(was killed ∩ male ∩ Stark ∩ royal) ∩ Q1: 1</title></rect><rect x="537.5" y="334.57142857142856" height="5.428571428571431" data-i="8" data-cardinality="1" width="35" class="fillQ0-upset-aamnds0m9"><title>(Stark ∩ female) ∩ Q1: 1</title></rect></g><g data-upset="cs-q"><path transform="translate(237.5, 184.57142857142856)" d="M0,-1 l35,0 l0,2 l-35,0 L-5,-5 L-5,5 Z" class="fillQ1-upset-aamnds0m9" data-i="1" data-cardinality="1"><title>(was killed ∩ male ∩ Stark) ∩ Q2: 1</title></path><path transform="translate(287.5, 134.57142857142856)" d="M0,-1 l35,0 l0,2 l-35,0 L-5,-5 L-5,5 Z" class="fillQ1-upset-aamnds0m9" data-i="2" data-cardinality="1"><title>(was killed ∩ male ∩ Lannister) ∩ Q2: 1</title></path><path transform="translate(237.5, 234.57142857142856)" d="M0,-1 l35,0 l0,2 l-35,0 L-5,-5 L-5,5 Z" class="fillQ1-upset-aamnds0m9" data-i="3" data-cardinality="1"><title>(was killed ∩ male ∩ Stark ∩ royal) ∩ Q2: 1</title></path><path transform="translate(337.5, 434.57142857142856)" d="M0,-1 l35,0 l0,2 l-35,0 L-5,-5 L-5,5 Z" class="fillQ1-upset-aamnds0m9" data-i="5" data-cardinality="1"><title>(was killed ∩ Lannister ∩ female ∩ royal) ∩ Q2: 1</title></path></g></g></g></svg></div></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor" id="small-sets"></a>Small Sets<a class="hash-link" href="#small-sets" title="Direct link to heading">#</a></h2><div class="mdxCodeBlock_Qi7t"><div class="playgroundHeader_3FDm playgroundEditorHeader_3dt6">Live Editor</div><div class="playgroundEditor_1rpd" style="position:relative;text-align:left;box-sizing:border-box;padding:0;overflow:hidden;white-space:pre;font-family:monospace;color:#bfc7d5;background-color:#292d3e"><textarea style="margin:0;border:0;background:none;box-sizing:inherit;display:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-variant-ligatures:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;tab-size:inherit;text-indent:inherit;text-rendering:inherit;text-transform:inherit;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word;position:absolute;top:0;left:0;height:100%;width:100%;resize:none;color:inherit;overflow:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-fill-color:transparent;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px" class="npm__react-simple-code-editor__textarea" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" data-gramm="false">// import React from &#x27;react&#x27;;
 
 function SmallSets() {
   return (
@@ -869,23 +869,23 @@ function SmallSets() {
     color: transparent !important;
   }
 }
-</style></div><div class="playgroundHeader_3FDm playgroundPreviewHeader_3Owj">Result</div><div class="playgroundPreview_6Czn"><div><div><svg class="root-upset-4b733hrhl" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
+</style></div><div class="playgroundHeader_3FDm playgroundPreviewHeader_3Owj">Result</div><div class="playgroundPreview_6Czn"><div><div><svg class="root-upset-cn6f87kj5" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
   
-  .root-upset-4b733hrhl {
+  .root-upset-cn6f87kj5 {
     font-family: sans-serif;
   }
   
   
-  .titleTextStyle-upset-4b733hrhl {
+  .titleTextStyle-upset-cn6f87kj5 {
     fill: #000000;
     font-size: 24px;
   }
-  .descTextStyle-upset-4b733hrhl {
+  .descTextStyle-upset-cn6f87kj5 {
     fill: #000000;
     font-size: 16px;
   }
 
-  .legendTextStyle-upset-4b733hrhl {
+  .legendTextStyle-upset-cn6f87kj5 {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
@@ -894,114 +894,114 @@ function SmallSets() {
   }
   
 
-  .axisTextStyle-upset-4b733hrhl {
+  .axisTextStyle-upset-cn6f87kj5 {
     fill: #000000;
     font-size: 10px;
     text-anchor: end;
   }
-  .barTextStyle-upset-4b733hrhl {
+  .barTextStyle-upset-cn6f87kj5 {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
   }
-  .setTextStyle-upset-4b733hrhl {
+  .setTextStyle-upset-cn6f87kj5 {
     fill: #000000;
     font-size: 16px;
     text-anchor: middle;
     dominant-baseline: central;
   }
-  .cChartTextStyle-upset-4b733hrhl {
+  .cChartTextStyle-upset-cn6f87kj5 {
     fill: #000000;
     font-size: 16px;
   }
 
-  .not-upset-4b733hrhl {
+  .not-upset-cn6f87kj5 {
     text-decoration: overline;
   }
 
-  .axisLine-upset-4b733hrhl {
+  .axisLine-upset-cn6f87kj5 {
     fill: none;
     stroke: #000000;
   }
 
-  .gridStyle-upset-4b733hrhl {
+  .gridStyle-upset-cn6f87kj5 {
     fill: none;
     stroke: #000000;
     stroke-linecap: round;
   }
-  .gridStyle-upset-4b733hrhl-1 {
+  .gridStyle-upset-cn6f87kj5-1 {
     stroke-width: 2;
   }
-  .gridStyle-upset-4b733hrhl-2 {
+  .gridStyle-upset-cn6f87kj5-2 {
     stroke-width: 3;
   }
 
   
-  .fillPrimary-upset-4b733hrhl { fill: #000000; fill-opacity: 1; }
-  .fillOverflow1-upset-4b733hrhl { fill-opacity: 0.7; }
-  .fillOverflow2-upset-4b733hrhl { fill-opacity: 0.4; }
+  .fillPrimary-upset-cn6f87kj5 { fill: #000000; fill-opacity: 1; }
+  .fillOverflow1-upset-cn6f87kj5 { fill-opacity: 0.7; }
+  .fillOverflow2-upset-cn6f87kj5 { fill-opacity: 0.4; }
   
   
-  .fillSelection-upset-4b733hrhl { fill: #ffa500; }
-  .fillTransparent-upset-4b733hrhl { fill: transparent; }
+  .fillSelection-upset-cn6f87kj5 { fill: #ffa500; }
+  .fillTransparent-upset-cn6f87kj5 { fill: transparent; }
 
-  .selectionHint-upset-4b733hrhl {
+  .selectionHint-upset-cn6f87kj5 {
     fill: transparent;
     pointer-events: none;
     stroke: #ffa500;
   }
-  .clickAble-upset-4b733hrhl {
+  .clickAble-upset-cn6f87kj5 {
     cursor: pointer;
   }
 
-  .startText-upset-4b733hrhl {
+  .startText-upset-cn6f87kj5 {
     text-anchor: start;
   }
-  .endText-upset-4b733hrhl {
+  .endText-upset-cn6f87kj5 {
     text-anchor: end;
   }
-  .pnone-upset-4b733hrhl {
+  .pnone-upset-cn6f87kj5 {
     pointer-events: none;
   }
   
-  .exportTextStyle-upset-4b733hrhl {
+  .exportTextStyle-upset-cn6f87kj5 {
     fill: #000000;
     font-size: 10px;
   }
-  .exportButtons-upset-4b733hrhl {
+  .exportButtons-upset-cn6f87kj5 {
     text-anchor: middle;
   }
-  .exportButton-upset-4b733hrhl {
+  .exportButton-upset-cn6f87kj5 {
     cursor: pointer;
     opacity: 0.5;
   }
-  .exportButton-upset-4b733hrhl:hover {
+  .exportButton-upset-cn6f87kj5:hover {
     opacity: 1;
   }
-  .exportButton-upset-4b733hrhl &gt; rect {
+  .exportButton-upset-cn6f87kj5 &gt; rect {
     fill: none;
     stroke: #000000;
   }
   
 
   
-  </style><g class="exportButtons-upset-4b733hrhl" transform="translate(778,497)"><g class="exportButton-upset-4b733hrhl" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-4b733hrhl" x="13">SVG</text></g><g class="exportButton-upset-4b733hrhl" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-4b733hrhl" x="13">PNG</text></g><g class="exportButton-upset-4b733hrhl" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-4b733hrhl" x="17">DUMP</text></g><g class="exportButton-upset-4b733hrhl" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-4b733hrhl" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><g><g transform="translate(758, 270)"><g><g transform="translate(0, 180.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-4b733hrhl endText-upset-4b733hrhl">0</text><line x2="-6" class="axisLine-upset-4b733hrhl"></line></g><g transform="translate(0, 138.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-4b733hrhl endText-upset-4b733hrhl">1</text><line x2="-6" class="axisLine-upset-4b733hrhl"></line></g><g transform="translate(0, 96.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-4b733hrhl endText-upset-4b733hrhl">2</text><line x2="-6" class="axisLine-upset-4b733hrhl"></line></g><g transform="translate(0, 54.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-4b733hrhl endText-upset-4b733hrhl">3</text><line x2="-6" class="axisLine-upset-4b733hrhl"></line></g><g transform="translate(0, 12.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-4b733hrhl endText-upset-4b733hrhl">4</text><line x2="-6" class="axisLine-upset-4b733hrhl"></line></g><path class="axisLine-upset-4b733hrhl" d="M-6,12H0.5V180H-6"></path></g><text class="cChartTextStyle-upset-4b733hrhl" transform="translate(-20, 180)rotate(-90)">Intersection Size</text></g><g><g><text transform="translate(200,40)" class="setTextStyle-upset-4b733hrhl">one</text></g><g><text transform="translate(10,140)rotate(-90)" class="setTextStyle-upset-4b733hrhl">two</text></g><g><text transform="translate(110,420)" class="setTextStyle-upset-4b733hrhl">three</text><text transform="translate(650,420)" class="setTextStyle-upset-4b733hrhl">three</text></g><text transform="translate(560,40)" class="setTextStyle-upset-4b733hrhl not-upset-4b733hrhl">one</text><text transform="translate(10,320)rotate(-90)" class="setTextStyle-upset-4b733hrhl not-upset-4b733hrhl">two</text><text transform="translate(290,420)" class="setTextStyle-upset-4b733hrhl not-upset-4b733hrhl">three</text><text transform="translate(470,420)" class="setTextStyle-upset-4b733hrhl not-upset-4b733hrhl">three</text></g><g><g transform="translate(200, 230)" data-cardinality="2"><title>one: 2</title><rect width="180" height="180" class="fillTransparent-upset-4b733hrhl"></rect><rect x="27" y="96" height="84" width="126" class="fillPrimary-upset-4b733hrhl"></rect><text y="94" x="90" class="barTextStyle-upset-4b733hrhl">2</text></g><g transform="translate(380, 50)" data-cardinality="1"><title>two: 1</title><rect width="180" height="180" class="fillTransparent-upset-4b733hrhl"></rect><rect x="27" y="138" height="42" width="126" class="fillPrimary-upset-4b733hrhl"></rect><text y="136" x="90" class="barTextStyle-upset-4b733hrhl">1</text></g><g transform="translate(560, 230)" data-cardinality="2"><title>three: 2</title><rect width="180" height="180" class="fillTransparent-upset-4b733hrhl"></rect><rect x="27" y="96" height="84" width="126" class="fillPrimary-upset-4b733hrhl"></rect><text y="94" x="90" class="barTextStyle-upset-4b733hrhl">2</text></g><g transform="translate(200, 50)" data-cardinality="1"><title>(one ∩ two): 1</title><rect width="180" height="180" class="fillTransparent-upset-4b733hrhl"></rect><rect x="27" y="138" height="42" width="126" class="fillPrimary-upset-4b733hrhl"></rect><text y="136" x="90" class="barTextStyle-upset-4b733hrhl">1</text></g><g transform="translate(20, 230)" data-cardinality="4"><title>(one ∩ three): 4</title><rect width="180" height="180" class="fillTransparent-upset-4b733hrhl"></rect><rect x="27" y="12" height="168" width="126" class="fillPrimary-upset-4b733hrhl"></rect><text y="10" x="90" class="barTextStyle-upset-4b733hrhl">4</text></g><g transform="translate(20, 50)" data-cardinality="2"><title>(one ∩ two ∩ three): 2</title><rect width="180" height="180" class="fillTransparent-upset-4b733hrhl"></rect><rect x="27" y="96" height="84" width="126" class="fillPrimary-upset-4b733hrhl"></rect><text y="94" x="90" class="barTextStyle-upset-4b733hrhl">2</text></g><g transform="translate(560, 50)" data-cardinality="1"><title>(two ∩ three): 1</title><rect width="180" height="180" class="fillTransparent-upset-4b733hrhl"></rect><rect x="27" y="138" height="42" width="126" class="fillPrimary-upset-4b733hrhl"></rect><text y="136" x="90" class="barTextStyle-upset-4b733hrhl">1</text></g></g><g transform="translate(20, 50)"><path d="M 180,0 l0,360 M 540,0 l0,360 M 0,0 l720,0 M 0,180 l720,0 M 0,360 l720,0" class="gridStyle-upset-4b733hrhl gridStyle-upset-4b733hrhl-0"></path><path d="M 0,0 l0,360 M 360,0 l0,360 M 720,0 l0,360" class="gridStyle-upset-4b733hrhl gridStyle-upset-4b733hrhl-1"></path></g></g><g></g><g></g></g></svg><svg class="root-upset-1qduart0n" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
+  </style><g class="exportButtons-upset-cn6f87kj5" transform="translate(778,497)"><g class="exportButton-upset-cn6f87kj5" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-cn6f87kj5" x="13">SVG</text></g><g class="exportButton-upset-cn6f87kj5" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-cn6f87kj5" x="13">PNG</text></g><g class="exportButton-upset-cn6f87kj5" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-cn6f87kj5" x="17">DUMP</text></g><g class="exportButton-upset-cn6f87kj5" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-cn6f87kj5" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><g><g transform="translate(758, 270)"><g><g transform="translate(0, 180.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-cn6f87kj5 endText-upset-cn6f87kj5">0</text><line x2="-6" class="axisLine-upset-cn6f87kj5"></line></g><g transform="translate(0, 138.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-cn6f87kj5 endText-upset-cn6f87kj5">1</text><line x2="-6" class="axisLine-upset-cn6f87kj5"></line></g><g transform="translate(0, 96.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-cn6f87kj5 endText-upset-cn6f87kj5">2</text><line x2="-6" class="axisLine-upset-cn6f87kj5"></line></g><g transform="translate(0, 54.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-cn6f87kj5 endText-upset-cn6f87kj5">3</text><line x2="-6" class="axisLine-upset-cn6f87kj5"></line></g><g transform="translate(0, 12.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-cn6f87kj5 endText-upset-cn6f87kj5">4</text><line x2="-6" class="axisLine-upset-cn6f87kj5"></line></g><path class="axisLine-upset-cn6f87kj5" d="M-6,12H0.5V180H-6"></path></g><text class="cChartTextStyle-upset-cn6f87kj5" transform="translate(-20, 180)rotate(-90)">Intersection Size</text></g><g><g><text transform="translate(200,40)" class="setTextStyle-upset-cn6f87kj5">one</text></g><g><text transform="translate(10,140)rotate(-90)" class="setTextStyle-upset-cn6f87kj5">two</text></g><g><text transform="translate(110,420)" class="setTextStyle-upset-cn6f87kj5">three</text><text transform="translate(650,420)" class="setTextStyle-upset-cn6f87kj5">three</text></g><text transform="translate(560,40)" class="setTextStyle-upset-cn6f87kj5 not-upset-cn6f87kj5">one</text><text transform="translate(10,320)rotate(-90)" class="setTextStyle-upset-cn6f87kj5 not-upset-cn6f87kj5">two</text><text transform="translate(290,420)" class="setTextStyle-upset-cn6f87kj5 not-upset-cn6f87kj5">three</text><text transform="translate(470,420)" class="setTextStyle-upset-cn6f87kj5 not-upset-cn6f87kj5">three</text></g><g><g transform="translate(200, 230)" data-cardinality="2"><title>one: 2</title><rect width="180" height="180" class="fillTransparent-upset-cn6f87kj5"></rect><rect x="27" y="96" height="84" width="126" class="fillPrimary-upset-cn6f87kj5"></rect><text y="94" x="90" class="barTextStyle-upset-cn6f87kj5">2</text></g><g transform="translate(380, 50)" data-cardinality="1"><title>two: 1</title><rect width="180" height="180" class="fillTransparent-upset-cn6f87kj5"></rect><rect x="27" y="138" height="42" width="126" class="fillPrimary-upset-cn6f87kj5"></rect><text y="136" x="90" class="barTextStyle-upset-cn6f87kj5">1</text></g><g transform="translate(560, 230)" data-cardinality="2"><title>three: 2</title><rect width="180" height="180" class="fillTransparent-upset-cn6f87kj5"></rect><rect x="27" y="96" height="84" width="126" class="fillPrimary-upset-cn6f87kj5"></rect><text y="94" x="90" class="barTextStyle-upset-cn6f87kj5">2</text></g><g transform="translate(200, 50)" data-cardinality="1"><title>(one ∩ two): 1</title><rect width="180" height="180" class="fillTransparent-upset-cn6f87kj5"></rect><rect x="27" y="138" height="42" width="126" class="fillPrimary-upset-cn6f87kj5"></rect><text y="136" x="90" class="barTextStyle-upset-cn6f87kj5">1</text></g><g transform="translate(20, 230)" data-cardinality="4"><title>(one ∩ three): 4</title><rect width="180" height="180" class="fillTransparent-upset-cn6f87kj5"></rect><rect x="27" y="12" height="168" width="126" class="fillPrimary-upset-cn6f87kj5"></rect><text y="10" x="90" class="barTextStyle-upset-cn6f87kj5">4</text></g><g transform="translate(20, 50)" data-cardinality="2"><title>(one ∩ two ∩ three): 2</title><rect width="180" height="180" class="fillTransparent-upset-cn6f87kj5"></rect><rect x="27" y="96" height="84" width="126" class="fillPrimary-upset-cn6f87kj5"></rect><text y="94" x="90" class="barTextStyle-upset-cn6f87kj5">2</text></g><g transform="translate(560, 50)" data-cardinality="1"><title>(two ∩ three): 1</title><rect width="180" height="180" class="fillTransparent-upset-cn6f87kj5"></rect><rect x="27" y="138" height="42" width="126" class="fillPrimary-upset-cn6f87kj5"></rect><text y="136" x="90" class="barTextStyle-upset-cn6f87kj5">1</text></g></g><g transform="translate(20, 50)"><path d="M 180,0 l0,360 M 540,0 l0,360 M 0,0 l720,0 M 0,180 l720,0 M 0,360 l720,0" class="gridStyle-upset-cn6f87kj5 gridStyle-upset-cn6f87kj5-0"></path><path d="M 0,0 l0,360 M 360,0 l0,360 M 720,0 l0,360" class="gridStyle-upset-cn6f87kj5 gridStyle-upset-cn6f87kj5-1"></path></g></g><g></g><g></g></g></svg><svg class="root-upset-glfn3vhq" width="780" height="500" viewBox="0 0 780 500" data-theme="light"><style>
   
-  .root-upset-1qduart0n {
+  .root-upset-glfn3vhq {
     font-family: sans-serif;
   }
   
   
-  .titleTextStyle-upset-1qduart0n {
+  .titleTextStyle-upset-glfn3vhq {
     fill: #000000;
     font-size: 24px;
   }
-  .descTextStyle-upset-1qduart0n {
+  .descTextStyle-upset-glfn3vhq {
     fill: #000000;
     font-size: 16px;
   }
 
-  .legendTextStyle-upset-1qduart0n {
+  .legendTextStyle-upset-glfn3vhq {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
@@ -1010,106 +1010,106 @@ function SmallSets() {
   }
   
 
-  .axisTextStyle-upset-1qduart0n {
+  .axisTextStyle-upset-glfn3vhq {
     fill: #000000;
     font-size: 10px;
     text-anchor: end;
   }
-  .barTextStyle-upset-1qduart0n {
+  .barTextStyle-upset-glfn3vhq {
     fill: #000000;
     font-size: 10px;
     text-anchor: middle;
   }
-  .setTextStyle-upset-1qduart0n {
+  .setTextStyle-upset-glfn3vhq {
     fill: #000000;
     font-size: 16px;
     text-anchor: middle;
     dominant-baseline: central;
   }
-  .cChartTextStyle-upset-1qduart0n {
+  .cChartTextStyle-upset-glfn3vhq {
     fill: #000000;
     font-size: 16px;
   }
 
-  .not-upset-1qduart0n {
+  .not-upset-glfn3vhq {
     text-decoration: overline;
   }
 
-  .axisLine-upset-1qduart0n {
+  .axisLine-upset-glfn3vhq {
     fill: none;
     stroke: #000000;
   }
 
-  .gridStyle-upset-1qduart0n {
+  .gridStyle-upset-glfn3vhq {
     fill: none;
     stroke: #000000;
     stroke-linecap: round;
   }
-  .gridStyle-upset-1qduart0n-1 {
+  .gridStyle-upset-glfn3vhq-1 {
     stroke-width: 2;
   }
-  .gridStyle-upset-1qduart0n-2 {
+  .gridStyle-upset-glfn3vhq-2 {
     stroke-width: 3;
   }
 
   
-  .fillPrimary-upset-1qduart0n { fill: #000000; fill-opacity: 1; }
-  .fillOverflow1-upset-1qduart0n { fill-opacity: 0.7; }
-  .fillOverflow2-upset-1qduart0n { fill-opacity: 0.4; }
+  .fillPrimary-upset-glfn3vhq { fill: #000000; fill-opacity: 1; }
+  .fillOverflow1-upset-glfn3vhq { fill-opacity: 0.7; }
+  .fillOverflow2-upset-glfn3vhq { fill-opacity: 0.4; }
   
   
-  .fillSelection-upset-1qduart0n { fill: #ffa500; }
-  .fillTransparent-upset-1qduart0n { fill: transparent; }
+  .fillSelection-upset-glfn3vhq { fill: #ffa500; }
+  .fillTransparent-upset-glfn3vhq { fill: transparent; }
 
-  .selectionHint-upset-1qduart0n {
+  .selectionHint-upset-glfn3vhq {
     fill: transparent;
     pointer-events: none;
     stroke: #ffa500;
   }
-  .clickAble-upset-1qduart0n {
+  .clickAble-upset-glfn3vhq {
     cursor: pointer;
   }
 
-  .startText-upset-1qduart0n {
+  .startText-upset-glfn3vhq {
     text-anchor: start;
   }
-  .endText-upset-1qduart0n {
+  .endText-upset-glfn3vhq {
     text-anchor: end;
   }
-  .pnone-upset-1qduart0n {
+  .pnone-upset-glfn3vhq {
     pointer-events: none;
   }
   
-  .exportTextStyle-upset-1qduart0n {
+  .exportTextStyle-upset-glfn3vhq {
     fill: #000000;
     font-size: 10px;
   }
-  .exportButtons-upset-1qduart0n {
+  .exportButtons-upset-glfn3vhq {
     text-anchor: middle;
   }
-  .exportButton-upset-1qduart0n {
+  .exportButton-upset-glfn3vhq {
     cursor: pointer;
     opacity: 0.5;
   }
-  .exportButton-upset-1qduart0n:hover {
+  .exportButton-upset-glfn3vhq:hover {
     opacity: 1;
   }
-  .exportButton-upset-1qduart0n &gt; rect {
+  .exportButton-upset-glfn3vhq &gt; rect {
     fill: none;
     stroke: #000000;
   }
   
 
   
-  </style><g class="exportButtons-upset-1qduart0n" transform="translate(778,497)"><g class="exportButton-upset-1qduart0n" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-1qduart0n" x="13">SVG</text></g><g class="exportButton-upset-1qduart0n" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-1qduart0n" x="13">PNG</text></g><g class="exportButton-upset-1qduart0n" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-1qduart0n" x="17">DUMP</text></g><g class="exportButton-upset-1qduart0n" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-1qduart0n" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><g><g transform="translate(758, 270)"><g><g transform="translate(0, 180.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-1qduart0n endText-upset-1qduart0n">0</text><line x2="-6" class="axisLine-upset-1qduart0n"></line></g><g transform="translate(0, 12.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-1qduart0n endText-upset-1qduart0n">1</text><line x2="-6" class="axisLine-upset-1qduart0n"></line></g><path class="axisLine-upset-1qduart0n" d="M-6,12H0.5V180H-6"></path></g><text class="cChartTextStyle-upset-1qduart0n" transform="translate(-20, 180)rotate(-90)">Intersection Size</text></g><g><g><text transform="translate(200,40)" class="setTextStyle-upset-1qduart0n">one</text></g><g><text transform="translate(10,140)rotate(-90)" class="setTextStyle-upset-1qduart0n">two</text></g><g><text transform="translate(110,420)" class="setTextStyle-upset-1qduart0n">three</text><text transform="translate(650,420)" class="setTextStyle-upset-1qduart0n">three</text></g><text transform="translate(560,40)" class="setTextStyle-upset-1qduart0n not-upset-1qduart0n">one</text><text transform="translate(10,320)rotate(-90)" class="setTextStyle-upset-1qduart0n not-upset-1qduart0n">two</text><text transform="translate(290,420)" class="setTextStyle-upset-1qduart0n not-upset-1qduart0n">three</text><text transform="translate(470,420)" class="setTextStyle-upset-1qduart0n not-upset-1qduart0n">three</text></g><g><g transform="translate(200, 230)" data-cardinality="1"><title>one: 1</title><rect width="180" height="180" class="fillTransparent-upset-1qduart0n"></rect><rect x="27" y="12" height="168" width="126" class="fillPrimary-upset-1qduart0n"></rect><text y="10" x="90" class="barTextStyle-upset-1qduart0n">1</text></g><g transform="translate(380, 50)" data-cardinality="1"><title>two: 1</title><rect width="180" height="180" class="fillTransparent-upset-1qduart0n"></rect><rect x="27" y="12" height="168" width="126" class="fillPrimary-upset-1qduart0n"></rect><text y="10" x="90" class="barTextStyle-upset-1qduart0n">1</text></g><g transform="translate(200, 50)" data-cardinality="1"><title>(one ∩ two): 1</title><rect width="180" height="180" class="fillTransparent-upset-1qduart0n"></rect><rect x="27" y="12" height="168" width="126" class="fillPrimary-upset-1qduart0n"></rect><text y="10" x="90" class="barTextStyle-upset-1qduart0n">1</text></g><g transform="translate(20, 50)" data-cardinality="1"><title>(one ∩ two ∩ three): 1</title><rect width="180" height="180" class="fillTransparent-upset-1qduart0n"></rect><rect x="27" y="12" height="168" width="126" class="fillPrimary-upset-1qduart0n"></rect><text y="10" x="90" class="barTextStyle-upset-1qduart0n">1</text></g><g transform="translate(560, 50)" data-cardinality="1"><title>(two ∩ three): 1</title><rect width="180" height="180" class="fillTransparent-upset-1qduart0n"></rect><rect x="27" y="12" height="168" width="126" class="fillPrimary-upset-1qduart0n"></rect><text y="10" x="90" class="barTextStyle-upset-1qduart0n">1</text></g></g><g transform="translate(20, 50)"><path d="M 180,0 l0,360 M 540,0 l0,360 M 0,0 l720,0 M 0,180 l720,0 M 0,360 l720,0" class="gridStyle-upset-1qduart0n gridStyle-upset-1qduart0n-0"></path><path d="M 0,0 l0,360 M 360,0 l0,360 M 720,0 l0,360" class="gridStyle-upset-1qduart0n gridStyle-upset-1qduart0n-1"></path></g></g><g></g><g></g></g></svg></div></div></div></div></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/upsetjs/upsetjs/edit/main/packages/docs/docs/components/karnaughmap.mdx" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" role="img" viewBox="0 0 40 40" class="iconEdit_3X3S" aria-label="Edit page"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/components/venndiagram"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Venn Diagram</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/components/modes"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Combination Modes »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3C7Q thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#skeleton" class="table-of-contents__link">Skeleton</a></li><li><a href="#title" class="table-of-contents__link">Title</a></li><li><a href="#interactivity" class="table-of-contents__link">Interactivity</a></li><li><a href="#click" class="table-of-contents__link">Click</a></li><li><a href="#queries" class="table-of-contents__link">Queries</a></li><li><a href="#small-sets" class="table-of-contents__link">Small Sets</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Resources</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs">Docs</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/getting-started">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/examples">Examples</a></li><li class="footer__item"><a class="footer__link-item" href="/api">API Reference</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a href="https://github.com/upsetjs/upsetjs" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub</a></li><li class="footer__item"><a href="https://github.com/upsetjs/upsetjs/dicussions" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Discussions</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a href="https://github.com/sgratzl" target="_blank" rel="noopener noreferrer" class="footer__link-item">@sgratzl</a></li><li class="footer__item"><a href="https://lineup-lite.js.org" target="_blank" rel="noopener noreferrer" class="footer__link-item">LineUp-lite</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 <a href="https://www.sgratzl.com">Samuel Gratzl</a>. All rights reserved. Built with Docusaurus.</div></div></div></footer></div>
+  </style><g class="exportButtons-upset-glfn3vhq" transform="translate(778,497)"><g class="exportButton-upset-glfn3vhq" data-type="svg" transform="translate(-26, 0)"><title>Download SVG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-glfn3vhq" x="13">SVG</text></g><g class="exportButton-upset-glfn3vhq" data-type="png" transform="translate(-54, 0)"><title>Download PNG Image</title><rect y="-9" width="26" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-glfn3vhq" x="13">PNG</text></g><g class="exportButton-upset-glfn3vhq" data-type="dump" transform="translate(-90, 0)"><title>Download UpSet.js JSON Dump</title><rect y="-9" width="34" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-glfn3vhq" x="17">DUMP</text></g><g class="exportButton-upset-glfn3vhq" data-type="share" transform="translate(-134, 0)"><title>Open a shareable URL</title><rect y="-9" width="42" height="11" rx="2" ry="2"></rect><text class="exportTextStyle-upset-glfn3vhq" x="21">SHARE</text></g></g><g transform="translate(20,20)" data-upset="base"><g><g transform="translate(758, 270)"><g><g transform="translate(0, 180.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-glfn3vhq endText-upset-glfn3vhq">0</text><line x2="-6" class="axisLine-upset-glfn3vhq"></line></g><g transform="translate(0, 12.5)"><text x="-9" dy="0.32em" class="axisTextStyle-upset-glfn3vhq endText-upset-glfn3vhq">1</text><line x2="-6" class="axisLine-upset-glfn3vhq"></line></g><path class="axisLine-upset-glfn3vhq" d="M-6,12H0.5V180H-6"></path></g><text class="cChartTextStyle-upset-glfn3vhq" transform="translate(-20, 180)rotate(-90)">Intersection Size</text></g><g><g><text transform="translate(200,40)" class="setTextStyle-upset-glfn3vhq">one</text></g><g><text transform="translate(10,140)rotate(-90)" class="setTextStyle-upset-glfn3vhq">two</text></g><g><text transform="translate(110,420)" class="setTextStyle-upset-glfn3vhq">three</text><text transform="translate(650,420)" class="setTextStyle-upset-glfn3vhq">three</text></g><text transform="translate(560,40)" class="setTextStyle-upset-glfn3vhq not-upset-glfn3vhq">one</text><text transform="translate(10,320)rotate(-90)" class="setTextStyle-upset-glfn3vhq not-upset-glfn3vhq">two</text><text transform="translate(290,420)" class="setTextStyle-upset-glfn3vhq not-upset-glfn3vhq">three</text><text transform="translate(470,420)" class="setTextStyle-upset-glfn3vhq not-upset-glfn3vhq">three</text></g><g><g transform="translate(200, 230)" data-cardinality="1"><title>one: 1</title><rect width="180" height="180" class="fillTransparent-upset-glfn3vhq"></rect><rect x="27" y="12" height="168" width="126" class="fillPrimary-upset-glfn3vhq"></rect><text y="10" x="90" class="barTextStyle-upset-glfn3vhq">1</text></g><g transform="translate(380, 50)" data-cardinality="1"><title>two: 1</title><rect width="180" height="180" class="fillTransparent-upset-glfn3vhq"></rect><rect x="27" y="12" height="168" width="126" class="fillPrimary-upset-glfn3vhq"></rect><text y="10" x="90" class="barTextStyle-upset-glfn3vhq">1</text></g><g transform="translate(200, 50)" data-cardinality="1"><title>(one ∩ two): 1</title><rect width="180" height="180" class="fillTransparent-upset-glfn3vhq"></rect><rect x="27" y="12" height="168" width="126" class="fillPrimary-upset-glfn3vhq"></rect><text y="10" x="90" class="barTextStyle-upset-glfn3vhq">1</text></g><g transform="translate(20, 50)" data-cardinality="1"><title>(one ∩ two ∩ three): 1</title><rect width="180" height="180" class="fillTransparent-upset-glfn3vhq"></rect><rect x="27" y="12" height="168" width="126" class="fillPrimary-upset-glfn3vhq"></rect><text y="10" x="90" class="barTextStyle-upset-glfn3vhq">1</text></g><g transform="translate(560, 50)" data-cardinality="1"><title>(two ∩ three): 1</title><rect width="180" height="180" class="fillTransparent-upset-glfn3vhq"></rect><rect x="27" y="12" height="168" width="126" class="fillPrimary-upset-glfn3vhq"></rect><text y="10" x="90" class="barTextStyle-upset-glfn3vhq">1</text></g></g><g transform="translate(20, 50)"><path d="M 180,0 l0,360 M 540,0 l0,360 M 0,0 l720,0 M 0,180 l720,0 M 0,360 l720,0" class="gridStyle-upset-glfn3vhq gridStyle-upset-glfn3vhq-0"></path><path d="M 0,0 l0,360 M 360,0 l0,360 M 720,0 l0,360" class="gridStyle-upset-glfn3vhq gridStyle-upset-glfn3vhq-1"></path></g></g><g></g><g></g></g></svg></div></div></div></div></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/upsetjs/upsetjs/edit/main/packages/docs/docs/components/karnaughmap.mdx" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" role="img" viewBox="0 0 40 40" class="iconEdit_3X3S" aria-label="Edit page"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/components/venndiagram"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Venn Diagram</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/components/modes"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Combination Modes »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3C7Q thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#skeleton" class="table-of-contents__link">Skeleton</a></li><li><a href="#title" class="table-of-contents__link">Title</a></li><li><a href="#interactivity" class="table-of-contents__link">Interactivity</a></li><li><a href="#click" class="table-of-contents__link">Click</a></li><li><a href="#queries" class="table-of-contents__link">Queries</a></li><li><a href="#small-sets" class="table-of-contents__link">Small Sets</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Resources</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs">Docs</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/getting-started">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/examples">Examples</a></li><li class="footer__item"><a class="footer__link-item" href="/api">API Reference</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a href="https://github.com/upsetjs/upsetjs" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub</a></li><li class="footer__item"><a href="https://github.com/upsetjs/upsetjs/dicussions" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Discussions</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a href="https://github.com/sgratzl" target="_blank" rel="noopener noreferrer" class="footer__link-item">@sgratzl</a></li><li class="footer__item"><a href="https://lineup-lite.js.org" target="_blank" rel="noopener noreferrer" class="footer__link-item">LineUp-lite</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 <a href="https://www.sgratzl.com">Samuel Gratzl</a>. All rights reserved. Built with Docusaurus.</div></div></div></footer></div>
 <script src="/assets/js/styles.94993567.js"></script>
-<script src="/assets/js/runtime~main.d1a1b716.js"></script>
-<script src="/assets/js/main.059acddd.js"></script>
+<script src="/assets/js/runtime~main.c6ecbeb8.js"></script>
+<script src="/assets/js/main.fff3bcfd.js"></script>
 <script src="/assets/js/1.2759cd06.js"></script>
 <script src="/assets/js/2.672eb4c3.js"></script>
 <script src="/assets/js/1be78505.1c747291.js"></script>
 <script src="/assets/js/45.81a53572.js"></script>
-<script src="/assets/js/935f2afb.575d182e.js"></script>
+<script src="/assets/js/935f2afb.0eb1b240.js"></script>
 <script src="/assets/js/44.ae0258d0.js"></script>
 <script src="/assets/js/abc08fe8.d4954ce5.js"></script>
 </body>
