@@ -1,0 +1,643 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>UpSet.js React - v1.7.0</title>
+	<meta name="description" content="Documentation for UpSet.js React - v1.7.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">UpSet.js React - v1.7.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>UpSet.js React - v1.7.0</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#upsetjs" id="upsetjs" style="color: inherit; text-decoration: none;">
+					<h1>UpSet.js</h1>
+				</a>
+				<p><a href="https://npmjs.org/package/@upsetjs/react"><img src="https://badge.fury.io/js/%40upsetjs%2Freact.svg" alt="NPM Package"></a> <a href="https://github.com/upsetjs/upsetjs/actions"><img src="https://github.com/upsetjs/upsetjs/workflows/nodeci/badge.svg" alt="Github Actions"></a></p>
+				<p>This package is part of the UpSet.js ecosystem located at the main <a href="https://github.com/upsetjs/upsetjs">Github Monorepo</a>.</p>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
+				</a>
+				<pre><code class="language-sh"><span style="color: #000000">npm install @upsetjs/react react react-dom</span>
+</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">React</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;react&#039;</span><span style="color: #000000">;</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">UpSetJS</span><span style="color: #000000">, { </span><span style="color: #001080">extractSets</span><span style="color: #000000">, </span><span style="color: #001080">generateCombinations</span><span style="color: #000000">, </span><span style="color: #001080">ISetLike</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@upsetjs/react&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">elems</span><span style="color: #000000"> = [</span>
+<span style="color: #000000">  { </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;A&#039;</span><span style="color: #000000">, </span><span style="color: #001080">sets:</span><span style="color: #000000"> [</span><span style="color: #A31515">&#039;S1&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;S2&#039;</span><span style="color: #000000">] },</span>
+<span style="color: #000000">  { </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;B&#039;</span><span style="color: #000000">, </span><span style="color: #001080">sets:</span><span style="color: #000000"> [</span><span style="color: #A31515">&#039;S1&#039;</span><span style="color: #000000">] },</span>
+<span style="color: #000000">  { </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;C&#039;</span><span style="color: #000000">, </span><span style="color: #001080">sets:</span><span style="color: #000000"> [</span><span style="color: #A31515">&#039;S2&#039;</span><span style="color: #000000">] },</span>
+<span style="color: #000000">  { </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;D&#039;</span><span style="color: #000000">, </span><span style="color: #001080">sets:</span><span style="color: #000000"> [</span><span style="color: #A31515">&#039;S1&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;S3&#039;</span><span style="color: #000000">] },</span>
+<span style="color: #000000">];</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">sets</span><span style="color: #000000"> = </span><span style="color: #795E26">extractSets</span><span style="color: #000000">(</span><span style="color: #001080">elems</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">combinations</span><span style="color: #000000"> = </span><span style="color: #795E26">generateCombinations</span><span style="color: #000000">(</span><span style="color: #001080">sets</span><span style="color: #000000">);</span>
+
+<span style="color: #000000">&lt;</span><span style="color: #001080">UpSetJS</span><span style="color: #000000"> </span><span style="color: #001080">sets</span><span style="color: #000000">={</span><span style="color: #001080">sets</span><span style="color: #000000">} </span><span style="color: #001080">combinations</span><span style="color: #000000">={</span><span style="color: #001080">combinations</span><span style="color: #000000">} </span><span style="color: #001080">width</span><span style="color: #000000">={</span><span style="color: #098658">500</span><span style="color: #000000">} </span><span style="color: #001080">height</span><span style="color: #000000">={</span><span style="color: #098658">300</span><span style="color: #000000">} /&gt;;</span>
+</code></pre>
+				<p>with stored selection</p>
+				<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">UpSetSelection</span><span style="color: #000000"> = (</span><span style="color: #001080">props</span><span style="color: #000000">: </span><span style="color: #267F99">any</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  [</span><span style="color: #001080">selection</span><span style="color: #000000">, </span><span style="color: #001080">setSelection</span><span style="color: #000000">] = </span><span style="color: #001080">React</span><span style="color: #000000">.</span><span style="color: #795E26">useState</span><span style="color: #000000">(</span><span style="color: #0000FF">null</span><span style="color: #000000"> </span><span style="color: #AF00DB">as</span><span style="color: #000000"> </span><span style="color: #267F99">ISetLike</span><span style="color: #000000">&lt;</span><span style="color: #267F99">any</span><span style="color: #000000">&gt; | </span><span style="color: #267F99">null</span><span style="color: #000000">);</span>
+
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> &lt;</span><span style="color: #267F99">UpSetJS</span><span style="color: #000000"> {...</span><span style="color: #267F99">props</span><span style="color: #000000">} </span><span style="color: #267F99">selection</span><span style="color: #000000">={</span><span style="color: #001080">selection</span><span style="color: #000000">} </span><span style="color: #267F99">onHover</span><span style="color: #000000">={</span><span style="color: #001080">setSelection</span><span style="color: #000000">} /&gt;;</span>
+<span style="color: #000000">};</span>
+
+<span style="color: #000000">&lt;</span><span style="color: #001080">UpSetSelection</span><span style="color: #000000"> </span><span style="color: #001080">sets</span><span style="color: #000000">={</span><span style="color: #001080">sets</span><span style="color: #000000">} </span><span style="color: #001080">combinations</span><span style="color: #000000">={</span><span style="color: #001080">combinations</span><span style="color: #000000">} </span><span style="color: #001080">width</span><span style="color: #000000">={</span><span style="color: #098658">500</span><span style="color: #000000">} </span><span style="color: #001080">height</span><span style="color: #000000">={</span><span style="color: #098658">300</span><span style="color: #000000">} /&gt;;</span>
+</code></pre>
+				<a href="#privacy-policy" id="privacy-policy" style="color: inherit; text-decoration: none;">
+					<h2>Privacy Policy</h2>
+				</a>
+				<p>UpSet.js is a client only library. The library or any of its integrations doesn&#39;t track you or transfers your data to any server. The uploaded data in the app are stored in your browser only using IndexedDB. The Tableau extension can run in a sandbox environment prohibiting any server requests. However, as soon as you export your session within the app to an external service (e.g., Codepen.io) your data will be transferred.</p>
+				<a href="#license--terms-of-service" id="license--terms-of-service" style="color: inherit; text-decoration: none;">
+					<h2>License / Terms of Service</h2>
+				</a>
+				<a href="#commercial-license" id="commercial-license" style="color: inherit; text-decoration: none;">
+					<h3>Commercial license</h3>
+				</a>
+				<p>If you want to use UpSet.js for a commercial application the commercial license is the appropriate license. Contact <a href="mailto:sam@sgratzl.com">@sgratzl</a> for details.</p>
+				<a href="#open-source-license" id="open-source-license" style="color: inherit; text-decoration: none;">
+					<h3>Open-source license</h3>
+				</a>
+				<p>This library is released under the <code>GNU AGPLv3</code> version to be used for private and academic purposes. In case of a commercial use, please get in touch regarding a commercial license.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/propvalidators.html">prop<wbr>Validators</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#default" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/bandscalefactory.html" class="tsd-kind-icon">Band<wbr>Scale<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/bandscalelike.html" class="tsd-kind-icon">Band<wbr>Scale<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/extractfromexpressionoptions.html" class="tsd-kind-icon">Extract<wbr>From<wbr>Expression<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/generatesetcombinationsoptions.html" class="tsd-kind-icon">Generate<wbr>Set<wbr>Combinations<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iarc.html" class="tsd-kind-icon">IArc</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iarcslice.html" class="tsd-kind-icon">IArc<wbr>Slice</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/ibaseset.html" class="tsd-kind-icon">IBase<wbr>Set</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/icircle.html" class="tsd-kind-icon">ICircle</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/idistinctsetintersection.html" class="tsd-kind-icon">IDistinct<wbr>Set<wbr>Intersection</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iellipse.html" class="tsd-kind-icon">IEllipse</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/iset.html" class="tsd-kind-icon">ISet</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/isetcomposite.html" class="tsd-kind-icon">ISet<wbr>Composite</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/isetintersection.html" class="tsd-kind-icon">ISet<wbr>Intersection</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/isetunion.html" class="tsd-kind-icon">ISet<wbr>Union</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/itextarcslice.html" class="tsd-kind-icon">IText<wbr>Arc<wbr>Slice</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/itextcircle.html" class="tsd-kind-icon">IText<wbr>Circle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/itextellipse.html" class="tsd-kind-icon">IText<wbr>Ellipse</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/itextlocation.html" class="tsd-kind-icon">IText<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/itextuniverseset.html" class="tsd-kind-icon">IText<wbr>Universe<wbr>Set</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iuniverseset.html" class="tsd-kind-icon">IUniverse<wbr>Set</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iupsetdump.html" class="tsd-kind-icon">IUp<wbr>Set<wbr>Dump</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/iupsetdumpdata.html" class="tsd-kind-icon">IUp<wbr>Set<wbr>Dump<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iupsetdumpref.html" class="tsd-kind-icon">IUp<wbr>Set<wbr>Dump<wbr>Ref</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/iupsetfromdumpconfig.html" class="tsd-kind-icon">IUp<wbr>Set<wbr>From<wbr>Dump<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/iupsetfromstaticdumpconfig.html" class="tsd-kind-icon">IUp<wbr>Set<wbr>From<wbr>Static<wbr>Dump<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iupsetjsdump.html" class="tsd-kind-icon">IUp<wbr>SetJSDump</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iupsetjsstaticdump.html" class="tsd-kind-icon">IUp<wbr>SetJSStatic<wbr>Dump</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/iupsetstaticdump.html" class="tsd-kind-icon">IUp<wbr>Set<wbr>Static<wbr>Dump</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/iupsetstaticdumpdata.html" class="tsd-kind-icon">IUp<wbr>Set<wbr>Static<wbr>Dump<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/iupsettodumpconfig.html" class="tsd-kind-icon">IUp<wbr>Set<wbr>ToDump<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/iupsettostaticdumpconfig.html" class="tsd-kind-icon">IUp<wbr>Set<wbr>ToStatic<wbr>Dump<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ivenndiagramlayout.html" class="tsd-kind-icon">IVenn<wbr>Diagram<wbr>Layout</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ivenndiagramlayoutgenerator.html" class="tsd-kind-icon">IVenn<wbr>Diagram<wbr>Layout<wbr>Generator</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/karnaughmapdataprops.html" class="tsd-kind-icon">Karnaugh<wbr>Map<wbr>Data<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/karnaughmapelementprops.html" class="tsd-kind-icon">Karnaugh<wbr>Map<wbr>Element<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/karnaughmapfontsizes.html" class="tsd-kind-icon">Karnaugh<wbr>Map<wbr>Font<wbr>Sizes</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/karnaughmapfullpropsg.html" class="tsd-kind-icon">Karnaugh<wbr>Map<wbr>Full<wbr>PropsG</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/karnaughmaplayoutprops.html" class="tsd-kind-icon">Karnaugh<wbr>Map<wbr>Layout<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/karnaughmapmultistyle.html" class="tsd-kind-icon">Karnaugh<wbr>Map<wbr>Multi<wbr>Style</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/karnaughmappropsg.html" class="tsd-kind-icon">Karnaugh<wbr>Map<wbr>PropsG</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/karnaughmapstyleprops.html" class="tsd-kind-icon">Karnaugh<wbr>Map<wbr>Style<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/karnaughmapthemeprops.html" class="tsd-kind-icon">Karnaugh<wbr>Map<wbr>Theme<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/numericscalefactory.html" class="tsd-kind-icon">Numeric<wbr>Scale<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/numericscalelike.html" class="tsd-kind-icon">Numeric<wbr>Scale<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/postprocesscombinationsoptions.html" class="tsd-kind-icon">Postprocess<wbr>Combinations<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/postprocesssetoptions.html" class="tsd-kind-icon">Postprocess<wbr>Set<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/setelemoverlap.html" class="tsd-kind-icon">Set<wbr>Elem<wbr>Overlap</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/setoverlap.html" class="tsd-kind-icon">Set<wbr>Overlap</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tickoptions.html" class="tsd-kind-icon">Tick<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetaddon.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Addon</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/upsetaddonhandlerinfo.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Addon<wbr>Handler<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetaddonprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Addon<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetbasedataprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Base<wbr>Data<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetbaseelementprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Base<wbr>Element<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/upsetbasefontsizes.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Base<wbr>Font<wbr>Sizes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/upsetbaselayoutprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Base<wbr>Layout<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetbasemultistyle.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Base<wbr>Multi<wbr>Style</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetbasestyleprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Base<wbr>Style<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/upsetbasethemeprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Base<wbr>Theme<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetcalcquery.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Calc<wbr>Query</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetdataprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Data<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetelemquery.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Elem<wbr>Query</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetelementprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Element<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/upsetexportoptions.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Export<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/upsetfontsizes.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Font<wbr>Sizes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/upsetfromstaticdumpcompressedcombination.html" class="tsd-kind-icon">Up<wbr>Set<wbr>From<wbr>Static<wbr>Dump<wbr>Compressed<wbr>Combination</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/upsetfromstaticdumpfullcombination.html" class="tsd-kind-icon">Up<wbr>Set<wbr>From<wbr>Static<wbr>Dump<wbr>Full<wbr>Combination</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetfullpropsg.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Full<wbr>PropsG</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/upsetjsdumpprops.html" class="tsd-kind-icon">Up<wbr>SetJSDump<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/upsetjsskeletonprops.html" class="tsd-kind-icon">Up<wbr>SetJSSkeleton<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/upsetlayoutprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Layout<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetmultistyle.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Multi<wbr>Style</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetpropsg.html" class="tsd-kind-icon">Up<wbr>Set<wbr>PropsG</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetqueryaddonprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Query<wbr>Addon<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetselectionaddonprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Selection<wbr>Addon<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetselectionprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Selection<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetsetquery.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Set<wbr>Query</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/upsetstyleprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Style<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/upsetthemeprops.html" class="tsd-kind-icon">Up<wbr>Set<wbr>Theme<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/venndiagramdataprops.html" class="tsd-kind-icon">Venn<wbr>Diagram<wbr>Data<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/venndiagramelementprops.html" class="tsd-kind-icon">Venn<wbr>Diagram<wbr>Element<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/venndiagramfontsizes.html" class="tsd-kind-icon">Venn<wbr>Diagram<wbr>Font<wbr>Sizes</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/venndiagramfullpropsg.html" class="tsd-kind-icon">Venn<wbr>Diagram<wbr>Full<wbr>PropsG</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/venndiagramlayoutprops.html" class="tsd-kind-icon">Venn<wbr>Diagram<wbr>Layout<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/venndiagrammultistyle.html" class="tsd-kind-icon">Venn<wbr>Diagram<wbr>Multi<wbr>Style</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/venndiagrampropsg.html" class="tsd-kind-icon">Venn<wbr>Diagram<wbr>PropsG</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/venndiagramstyleprops.html" class="tsd-kind-icon">Venn<wbr>Diagram<wbr>Style<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/venndiagramthemeprops.html" class="tsd-kind-icon">Venn<wbr>Diagram<wbr>Theme<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#isetcombination" class="tsd-kind-icon">ISet<wbr>Combination</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#isetcombinations" class="tsd-kind-icon">ISet<wbr>Combinations</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#isetlike" class="tsd-kind-icon">ISet<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#isetlikes" class="tsd-kind-icon">ISet<wbr>Likes</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#isets" class="tsd-kind-icon">ISets</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#karnaughmapfullprops" class="tsd-kind-icon">Karnaugh<wbr>Map<wbr>Full<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#karnaughmapprops" class="tsd-kind-icon">Karnaugh<wbr>Map<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#numericscaletick" class="tsd-kind-icon">Numeric<wbr>Scale<wbr>Tick</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#setcombinationtype" class="tsd-kind-icon">Set<wbr>Combination<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#upsetaddonhandlerinfos" class="tsd-kind-icon">Up<wbr>Set<wbr>Addon<wbr>Handler<wbr>Infos</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#upsetaddons" class="tsd-kind-icon">Up<wbr>Set<wbr>Addons</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#upsetcompressedindices" class="tsd-kind-icon">Up<wbr>Set<wbr>Compressed<wbr>Indices</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#upsetextratheme" class="tsd-kind-icon">Up<wbr>Set<wbr>Extra<wbr>Theme</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#upsetfullprops" class="tsd-kind-icon">Up<wbr>Set<wbr>Full<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#upsetprops" class="tsd-kind-icon">Up<wbr>Set<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#upsetqueries" class="tsd-kind-icon">Up<wbr>Set<wbr>Queries</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#upsetquery" class="tsd-kind-icon">Up<wbr>Set<wbr>Query</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#upsetselection" class="tsd-kind-icon">Up<wbr>Set<wbr>Selection</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#upsetstyleclassnames" class="tsd-kind-icon">Up<wbr>Set<wbr>Style<wbr>Class<wbr>Names</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#upsetthemes" class="tsd-kind-icon">Up<wbr>Set<wbr>Themes</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#venndiagramfullprops" class="tsd-kind-icon">Venn<wbr>Diagram<wbr>Full<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#venndiagramprops" class="tsd-kind-icon">Venn<wbr>Diagram<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#karnaughmap" class="tsd-kind-icon">Karnaugh<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#upsetjs" class="tsd-kind-icon">Up<wbr>SetJS</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#venndiagram" class="tsd-kind-icon">Venn<wbr>Diagram</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#karnaughmapskeleton" class="tsd-kind-icon">Karnaugh<wbr>Map<wbr>Skeleton</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#upsetjsskeleton" class="tsd-kind-icon">Up<wbr>SetJSSkeleton</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#venndiagramskeleton" class="tsd-kind-icon">Venn<wbr>Diagram<wbr>Skeleton</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#ascombination" class="tsd-kind-icon">as<wbr>Combination</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#ascombinations" class="tsd-kind-icon">as<wbr>Combinations</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#asset" class="tsd-kind-icon">as<wbr>Set</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#assets" class="tsd-kind-icon">as<wbr>Sets</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#bandscale" class="tsd-kind-icon">band<wbr>Scale</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#createvennjsadapter" class="tsd-kind-icon">create<wbr>VennJSAdapter</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#downloadurl" class="tsd-kind-icon">download<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#exportsvg" class="tsd-kind-icon">exportSVG</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#exportvegalite" class="tsd-kind-icon">export<wbr>Vega<wbr>Lite</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#extractfromexpression" class="tsd-kind-icon">extract<wbr>From<wbr>Expression</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#extractsets" class="tsd-kind-icon">extract<wbr>Sets</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#filldefaults" class="tsd-kind-icon">fill<wbr>Defaults</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#filldefaultsg" class="tsd-kind-icon">fill<wbr>DefaultsG</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#fillkarnaughmapdefaults" class="tsd-kind-icon">fill<wbr>Karnaugh<wbr>Map<wbr>Defaults</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#fillkarnaughmapdefaultsg" class="tsd-kind-icon">fill<wbr>Karnaugh<wbr>Map<wbr>DefaultsG</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#fillvenndiagramdefaults" class="tsd-kind-icon">fill<wbr>Venn<wbr>Diagram<wbr>Defaults</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#fillvenndiagramdefaultsg" class="tsd-kind-icon">fill<wbr>Venn<wbr>Diagram<wbr>DefaultsG</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#fromdump" class="tsd-kind-icon">from<wbr>Dump</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#fromindicesarray" class="tsd-kind-icon">from<wbr>Indices<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#fromsetname" class="tsd-kind-icon">from<wbr>Set<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#fromstaticdump" class="tsd-kind-icon">from<wbr>Static<wbr>Dump</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#generatecombinations" class="tsd-kind-icon">generate<wbr>Combinations</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getdefaulttheme" class="tsd-kind-icon">get<wbr>Default<wbr>Theme</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#iscalcquery" class="tsd-kind-icon">is<wbr>Calc<wbr>Query</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#iselemquery" class="tsd-kind-icon">is<wbr>Elem<wbr>Query</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#isellipse" class="tsd-kind-icon">is<wbr>Ellipse</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#isgeneratesetcombinationoptions" class="tsd-kind-icon">is<wbr>Generate<wbr>Set<wbr>Combination<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#isset" class="tsd-kind-icon">is<wbr>Set</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#issetcombination" class="tsd-kind-icon">is<wbr>Set<wbr>Combination</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#issetlike" class="tsd-kind-icon">is<wbr>Set<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#issetquery" class="tsd-kind-icon">is<wbr>Set<wbr>Query</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#isupsetquery" class="tsd-kind-icon">is<wbr>UpSet<wbr>Query</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#linearscale" class="tsd-kind-icon">linear<wbr>Scale</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#logscale" class="tsd-kind-icon">log<wbr>Scale</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#mergecolors" class="tsd-kind-icon">merge<wbr>Colors</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#parsecolor" class="tsd-kind-icon">parse<wbr>Color</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#queryelemoverlap" class="tsd-kind-icon">query<wbr>Elem<wbr>Overlap</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#queryoverlap" class="tsd-kind-icon">query<wbr>Overlap</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#setelemintersectionfactory" class="tsd-kind-icon">set<wbr>Elem<wbr>Intersection<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#setelemoverlap" class="tsd-kind-icon">set<wbr>Elem<wbr>Overlap</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#setelemoverlapfactory" class="tsd-kind-icon">set<wbr>Elem<wbr>Overlap<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#setoverlap" class="tsd-kind-icon">set<wbr>Overlap</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#setoverlapfactory" class="tsd-kind-icon">set<wbr>Overlap<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#todump" class="tsd-kind-icon">to<wbr>Dump</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#toindicesarray" class="tsd-kind-icon">to<wbr>Indices<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#tokey" class="tsd-kind-icon">to<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#tostaticdump" class="tsd-kind-icon">to<wbr>Static<wbr>Dump</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#toupsetjsdump" class="tsd-kind-icon">to<wbr>UpSetJSDump</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#toupsetjsstaticdump" class="tsd-kind-icon">to<wbr>UpSetJSStatic<wbr>Dump</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
