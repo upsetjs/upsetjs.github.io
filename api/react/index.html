@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UpSet.js React - v1.7.0</title>
-	<meta name="description" content="Documentation for UpSet.js React - v1.7.0">
+	<title>UpSet.js React - v1.9.1</title>
+	<meta name="description" content="Documentation for UpSet.js React - v1.9.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<script async src="assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">UpSet.js React - v1.7.0</a>
+					<a href="index.html" class="title">UpSet.js React - v1.9.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -48,7 +48,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>UpSet.js React - v1.7.0</h1>
+			<h1>UpSet.js React - v1.9.1</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 					<h2>Usage</h2>
 				</a>
 				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">React</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;react&#039;</span><span style="color: #000000">;</span>
-<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">UpSetJS</span><span style="color: #000000">, { </span><span style="color: #001080">extractSets</span><span style="color: #000000">, </span><span style="color: #001080">generateCombinations</span><span style="color: #000000">, </span><span style="color: #001080">ISetLike</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@upsetjs/react&#039;</span><span style="color: #000000">;</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">UpSetJS</span><span style="color: #000000">, { </span><span style="color: #001080">extractCombinations</span><span style="color: #000000">, </span><span style="color: #001080">ISetLike</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@upsetjs/react&#039;</span><span style="color: #000000">;</span>
 
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">elems</span><span style="color: #000000"> = [</span>
 <span style="color: #000000">  { </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;A&#039;</span><span style="color: #000000">, </span><span style="color: #001080">sets:</span><span style="color: #000000"> [</span><span style="color: #A31515">&#039;S1&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;S2&#039;</span><span style="color: #000000">] },</span>
@@ -79,8 +79,7 @@
 <span style="color: #000000">  { </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;D&#039;</span><span style="color: #000000">, </span><span style="color: #001080">sets:</span><span style="color: #000000"> [</span><span style="color: #A31515">&#039;S1&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;S3&#039;</span><span style="color: #000000">] },</span>
 <span style="color: #000000">];</span>
 
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">sets</span><span style="color: #000000"> = </span><span style="color: #795E26">extractSets</span><span style="color: #000000">(</span><span style="color: #001080">elems</span><span style="color: #000000">);</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">combinations</span><span style="color: #000000"> = </span><span style="color: #795E26">generateCombinations</span><span style="color: #000000">(</span><span style="color: #001080">sets</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">sets</span><span style="color: #000000">, </span><span style="color: #0070C1">combinations</span><span style="color: #000000"> } = </span><span style="color: #795E26">useMemo</span><span style="color: #000000">(() </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #795E26">extractCombinations</span><span style="color: #000000">(</span><span style="color: #001080">elems</span><span style="color: #000000">), [</span><span style="color: #001080">elems</span><span style="color: #000000">]);</span>
 
 <span style="color: #000000">&lt;</span><span style="color: #001080">UpSetJS</span><span style="color: #000000"> </span><span style="color: #001080">sets</span><span style="color: #000000">={</span><span style="color: #001080">sets</span><span style="color: #000000">} </span><span style="color: #001080">combinations</span><span style="color: #000000">={</span><span style="color: #001080">combinations</span><span style="color: #000000">} </span><span style="color: #001080">width</span><span style="color: #000000">={</span><span style="color: #098658">500</span><span style="color: #000000">} </span><span style="color: #001080">height</span><span style="color: #000000">={</span><span style="color: #098658">300</span><span style="color: #000000">} /&gt;;</span>
 </code></pre>
@@ -132,8 +131,14 @@
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/bandscalelike.html" class="tsd-kind-icon">Band<wbr>Scale<wbr>Like</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/extractcombinationsoptions.html" class="tsd-kind-icon">Extract<wbr>Combinations<wbr>Options</a>
+					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/extractfromexpressionoptions.html" class="tsd-kind-icon">Extract<wbr>From<wbr>Expression<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/generateoverlaplookupoptions.html" class="tsd-kind-icon">Generate<wbr>Overlap<wbr>Lookup<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/generatesetcombinationsoptions.html" class="tsd-kind-icon">Generate<wbr>Set<wbr>Combinations<wbr>Options</a>
@@ -164,6 +169,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/isetintersection.html" class="tsd-kind-icon">ISet<wbr>Intersection</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/isetoverlapfunction.html" class="tsd-kind-icon">ISet<wbr>Overlap<wbr>Function</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/isetunion.html" class="tsd-kind-icon">ISet<wbr>Union</a>
@@ -502,6 +510,9 @@
 						<a href="modules.html#exportvegalite" class="tsd-kind-icon">export<wbr>Vega<wbr>Lite</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#extractcombinations" class="tsd-kind-icon">extract<wbr>Combinations</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#extractfromexpression" class="tsd-kind-icon">extract<wbr>From<wbr>Expression</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
@@ -539,6 +550,24 @@
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#generatecombinations" class="tsd-kind-icon">generate<wbr>Combinations</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#generatedistinctoverlapfunction" class="tsd-kind-icon">generate<wbr>Distinct<wbr>Overlap<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#generateintersectionoverlapfunction" class="tsd-kind-icon">generate<wbr>Intersection<wbr>Overlap<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#generateoverlapfunction" class="tsd-kind-icon">generate<wbr>Overlap<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#generateoverlaplookup" class="tsd-kind-icon">generate<wbr>Overlap<wbr>Lookup</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#generateoverlaplookupfunction" class="tsd-kind-icon">generate<wbr>Overlap<wbr>Lookup<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#generateunionoverlapfunction" class="tsd-kind-icon">generate<wbr>Union<wbr>Overlap<wbr>Function</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#getdefaulttheme" class="tsd-kind-icon">get<wbr>Default<wbr>Theme</a>
