@@ -21,7 +21,7 @@ Due to the restrictions of the dashboard extension system, you need to have at l
 
 ## Example
 
-see https://github.com/upsetjs/upsetjs_tableau_extension/examples/got.twb
+see https://upset.js.org/integrations/tableau/got.twb
 
 ## Dev Environment
 
@@ -36,7 +36,7 @@ alternatively one can append `#mock` to use mock data to test the extension in t
 npm i -g yarn
 yarn set version berry
 yarn install
-yarn pnpify --sdk
+yarn pnpify --sdk vscode
 ```
 
 ### Building
@@ -51,9 +51,7 @@ yarn build
 use `release-it`
 
 ```sh
-yarn release:major
-yarn release:minor
-yarn release:patch
+yarn release
 ```
 
 ## Privacy Policy

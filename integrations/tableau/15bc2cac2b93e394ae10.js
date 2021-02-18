@@ -1,0 +1,1 @@
+(globalThis.webpackChunk_upsetjs_tableau_extension=globalThis.webpackChunk_upsetjs_tableau_extension||[]).push([[109],{109:(e,t,a)=>{"use strict";a.r(t),a.d(t,{default:()=>c});var n=a(364),u=a(6160),s=a(8963);const l=(0,a(3786).Nu)();function c(){return n.createElement(u.DW,{api:l},n.createElement(s.Z,null))}}}]);
