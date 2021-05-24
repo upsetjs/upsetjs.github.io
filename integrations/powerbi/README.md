@@ -12,7 +12,7 @@ see also [Sample PBIX file](https://upset.js.org/integrations/powerbi/got.pbix)
 
 ## Installation
 
-Download the latest package from [https://upset.js.org/integrations/powerbi/upsetjs.pbiviz](https://upset.js.org/integrations/powerbi/upsetjs.pbiviz) and install into your PowerBI environment.
+Download the latest package from [https://upset.js.org/integrations/powerbi/upsetjs_preview.pbiviz](https://upset.js.org/integrations/powerbi/upsetjs_preview.pbiviz) and install into your PowerBI environment.
 
 ## Data Roles
 
@@ -38,7 +38,7 @@ see also [Sample PBIX file](https://upset.js.org/integrations/powerbi/got_venn.p
 
 ### Installation
 
-Download the latest package from [https://upset.js.org/integrations/powerbi/upsetjs_venn.pbiviz](https://upset.js.org/integrations/powerbi/upsetjs_venn.pbiviz) and install into your PowerBI environment.
+Download the latest package from [https://upset.js.org/integrations/powerbi/upsetjs_venn_preview.pbiviz](https://upset.js.org/integrations/powerbi/upsetjs_venn_preview.pbiviz) and install into your PowerBI environment.
 
 ### Data Roles
 
@@ -51,7 +51,7 @@ In addition, the visual supports various styling options including the customiza
 
 ## Dev Environment
 
-see also https://docs.microsoft.com/en-us/power-bi/developer/visuals/custom-visual-develop-tutorial
+see also https://docs.microsoft.com/en-us/power-bi/developer/visuals/environment-setup
 
 ```sh
 npm i
