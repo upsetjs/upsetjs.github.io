@@ -1,4 +1,4 @@
-pandoc: 2.7.3
+pandoc: '2.5'
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
@@ -8,5 +8,5 @@ articles:
   kmap: kmap.html
   upsetjs: upsetjs.html
   venn: venn.html
-last_built: 2021-09-22T13:46Z
+last_built: 2021-09-24T14:09Z
 
