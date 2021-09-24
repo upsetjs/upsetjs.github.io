@@ -98,7 +98,7 @@
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#upsetjs-as-r-htmlwidget" class="anchor"></a>UpSet.js as R HTMLWidget</h1></div>
 
-<p>This is a <a href="http://www.htmlwidgets.org/">HTMLWidget</a> wrapper around the JavaScript library <a href="https://github.com/upsetjs/upsetjs">UpSet.js</a> and an alternative implementation of <a href="https://www.rdocumentation.org/packages/UpSetR">UpSetR</a>.</p>
+<p>This is a <a href="http://www.htmlwidgets.org/">HTMLWidget</a> and <a href="https://dashr.plotly.com/">Plot.ly Dash</a> wrapper around the JavaScript library <a href="https://github.com/upsetjs/upsetjs">UpSet.js</a> and an alternative implementation of <a href="https://www.rdocumentation.org/packages/UpSetR">UpSetR</a>.</p>
 <p>This package is part of the UpSet.js ecosystem located at the main <a href="https://github.com/upsetjs/upsetjs">Github Monorepo</a>.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
@@ -146,7 +146,39 @@
 <span class="co"># Run the application</span>
 <span class="fu">shinyApp</span><span class="op">(</span>ui <span class="op">=</span> <span class="va">ui</span>, server <span class="op">=</span> <span class="va">server</span><span class="op">)</span></code></pre></div>
 <p><img src="https://user-images.githubusercontent.com/4129778/79375695-51d5bb80-7f59-11ea-8437-40fa60ce425c.png" alt="shiny"></p>
-<p>see also <a href="./master/shiny">Shiny Examples</a></p>
+<p>see also <a href="./main/shiny">Shiny Examples</a></p>
+</div>
+<div id="dash-example" class="section level2">
+<h2 class="hasAnchor">
+<a href="#dash-example" class="anchor"></a>Dash Example</h2>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">dash</span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">dashHtmlComponents</span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/upsetjs/upsetjs_r/">upsetjs</a></span><span class="op">)</span>
+
+<span class="va">app</span> <span class="op">&lt;-</span> <span class="va">Dash</span><span class="op">$</span><span class="fu">new</span><span class="op">(</span><span class="op">)</span>
+
+<span class="va">app</span><span class="op">$</span><span class="fu">layout</span><span class="op">(</span>
+    <span class="fu">htmlDiv</span><span class="op">(</span>
+        <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>
+            <span class="fu">htmlH1</span><span class="op">(</span><span class="st">"Hello UpSet.js + Dash"</span><span class="op">)</span>,
+            <span class="fu"><a href="reference/upsetjsDash.html">upsetjsDash</a></span><span class="op">(</span>id <span class="op">=</span> <span class="st">"upset"</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu"><a href="reference/fromList.html">fromList</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>a <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span><span class="op">)</span>, b <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">3</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
+                <span class="op">%&gt;%</span> <span class="fu"><a href="reference/interactiveChart.html">interactiveChart</a></span><span class="op">(</span><span class="op">)</span>,
+            <span class="fu">htmlDiv</span><span class="op">(</span>id <span class="op">=</span> <span class="st">"output"</span><span class="op">)</span>
+        <span class="op">)</span>
+    <span class="op">)</span>
+<span class="op">)</span>
+<span class="va">app</span><span class="op">$</span><span class="fu">callback</span><span class="op">(</span>
+    output <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>id <span class="op">=</span> <span class="st">"output"</span>, property <span class="op">=</span> <span class="st">"children"</span><span class="op">)</span>,
+    params <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="fu">input</span><span class="op">(</span>id <span class="op">=</span> <span class="st">"upset"</span>, property <span class="op">=</span> <span class="st">"selection"</span><span class="op">)</span><span class="op">)</span>,
+    <span class="kw">function</span><span class="op">(</span><span class="va">selection</span><span class="op">)</span> <span class="op">{</span>
+        <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html">sprintf</a></span><span class="op">(</span><span class="st">"You selected \"%s\""</span>, <span class="va">selection</span><span class="op">$</span><span class="va">name</span><span class="op">)</span>
+    <span class="op">}</span>
+<span class="op">)</span>
+
+<span class="va">app</span><span class="op">$</span><span class="fu">run_server</span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<p>TODO</p>
+<p>see also <a href="./main/dash">Dash Examples</a></p>
 </div>
 <div id="documentation" class="section level2">
 <h2 class="hasAnchor">
@@ -157,7 +189,7 @@
 <h2 class="hasAnchor">
 <a href="#venn-diagram" class="anchor"></a>Venn Diagram</h2>
 <p>Besides the main UpSet.js plot also Venn Diagrams for up to five sets are supported. It uses the same input formats and has similar functionality in terms of interaction.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">listInput</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>one <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">11</span>, <span class="fl">12</span>, <span class="fl">13</span><span class="op">)</span>, two <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">10</span><span class="op">)</span>, three <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">9</span>, <span class="fl">10</span>, <span class="fl">12</span>, <span class="fl">13</span><span class="op">)</span><span class="op">)</span>
 <span class="fu"><a href="reference/upsetjsVennDiagram.html">upsetjsVennDiagram</a></span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu"><a href="reference/fromList.html">fromList</a></span><span class="op">(</span><span class="va">listInput</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu"><a href="reference/interactiveChart.html">interactiveChart</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p><img src="https://user-images.githubusercontent.com/4129778/84817608-8a574b80-b015-11ea-91b8-2ff17bb533e4.png" alt="image"></p>
@@ -167,7 +199,7 @@
 <h2 class="hasAnchor">
 <a href="#karnaugh-maps-diagram" class="anchor"></a>Karnaugh Maps Diagram</h2>
 <p>Besides the main UpSet.js plot also a variant of a Karnaugh Map is supported. It uses the same input formats and has similar functionality in terms of interaction.</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">listInput</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>one <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">11</span>, <span class="fl">12</span>, <span class="fl">13</span><span class="op">)</span>, two <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">10</span><span class="op">)</span>, three <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">9</span>, <span class="fl">10</span>, <span class="fl">12</span>, <span class="fl">13</span><span class="op">)</span><span class="op">)</span>
 <span class="fu"><a href="reference/upsetjsKarnaughMap.html">upsetjsKarnaughMap</a></span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu"><a href="reference/fromList.html">fromList</a></span><span class="op">(</span><span class="va">listInput</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu"><a href="reference/interactiveChart.html">interactiveChart</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p><img src="https://user-images.githubusercontent.com/4129778/86348506-09789080-bc60-11ea-9ed0-be0560269f7f.png" alt="image"></p>
@@ -181,24 +213,24 @@
 <li>R with packages: devtools, pkgdown</li>
 <li>pandoc</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="ex">npm</span> i -g yarn</a>
-<a class="sourceLine" id="cb6-2" title="2"><span class="ex">yarn</span> install</a>
-<a class="sourceLine" id="cb6-3" title="3"><span class="ex">yarn</span> sdks vscode</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">npm</span> i -g yarn</a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="ex">yarn</span> install</a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="ex">yarn</span> sdks vscode</a></code></pre></div>
 <div id="building" class="section level3">
 <h3 class="hasAnchor">
 <a href="#building" class="anchor"></a>Building</h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">yarn</span> lint</a>
-<a class="sourceLine" id="cb7-2" title="2"><span class="ex">yarn</span> build</a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="ex">yarn</span> lint</a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="ex">yarn</span> build</a></code></pre></div>
 </div>
 <div id="r-package" class="section level3">
 <h3 class="hasAnchor">
 <a href="#r-package" class="anchor"></a>R Package</h3>
-<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="ex">yarn</span> style:r</a>
-<a class="sourceLine" id="cb8-2" title="2"><span class="ex">yarn</span> lint:r</a>
-<a class="sourceLine" id="cb8-3" title="3"><span class="ex">yarn</span> check:r</a>
-<a class="sourceLine" id="cb8-4" title="4"><span class="ex">yarn</span> build:r</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="ex">yarn</span> style:r</a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="ex">yarn</span> lint:r</a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="ex">yarn</span> check:r</a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="ex">yarn</span> build:r</a></code></pre></div>
 <p>or in R</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/load_all.html">load_all</a></span><span class="op">(</span><span class="op">)</span>
 <span class="fu">styler</span><span class="fu">::</span><span class="fu"><a href="https://styler.r-lib.org/reference/style_pkg.html">style_pkg</a></span><span class="op">(</span><span class="op">)</span>
 <span class="fu">lintr</span><span class="fu">::</span><span class="fu">lint_pkg</span><span class="op">(</span><span class="op">)</span>
@@ -207,9 +239,9 @@
 <span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/build.html">build</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p><strong>R Package Website</strong></p>
 <p>will be automatically updated upon push</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb10-1" title="1"><span class="ex">yarn</span> docs:r</a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="ex">yarn</span> docs:r</a></code></pre></div>
 <p>or in R</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/build_site.html">build_site</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 </div>
 </div>
@@ -217,8 +249,8 @@
 <h2 class="hasAnchor">
 <a href="#release" class="anchor"></a>Release</h2>
 <p>use <code>release-it</code></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb12-1" title="1"><span class="ex">yarn</span> release</a>
-<a class="sourceLine" id="cb12-2" title="2"><span class="ex">Rscript</span> -e <span class="st">"devtools::release()"</span></a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb13-1" title="1"><span class="ex">yarn</span> release</a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="ex">Rscript</span> -e <span class="st">"devtools::release()"</span></a></code></pre></div>
 </div>
 <div id="privacy-policy" class="section level2">
 <h2 class="hasAnchor">
@@ -231,7 +263,7 @@
 <div id="commercial-license" class="section level3">
 <h3 class="hasAnchor">
 <a href="#commercial-license" class="anchor"></a>Commercial license</h3>
-<p>If you want to use Upset.js for a commercial application the commercial license is the appropriate license. Contact <a href="mailto:sam@sgratzl.com">@sgratzl</a> for details.</p>
+<p>If you want to use UpSet.js for a commercial application or in a commercial environment, the commercial license is the appropriate license. Contact <a href="mailto:sam@sgratzl.com">@sgratzl</a> for details.</p>
 </div>
 <div id="open-source-license" class="section level3">
 <h3 class="hasAnchor">
