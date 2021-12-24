@@ -20,6 +20,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -32,17 +34,14 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">upsetjs</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.6.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.10.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
+  <a href="articles/upsetjs.html">Get started</a>
 </li>
 <li>
   <a href="reference/index.html">Reference</a>
@@ -55,9 +54,6 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="articles/basic.html">UpSet.js Introduction</a>
-    </li>
-    <li>
       <a href="articles/colors.html">UpSet.js Coloring</a>
     </li>
     <li>
@@ -77,8 +73,8 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/upsetjs/upsetjs_r/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/upsetjs/upsetjs_r/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -94,139 +90,188 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="upsetjs-as-r-htmlwidget" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#upsetjs-as-r-htmlwidget" class="anchor"></a>UpSet.js as R HTMLWidget</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="upsetjs-as-r-htmlwidget">UpSet.js as R HTMLWidget<a class="anchor" aria-label="anchor" href="#upsetjs-as-r-htmlwidget"></a>
+</h1></div>
 
-<p>This is a <a href="http://www.htmlwidgets.org/">HTMLWidget</a> wrapper around the JavaScript library <a href="https://github.com/upsetjs/upsetjs">UpSet.js</a> and an alternative implementation of <a href="https://www.rdocumentation.org/packages/UpSetR">UpSetR</a>.</p>
-<p>This package is part of the UpSet.js ecosystem located at the main <a href="https://github.com/upsetjs/upsetjs">Github Monorepo</a>.</p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="co"># CRAN version</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">'upsetjs'</span>)
+<p>This is a <a href="http://www.htmlwidgets.org/" class="external-link">HTMLWidget</a> and <a href="https://dashr.plotly.com/" class="external-link">Plot.ly Dash</a> wrapper around the JavaScript library <a href="https://github.com/upsetjs/upsetjs" class="external-link">UpSet.js</a> and an alternative implementation of <a href="https://www.rdocumentation.org/packages/UpSetR" class="external-link">UpSetR</a>.</p>
+<p>This package is part of the UpSet.js ecosystem located at the main <a href="https://github.com/upsetjs/upsetjs" class="external-link">Github Monorepo</a>.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># CRAN version</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'upsetjs'</span><span class="op">)</span>
 <span class="co"># or</span>
-<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_url</a></span>(<span class="st">"https://github.com/upsetjs/upsetjs_r/releases/latest/download/upsetjs.tar.gz"</span>)
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_url</a></span><span class="op">(</span><span class="st">"https://github.com/upsetjs/upsetjs_r/releases/latest/download/upsetjs.tar.gz"</span><span class="op">)</span>
 
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">upsetjs</span>)</pre></div>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/upsetjs/upsetjs_r/" class="external-link">upsetjs</a></span><span class="op">)</span></code></pre></div>
 </div>
-<div id="example" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example</h2>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="no">listInput</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="kw">one</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">11</span>, <span class="fl">12</span>, <span class="fl">13</span>), <span class="kw">two</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">10</span>), <span class="kw">three</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">9</span>, <span class="fl">10</span>, <span class="fl">12</span>, <span class="fl">13</span>))
-<span class="fu"><a href="reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="reference/interactiveChart.html">interactiveChart</a></span>()</pre></div>
-<p><img src="https://user-images.githubusercontent.com/4129778/79375541-10dda700-7f59-11ea-933a-a3ffbca1bfd2.png" alt="List Input Example"></p>
-<p>see also <a href="./master/vignettes/basic.Rmd">Basic.Rmd</a></p>
+<div class="section level2">
+<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+</h2>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">listInput</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>one <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">11</span>, <span class="fl">12</span>, <span class="fl">13</span><span class="op">)</span>, two <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">10</span><span class="op">)</span>, three <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">9</span>, <span class="fl">10</span>, <span class="fl">12</span>, <span class="fl">13</span><span class="op">)</span><span class="op">)</span>
+<span class="fu"><a href="reference/upsetjs.html">upsetjs</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="reference/fromList.html">fromList</a></span><span class="op">(</span><span class="va">listInput</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="reference/interactiveChart.html">interactiveChart</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<div class="figure">
+<img src="https://user-images.githubusercontent.com/4129778/79375541-10dda700-7f59-11ea-933a-a3ffbca1bfd2.png" alt="List Input Example"><p class="caption">List Input Example</p>
 </div>
-<div id="shiny-example" class="section level2">
-<h2 class="hasAnchor">
-<a href="#shiny-example" class="anchor"></a>Shiny Example</h2>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">shiny</span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">upsetjs</span>)
+<p>see also <a href="./master/vignettes/upsetjs.Rmd">UpSetJS.Rmd</a></p>
+</div>
+<div class="section level2">
+<h2 id="shiny-example">Shiny Example<a class="anchor" aria-label="anchor" href="#shiny-example"></a>
+</h2>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://shiny.rstudio.com/" class="external-link">shiny</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/upsetjs/upsetjs_r/" class="external-link">upsetjs</a></span><span class="op">)</span>
 
-<span class="no">listInput</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="kw">one</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">11</span>, <span class="fl">12</span>, <span class="fl">13</span>),
-                  <span class="kw">two</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">10</span>),
-                  <span class="kw">three</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">9</span>, <span class="fl">10</span>, <span class="fl">12</span>, <span class="fl">13</span>))
+<span class="va">listInput</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>one <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">11</span>, <span class="fl">12</span>, <span class="fl">13</span><span class="op">)</span>,
+                  two <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">10</span><span class="op">)</span>,
+                  three <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">9</span>, <span class="fl">10</span>, <span class="fl">12</span>, <span class="fl">13</span><span class="op">)</span><span class="op">)</span>
 
-<span class="no">ui</span> <span class="kw">&lt;-</span> <span class="fu">fluidPage</span>(
-  <span class="fu">titlePanel</span>(<span class="st">"UpSet.js Shiny Example"</span>),
-  <span class="fu"><a href="reference/upsetjsOutput.html">upsetjsOutput</a></span>(<span class="st">"upsetjs1"</span>),
-)
+<span class="va">ui</span> <span class="op">&lt;-</span> <span class="fu">fluidPage</span><span class="op">(</span>
+  <span class="fu">titlePanel</span><span class="op">(</span><span class="st">"UpSet.js Shiny Example"</span><span class="op">)</span>,
+  <span class="fu"><a href="reference/upsetjsOutput.html">upsetjsOutput</a></span><span class="op">(</span><span class="st">"upsetjs1"</span><span class="op">)</span>,
+<span class="op">)</span>
 
-<span class="no">server</span> <span class="kw">&lt;-</span> <span class="kw">function</span>(<span class="no">input</span>, <span class="no">output</span>, <span class="no">session</span>) {
+<span class="va">server</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">input</span>, <span class="va">output</span>, <span class="va">session</span><span class="op">)</span> <span class="op">{</span>
   <span class="co"># render upsetjs as interactive plot</span>
-  <span class="no">output</span>$<span class="no">upsetjs1</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/renderUpsetjs.html">renderUpsetjs</a></span>({
-    <span class="fu"><a href="reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="reference/interactiveChart.html">interactiveChart</a></span>()
-  })
-}
+  <span class="va">output</span><span class="op">$</span><span class="va">upsetjs1</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/renderUpsetjs.html">renderUpsetjs</a></span><span class="op">(</span><span class="op">{</span>
+    <span class="fu"><a href="reference/upsetjs.html">upsetjs</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="reference/fromList.html">fromList</a></span><span class="op">(</span><span class="va">listInput</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="reference/interactiveChart.html">interactiveChart</a></span><span class="op">(</span><span class="op">)</span>
+  <span class="op">}</span><span class="op">)</span>
+<span class="op">}</span>
 
 <span class="co"># Run the application</span>
-<span class="fu">shinyApp</span>(<span class="kw">ui</span> <span class="kw">=</span> <span class="no">ui</span>, <span class="kw">server</span> <span class="kw">=</span> <span class="no">server</span>)</pre></div>
-<p><img src="https://user-images.githubusercontent.com/4129778/79375695-51d5bb80-7f59-11ea-8437-40fa60ce425c.png" alt="shiny"></p>
-<p>see also <a href="./master/shiny">Shiny Examples</a></p>
+<span class="fu">shinyApp</span><span class="op">(</span>ui <span class="op">=</span> <span class="va">ui</span>, server <span class="op">=</span> <span class="va">server</span><span class="op">)</span></code></pre></div>
+<div class="figure">
+<img src="https://user-images.githubusercontent.com/4129778/79375695-51d5bb80-7f59-11ea-8437-40fa60ce425c.png" alt="shiny"><p class="caption">shiny</p>
 </div>
-<div id="documentation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#documentation" class="anchor"></a>Documentation</h2>
-<p>the package documentation is located at <a href="https://upset.js.org/integrations/r"><img src="https://img.shields.io/badge/API-open-blue" alt="Open Docs"></a>. An introduction vignette is at <a href="https://upset.js.org/integrations/r/articles/basic"><img src="https://img.shields.io/badge/Example-open-red" alt="Open Vignette"></a>.</p>
+<p>see also <a href="./main/shiny">Shiny Examples</a></p>
 </div>
-<div id="venn-diagram" class="section level2">
-<h2 class="hasAnchor">
-<a href="#venn-diagram" class="anchor"></a>Venn Diagram</h2>
+<div class="section level2">
+<h2 id="dash-example">Dash Example<a class="anchor" aria-label="anchor" href="#dash-example"></a>
+</h2>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/plotly/dashR" class="external-link">dash</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/plotly/dash-html-components" class="external-link">dashHtmlComponents</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/upsetjs/upsetjs_r/" class="external-link">upsetjs</a></span><span class="op">)</span>
+
+<span class="va">app</span> <span class="op">&lt;-</span> <span class="va">Dash</span><span class="op">$</span><span class="fu">new</span><span class="op">(</span><span class="op">)</span>
+
+<span class="va">app</span><span class="op">$</span><span class="fu">layout</span><span class="op">(</span>
+    <span class="fu">htmlDiv</span><span class="op">(</span>
+        <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>
+            <span class="fu">htmlH1</span><span class="op">(</span><span class="st">"Hello UpSet.js + Dash"</span><span class="op">)</span>,
+            <span class="fu"><a href="reference/upsetjsDash.html">upsetjsDash</a></span><span class="op">(</span>id <span class="op">=</span> <span class="st">"upset"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="reference/fromList.html">fromList</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>a <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span><span class="op">)</span>, b <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">3</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
+                <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="reference/interactiveChart.html">interactiveChart</a></span><span class="op">(</span><span class="op">)</span>,
+            <span class="fu">htmlDiv</span><span class="op">(</span>id <span class="op">=</span> <span class="st">"output"</span><span class="op">)</span>
+        <span class="op">)</span>
+    <span class="op">)</span>
+<span class="op">)</span>
+<span class="va">app</span><span class="op">$</span><span class="fu">callback</span><span class="op">(</span>
+    output <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>id <span class="op">=</span> <span class="st">"output"</span>, property <span class="op">=</span> <span class="st">"children"</span><span class="op">)</span>,
+    params <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="fu">input</span><span class="op">(</span>id <span class="op">=</span> <span class="st">"upset"</span>, property <span class="op">=</span> <span class="st">"selection"</span><span class="op">)</span><span class="op">)</span>,
+    <span class="kw">function</span><span class="op">(</span><span class="va">selection</span><span class="op">)</span> <span class="op">{</span>
+        <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html" class="external-link">sprintf</a></span><span class="op">(</span><span class="st">"You selected \"%s\""</span>, <span class="va">selection</span><span class="op">$</span><span class="va">name</span><span class="op">)</span>
+    <span class="op">}</span>
+<span class="op">)</span>
+
+<span class="va">app</span><span class="op">$</span><span class="fu">run_server</span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<p>TODO</p>
+<p>see also <a href="./main/dash">Dash Examples</a></p>
+</div>
+<div class="section level2">
+<h2 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
+</h2>
+<p>the package documentation is located at <a href="https://upset.js.org/integrations/r" class="external-link"><img src="https://img.shields.io/badge/API-open-blue" alt="Open Docs"></a>. An introduction vignette is at <a href="https://upset.js.org/integrations/r/articles/basic" class="external-link"><img src="https://img.shields.io/badge/Example-open-red" alt="Open Vignette"></a>.</p>
+</div>
+<div class="section level2">
+<h2 id="venn-diagram">Venn Diagram<a class="anchor" aria-label="anchor" href="#venn-diagram"></a>
+</h2>
 <p>Besides the main UpSet.js plot also Venn Diagrams for up to five sets are supported. It uses the same input formats and has similar functionality in terms of interaction.</p>
-<div class="sourceCode" id="cb4"><pre class="r"><span class="no">listInput</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="kw">one</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">11</span>, <span class="fl">12</span>, <span class="fl">13</span>), <span class="kw">two</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">10</span>), <span class="kw">three</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">9</span>, <span class="fl">10</span>, <span class="fl">12</span>, <span class="fl">13</span>))
-<span class="fu"><a href="reference/upsetjsVennDiagram.html">upsetjsVennDiagram</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="reference/interactiveChart.html">interactiveChart</a></span>()</pre></div>
-<p><img src="https://user-images.githubusercontent.com/4129778/84817608-8a574b80-b015-11ea-91b8-2ff17bb533e4.png" alt="image"></p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">listInput</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>one <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">11</span>, <span class="fl">12</span>, <span class="fl">13</span><span class="op">)</span>, two <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">10</span><span class="op">)</span>, three <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">9</span>, <span class="fl">10</span>, <span class="fl">12</span>, <span class="fl">13</span><span class="op">)</span><span class="op">)</span>
+<span class="fu"><a href="reference/upsetjsVennDiagram.html">upsetjsVennDiagram</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="reference/fromList.html">fromList</a></span><span class="op">(</span><span class="va">listInput</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="reference/interactiveChart.html">interactiveChart</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<div class="figure">
+<img src="https://user-images.githubusercontent.com/4129778/84817608-8a574b80-b015-11ea-91b8-2ff17bb533e4.png" alt="image"><p class="caption">image</p>
+</div>
 <p>see also <a href="./master/vignettes/venn.Rmd">Venn.Rmd</a></p>
 </div>
-<div id="karnaugh-maps-diagram" class="section level2">
-<h2 class="hasAnchor">
-<a href="#karnaugh-maps-diagram" class="anchor"></a>Karnaugh Maps Diagram</h2>
+<div class="section level2">
+<h2 id="karnaugh-maps-diagram">Karnaugh Maps Diagram<a class="anchor" aria-label="anchor" href="#karnaugh-maps-diagram"></a>
+</h2>
 <p>Besides the main UpSet.js plot also a variant of a Karnaugh Map is supported. It uses the same input formats and has similar functionality in terms of interaction.</p>
-<div class="sourceCode" id="cb5"><pre class="r"><span class="no">listInput</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="kw">one</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">11</span>, <span class="fl">12</span>, <span class="fl">13</span>), <span class="kw">two</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">10</span>), <span class="kw">three</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">9</span>, <span class="fl">10</span>, <span class="fl">12</span>, <span class="fl">13</span>))
-<span class="fu"><a href="reference/upsetjsKarnaughMap.html">upsetjsKarnaughMap</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="reference/interactiveChart.html">interactiveChart</a></span>()</pre></div>
-<p><img src="https://user-images.githubusercontent.com/4129778/86348506-09789080-bc60-11ea-9ed0-be0560269f7f.png" alt="image"></p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">listInput</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>one <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">11</span>, <span class="fl">12</span>, <span class="fl">13</span><span class="op">)</span>, two <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">10</span><span class="op">)</span>, three <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">7</span>, <span class="fl">8</span>, <span class="fl">9</span>, <span class="fl">10</span>, <span class="fl">12</span>, <span class="fl">13</span><span class="op">)</span><span class="op">)</span>
+<span class="fu"><a href="reference/upsetjsKarnaughMap.html">upsetjsKarnaughMap</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="reference/fromList.html">fromList</a></span><span class="op">(</span><span class="va">listInput</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="reference/interactiveChart.html">interactiveChart</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<div class="figure">
+<img src="https://user-images.githubusercontent.com/4129778/86348506-09789080-bc60-11ea-9ed0-be0560269f7f.png" alt="image"><p class="caption">image</p>
+</div>
 <p>see also <a href="./master/vignettes/kmap.Rmd">KMap.Rmd</a></p>
 </div>
-<div id="dev-environment" class="section level2">
-<h2 class="hasAnchor">
-<a href="#dev-environment" class="anchor"></a>Dev Environment</h2>
+<div class="section level2">
+<h2 id="dev-environment">Dev Environment<a class="anchor" aria-label="anchor" href="#dev-environment"></a>
+</h2>
 <p>requirements:</p>
 <ul>
 <li>R with packages: devtools, pkgdown</li>
 <li>pandoc</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="ex">npm</span> i -g yarn</span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="ex">yarn</span> set version berry</span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="ex">yarn</span> install</span>
-<span id="cb6-4"><a href="#cb6-4"></a><span class="ex">yarn</span> pnpify --sdk</span></code></pre></div>
-<div id="building" class="section level3">
-<h3 class="hasAnchor">
-<a href="#building" class="anchor"></a>Building</h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a><span class="ex">yarn</span> lint</span>
-<span id="cb7-2"><a href="#cb7-2"></a><span class="ex">yarn</span> build</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">npm</span> i -g yarn</a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="ex">yarn</span> install</a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="ex">yarn</span> sdks vscode</a></code></pre></div>
+<div class="section level3">
+<h3 id="building">Building<a class="anchor" aria-label="anchor" href="#building"></a>
+</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="ex">yarn</span> lint</a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="ex">yarn</span> build</a></code></pre></div>
 </div>
-<div id="r-package" class="section level3">
-<h3 class="hasAnchor">
-<a href="#r-package" class="anchor"></a>R Package</h3>
-<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a><span class="ex">yarn</span> check:r</span>
-<span id="cb8-2"><a href="#cb8-2"></a><span class="ex">yarn</span> build:r</span></code></pre></div>
+<div class="section level3">
+<h3 id="r-package">R Package<a class="anchor" aria-label="anchor" href="#r-package"></a>
+</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="ex">yarn</span> style:r</a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="ex">yarn</span> lint:r</a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="ex">yarn</span> check:r</a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="ex">yarn</span> build:r</a></code></pre></div>
 <p>or in R</p>
-<div class="sourceCode" id="cb9"><pre class="r"><span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/check.html">check</a></span>(<span class="st">"r_package"</span>)
-<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/document.html">document</a></span>(<span class="st">"r_package"</span>)
-<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/build.html">build</a></span>(<span class="st">"r_package"</span>)
-<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/load_all.html">load_all</a></span>(<span class="st">"r_package"</span>)</pre></div>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/load_all.html" class="external-link">load_all</a></span><span class="op">(</span><span class="op">)</span>
+<span class="fu">styler</span><span class="fu">::</span><span class="fu"><a href="https://styler.r-lib.org/reference/style_pkg.html" class="external-link">style_pkg</a></span><span class="op">(</span><span class="op">)</span>
+<span class="fu">lintr</span><span class="fu">::</span><span class="fu">lint_pkg</span><span class="op">(</span><span class="op">)</span>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/check.html" class="external-link">check</a></span><span class="op">(</span><span class="op">)</span>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/document.html" class="external-link">document</a></span><span class="op">(</span><span class="op">)</span>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/build.html" class="external-link">build</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p><strong>R Package Website</strong></p>
 <p>will be automatically updated upon push</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a><span class="ex">yarn</span> docs:r</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="ex">yarn</span> docs:r</a></code></pre></div>
 <p>or in R</p>
-<div class="sourceCode" id="cb11"><pre class="r">devtools::build_site("r_package)</pre></div>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/build_site.html" class="external-link">build_site</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 </div>
 </div>
-<div id="release" class="section level2">
-<h2 class="hasAnchor">
-<a href="#release" class="anchor"></a>Release</h2>
+<div class="section level2">
+<h2 id="release">Release<a class="anchor" aria-label="anchor" href="#release"></a>
+</h2>
 <p>use <code>release-it</code></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1"></a><span class="ex">yarn</span> release:major</span>
-<span id="cb12-2"><a href="#cb12-2"></a><span class="ex">yarn</span> release:minor</span>
-<span id="cb12-3"><a href="#cb12-3"></a><span class="ex">yarn</span> release:patch</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb13-1" title="1"><span class="ex">yarn</span> release</a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="ex">Rscript</span> -e <span class="st">"devtools::release()"</span></a></code></pre></div>
 </div>
-<div id="privacy-policy" class="section level2">
-<h2 class="hasAnchor">
-<a href="#privacy-policy" class="anchor"></a>Privacy Policy</h2>
+<div class="section level2">
+<h2 id="privacy-policy">Privacy Policy<a class="anchor" aria-label="anchor" href="#privacy-policy"></a>
+</h2>
 <p>UpSet.js is a client only library. The library or any of its integrations doesn’t track you or transfers your data to any server. The uploaded data in the app are stored in your browser only using IndexedDB. The Tableau extension can run in a sandbox environment prohibiting any server requests. However, as soon as you export your session within the app to an external service (e.g., Codepen.io) your data will be transferred.</p>
 </div>
-<div id="license--terms-of-service" class="section level2">
-<h2 class="hasAnchor">
-<a href="#license--terms-of-service" class="anchor"></a>License / Terms of Service</h2>
-<div id="commercial-license" class="section level3">
-<h3 class="hasAnchor">
-<a href="#commercial-license" class="anchor"></a>Commercial license</h3>
-<p>If you want to use Upset.js for a commercial application the commercial license is the appropriate license. Contact <a href="mailto:sam@sgratzl.com">@sgratzl</a> for details.</p>
+<div class="section level2">
+<h2 id="license--terms-of-service">License / Terms of Service<a class="anchor" aria-label="anchor" href="#license--terms-of-service"></a>
+</h2>
+<div class="section level3">
+<h3 id="commercial-license">Commercial license<a class="anchor" aria-label="anchor" href="#commercial-license"></a>
+</h3>
+<p>If you want to use UpSet.js for a commercial application or in a commercial environment, the commercial license is the appropriate license. Contact <a href="mailto:sam@sgratzl.com">@sgratzl</a> for details.</p>
 </div>
-<div id="open-source-license" class="section level3">
-<h3 class="hasAnchor">
-<a href="#open-source-license" class="anchor"></a>Open-source license</h3>
+<div class="section level3">
+<h3 id="open-source-license">Open-source license<a class="anchor" aria-label="anchor" href="#open-source-license"></a>
+</h3>
 <p>This library is released under the <code>GNU AGPLv3</code> version to be used for private and academic purposes. In case of a commercial use, please get in touch regarding a commercial license.</p>
 </div>
 </div>
@@ -235,51 +280,61 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=upsetjs">https://​cloud.r-project.org/​package=upsetjs</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/upsetjs/upsetjs_r/">https://​github.com/​upsetjs/​upsetjs_r/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/upsetjs/upsetjs_r/issues">https://​github.com/​upsetjs/​upsetjs_r/​issues</a>
-</li>
+<li><a href="https://cloud.r-project.org/package=upsetjs" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/upsetjs/upsetjs_r/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/upsetjs/upsetjs_r/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li>
-<a href="https://www.r-project.org/Licenses/AGPL-3">AGPL-3</a> | file <a href="LICENSE-text.html">LICENSE</a>
+<a href="https://www.r-project.org/Licenses/AGPL-3" class="external-link">AGPL-3</a> | file <a href="LICENSE-text.html">LICENSE</a>
 </li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing upsetjs</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Samuel Gratzl <br><small class="roles"> Author, maintainer </small>  </li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.rdocumentation.org/packages/upsetjs"><img src="https://img.shields.io/cran/v/upsetjs" alt="CRAN"></a></li>
-<li><a href="https://github.com/upsetjs/upsetjs_r/actions"><img src="https://github.com/upsetjs/upsetjs_r/workflows/ci/badge.svg" alt="Github Actions"></a></li>
-<li><a href="https://mybinder.org/v2/gh/upsetjs/upsetjs_r/master?urlpath=rstudio"><img src="https://mybinder.org/badge_logo.svg" alt="Open in Binder"></a></li>
-<li><a href="https://upset.js.org/integrations/r"><img src="https://img.shields.io/badge/API-open-blue" alt="Open Docs"></a></li>
-<li><a href="https://upset.js.org/integrations/r/articles/basic"><img src="https://img.shields.io/badge/Example-open-red" alt="Open example"></a></li>
+<li><a href="https://www.rdocumentation.org/packages/upsetjs" class="external-link"><img src="https://img.shields.io/cran/v/upsetjs" alt="CRAN"></a></li>
+<li><a href="https://github.com/upsetjs/upsetjs_r/actions" class="external-link"><img src="https://github.com/upsetjs/upsetjs_r/workflows/ci/badge.svg" alt="Github Actions"></a></li>
+<li><a href="https://mybinder.org/v2/gh/upsetjs/upsetjs_r/master?urlpath=rstudio" class="external-link"><img src="https://mybinder.org/badge_logo.svg" alt="Open in Binder"></a></li>
+<li><a href="https://upset.js.org/integrations/r" class="external-link"><img src="https://img.shields.io/badge/API-open-blue" alt="Open Docs"></a></li>
+<li><a href="https://upset.js.org/integrations/r/articles/basic" class="external-link"><img src="https://img.shields.io/badge/Example-open-red" alt="Open example"></a></li>
 </ul>
 </div>
-</div>
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Samuel Gratzl.</p>
+  <p></p>
+<p>Developed by Samuel Gratzl.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -287,6 +342,8 @@
 
   
 
+
+  
 
   </body>
 </html>

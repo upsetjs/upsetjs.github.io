@@ -19,6 +19,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,17 +33,14 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">upsetjs</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.6.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.10.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
+  <a href="../articles/upsetjs.html">Get started</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -54,9 +53,6 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../articles/basic.html">UpSet.js Introduction</a>
-    </li>
-    <li>
       <a href="../articles/colors.html">UpSet.js Coloring</a>
     </li>
     <li>
@@ -76,8 +72,8 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/upsetjs/upsetjs_r/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/upsetjs/upsetjs_r/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -91,46 +87,54 @@
 
       
 
-      </header><script src="colors_files/accessible-code-block-0.0.1/empty-anchor.js"></script><script src="colors_files/htmlwidgets-1.5.1/htmlwidgets.js"></script><script src="colors_files/upsetjs-binding-1.6.0/upsetjs.js"></script><div class="row">
+      </header><script src="colors_files/htmlwidgets-1.5.4/htmlwidgets.js"></script><script src="colors_files/upsetjs-binding-1.10.0/upsetjs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>UpSet.js Coloring</h1>
-                        <h4 class="author">Samuel Gratzl</h4>
+                        <h4 data-toc-skip class="author">Samuel Gratzl</h4>
             
-            <h4 class="date">2020-07-02</h4>
+            <h4 data-toc-skip class="date">2021-12-24</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/upsetjs/upsetjs_r/blob/master/../vignettes/colors.Rmd"><code>../vignettes/colors.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/upsetjs/upsetjs_r/blob/HEAD/vignettes/colors.Rmd" class="external-link"><code>vignettes/colors.Rmd</code></a></small>
       <div class="hidden name"><code>colors.Rmd</code></div>
 
     </div>
 
     
     
-<div id="upset-js-r-widget---coloring-diagrams" class="section level1">
-<h1 class="hasAnchor">
-<a href="#upset-js-r-widget---coloring-diagrams" class="anchor"></a>UpSet.js R Widget - Coloring Diagrams</h1>
+<div class="section level1">
+<h1 id="upset-js-r-widget---coloring-diagrams">UpSet.js R Widget - Coloring Diagrams<a class="anchor" aria-label="anchor" href="#upset-js-r-widget---coloring-diagrams"></a>
+</h1>
 <p>UpSet.js allow you to color sets in UpSet plots and Venn diagrams.</p>
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="co"># devtools::install_url("https://github.com/upsetjs/upsetjs_r/releases/latest/download/upsetjs.tar.gz")</span>
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">upsetjs</span>)</pre></body></html></div>
-<div id="basic-user-interface" class="section level2">
-<h2 class="hasAnchor">
-<a href="#basic-user-interface" class="anchor"></a>Basic User Interface</h2>
-<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="no">listInput</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="kw">s1</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'e'</span>, <span class="st">'g'</span>, <span class="st">'h'</span>, <span class="st">'k'</span>, <span class="st">'l'</span>, <span class="st">'m'</span>), <span class="kw">s2</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>, <span class="st">'j'</span>), <span class="kw">s3</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">'a'</span>, <span class="st">'e'</span>, <span class="st">'f'</span>, <span class="st">'g'</span>, <span class="st">'h'</span>, <span class="st">'i'</span>, <span class="st">'j'</span>, <span class="st">'l'</span>, <span class="st">'m'</span>))
-<span class="no">colors</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(<span class="kw">s1</span> <span class="kw">=</span> <span class="st">'#1f77b4'</span>, <span class="kw">s2</span> <span class="kw">=</span> <span class="st">'#2ca02c'</span>, <span class="kw">s3</span> <span class="kw">=</span> <span class="st">'#d62728'</span>, <span class="kw">`s1&amp;s2`</span> <span class="kw">=</span> <span class="st">'#9467bd'</span>, <span class="kw">`s1&amp;s3`</span> <span class="kw">=</span> <span class="st">'#8c564b'</span>, <span class="kw">`s2&amp;s3`</span> <span class="kw">=</span> <span class="st">'#e377c2'</span>, <span class="kw">`s1&amp;s2&amp;s3`</span> <span class="kw">=</span> <span class="st">'#bcbd22'</span>)
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># devtools::install_url("https://github.com/upsetjs/upsetjs_r/releases/latest/download/upsetjs.tar.gz")</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/upsetjs/upsetjs_r/" class="external-link">upsetjs</a></span><span class="op">)</span></code></pre></div>
+<div class="section level2">
+<h2 id="basic-user-interface">Basic User Interface<a class="anchor" aria-label="anchor" href="#basic-user-interface"></a>
+</h2>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">listInput</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>s1 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'e'</span>, <span class="st">'g'</span>, <span class="st">'h'</span>, <span class="st">'k'</span>, <span class="st">'l'</span>, <span class="st">'m'</span><span class="op">)</span>, s2 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>, <span class="st">'j'</span><span class="op">)</span>, s3 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'e'</span>, <span class="st">'f'</span>, <span class="st">'g'</span>, <span class="st">'h'</span>, <span class="st">'i'</span>, <span class="st">'j'</span>, <span class="st">'l'</span>, <span class="st">'m'</span><span class="op">)</span><span class="op">)</span>
+<span class="va">colors</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>s1 <span class="op">=</span> <span class="st">'#1f77b4'</span>, s2 <span class="op">=</span> <span class="st">'#2ca02c'</span>, s3 <span class="op">=</span> <span class="st">'#d62728'</span>, `s1&amp;s2` <span class="op">=</span> <span class="st">'#9467bd'</span>, `s1&amp;s3` <span class="op">=</span> <span class="st">'#8c564b'</span>, `s2&amp;s3` <span class="op">=</span> <span class="st">'#e377c2'</span>, `s1&amp;s2&amp;s3` <span class="op">=</span> <span class="st">'#bcbd22'</span><span class="op">)</span>
 
-<span class="no">render</span> <span class="kw">&lt;-</span> <span class="kw">function</span>(<span class="no">upsetjs</span>) {
-  <span class="no">upsetjs</span> <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span>(<span class="no">listInput</span>, <span class="kw">colors</span><span class="kw">=</span><span class="no">colors</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/chartTheme.html">chartTheme</a></span>(<span class="kw">selection.color</span><span class="kw">=</span><span class="st">""</span>, <span class="kw">has.selection.opacity</span><span class="kw">=</span><span class="fl">0.3</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/interactiveChart.html">interactiveChart</a></span>()
-}</pre></body></html></div>
-<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="no">v</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu">render</span>()
-<span class="no">v</span></pre></body></html></div>
-<div id="htmlwidget-fa1bb4a75fa18e16e17b" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fa1bb4a75fa18e16e17b">{"x":{"mode":"hover","sets":[{"name":"s1","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"color":"#1f77b4"},{"name":"s3","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"color":"#d62728"},{"name":"s2","type":"set","elems":["a","b","d","e","j"],"color":"#2ca02c"}],"combinations":[{"name":"s1","color":"#1f77b4","type":"intersection","elems":["a","b","c","e","g","h","k","l","m"],"setNames":"s1"},{"name":"s3","color":"#d62728","type":"intersection","elems":["a","e","f","g","h","i","j","l","m"],"setNames":"s3"},{"name":"s1&s3","color":"#8c564b","type":"intersection","elems":["a","e","g","h","l","m"],"setNames":["s1","s3"]},{"name":"s2","color":"#2ca02c","type":"intersection","elems":["a","b","d","e","j"],"setNames":"s2"},{"name":"s1&s2","color":"#9467bd","type":"intersection","elems":["a","b","e"],"setNames":["s1","s2"]},{"name":"s2&s3","color":"#e377c2","type":"intersection","elems":["a","e","j"],"setNames":["s2","s3"]},{"name":"s1&s2&s3","color":"#bcbd22","type":"intersection","elems":["a","e"],"setNames":["s1","s2","s3"]}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"selectionColor":"","hasSelectionOpacity":0.3,"interactive":true},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="no">v</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../reference/upsetjsVennDiagram.html">upsetjsVennDiagram</a></span>() <span class="kw">%&gt;%</span> <span class="fu">render</span>()
-<span class="no">v</span></pre></body></html></div>
-<div id="htmlwidget-ec89a4279fa19c4f93e4" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ec89a4279fa19c4f93e4">{"x":{"renderMode":"venn","mode":"hover","sets":[{"name":"s1","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"color":"#1f77b4"},{"name":"s3","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"color":"#d62728"},{"name":"s2","type":"set","elems":["a","b","d","e","j"],"color":"#2ca02c"}],"combinations":[{"name":"","color":null,"type":"distinctIntersection","elems":null,"setNames":null},{"name":"s1","color":"#1f77b4","type":"distinctIntersection","elems":["c","k"],"setNames":"s1"},{"name":"s2","color":"#2ca02c","type":"distinctIntersection","elems":"d","setNames":"s2"},{"name":"s3","color":"#d62728","type":"distinctIntersection","elems":["f","i"],"setNames":"s3"},{"name":"s1&s2","color":"#9467bd","type":"distinctIntersection","elems":"b","setNames":["s1","s2"]},{"name":"s1&s3","color":"#8c564b","type":"distinctIntersection","elems":["g","h","l","m"],"setNames":["s1","s3"]},{"name":"s2&s3","color":"#e377c2","type":"distinctIntersection","elems":"j","setNames":["s2","s3"]},{"name":"s1&s2&s3","color":"#bcbd22","type":"distinctIntersection","elems":["a","e"],"setNames":["s1","s2","s3"]}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"selectionColor":"","hasSelectionOpacity":0.3,"interactive":true},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="no">v</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../reference/upsetjsEulerDiagram.html">upsetjsEulerDiagram</a></span>() <span class="kw">%&gt;%</span> <span class="fu">render</span>()
-<span class="no">v</span></pre></body></html></div>
-<div id="htmlwidget-b5a133c62053488de950" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b5a133c62053488de950">{"x":{"renderMode":"euler","mode":"hover","sets":[{"name":"s1","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"color":"#1f77b4"},{"name":"s3","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"color":"#d62728"},{"name":"s2","type":"set","elems":["a","b","d","e","j"],"color":"#2ca02c"}],"combinations":[{"name":"","color":null,"type":"distinctIntersection","elems":null,"setNames":null},{"name":"s1","color":"#1f77b4","type":"distinctIntersection","elems":["c","k"],"setNames":"s1"},{"name":"s2","color":"#2ca02c","type":"distinctIntersection","elems":"d","setNames":"s2"},{"name":"s3","color":"#d62728","type":"distinctIntersection","elems":["f","i"],"setNames":"s3"},{"name":"s1&s2","color":"#9467bd","type":"distinctIntersection","elems":"b","setNames":["s1","s2"]},{"name":"s1&s3","color":"#8c564b","type":"distinctIntersection","elems":["g","h","l","m"],"setNames":["s1","s3"]},{"name":"s2&s3","color":"#e377c2","type":"distinctIntersection","elems":"j","setNames":["s2","s3"]},{"name":"s1&s2&s3","color":"#bcbd22","type":"distinctIntersection","elems":["a","e"],"setNames":["s1","s2","s3"]}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"selectionColor":"","hasSelectionOpacity":0.3,"interactive":true},"evals":[],"jsHooks":[]}</script>
+<span class="va">render</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">upsetjs</span><span class="op">)</span> <span class="op">{</span>
+  <span class="va">upsetjs</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="../reference/fromList.html">fromList</a></span><span class="op">(</span><span class="va">listInput</span>, colors<span class="op">=</span><span class="va">colors</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="../reference/chartTheme.html">chartTheme</a></span><span class="op">(</span>selection.color<span class="op">=</span><span class="st">""</span>, has.selection.opacity<span class="op">=</span><span class="fl">0.3</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="../reference/interactiveChart.html">interactiveChart</a></span><span class="op">(</span><span class="op">)</span>
+<span class="op">}</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">v</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+    <span class="fu">render</span><span class="op">(</span><span class="op">)</span>
+<span class="va">v</span></code></pre></div>
+<div id="htmlwidget-e592645b0c7d679bb335" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e592645b0c7d679bb335">{"x":{"sets":[{"name":"s1","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":"#1f77b4"},{"name":"s3","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":"#d62728"},{"name":"s2","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":"#2ca02c"}],"combinations":[{"name":"s1","type":"intersection","elems":["a","b","c","e","g","h","k","l","m"],"color":"#1f77b4","cardinality":9,"setNames":"s1","degree":1},{"name":"s3","type":"intersection","elems":["a","e","f","g","h","i","j","l","m"],"color":"#d62728","cardinality":9,"setNames":"s3","degree":1},{"name":"s1&s3","type":"intersect","elems":["a","e","g","h","l","m"],"color":"#8c564b","cardinality":6,"setNames":["s1","s3"],"degree":2},{"name":"s2","type":"intersection","elems":["a","b","d","e","j"],"color":"#2ca02c","cardinality":5,"setNames":"s2","degree":1},{"name":"s1&s2","type":"intersect","elems":["a","b","e"],"color":"#9467bd","cardinality":3,"setNames":["s1","s2"],"degree":2},{"name":"s3&s2","type":"intersect","elems":["a","e","j"],"color":null,"cardinality":3,"setNames":["s3","s2"],"degree":2},{"name":"s1&s3&s2","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["s1","s3","s2"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"selectionColor":"","hasSelectionOpacity":0.3,"interactive":true},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">v</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/upsetjsVennDiagram.html">upsetjsVennDiagram</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+    <span class="fu">render</span><span class="op">(</span><span class="op">)</span>
+<span class="va">v</span></code></pre></div>
+<div id="htmlwidget-6098905a444a46e0b583" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6098905a444a46e0b583">{"x":{"renderMode":"venn","sets":[{"name":"s1","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":"#1f77b4"},{"name":"s3","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":"#d62728"},{"name":"s2","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":"#2ca02c"}],"combinations":[{"name":"s1","type":"distinctIntersection","elems":["c","k"],"color":"#1f77b4","cardinality":2,"setNames":"s1","degree":1},{"name":"s2","type":"distinctIntersection","elems":"d","color":"#2ca02c","cardinality":1,"setNames":"s2","degree":1},{"name":"s3","type":"distinctIntersection","elems":["f","i"],"color":"#d62728","cardinality":2,"setNames":"s3","degree":1},{"name":"s1&s2","type":"distinctIntersection","elems":"b","color":"#9467bd","cardinality":1,"setNames":["s1","s2"],"degree":2},{"name":"s1&s3","type":"distinctIntersection","elems":["g","h","l","m"],"color":"#8c564b","cardinality":4,"setNames":["s1","s3"],"degree":2},{"name":"s3&s2","type":"distinctIntersection","elems":"j","color":null,"cardinality":1,"setNames":["s3","s2"],"degree":2},{"name":"s1&s3&s2","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["s1","s3","s2"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"selectionColor":"","hasSelectionOpacity":0.3,"interactive":true},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">v</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/upsetjsEulerDiagram.html">upsetjsEulerDiagram</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+    <span class="fu">render</span><span class="op">(</span><span class="op">)</span>
+<span class="va">v</span></code></pre></div>
+<div id="htmlwidget-ef2d1892d60e34c07e36" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ef2d1892d60e34c07e36">{"x":{"renderMode":"euler","sets":[{"name":"s1","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":"#1f77b4"},{"name":"s3","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":"#d62728"},{"name":"s2","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":"#2ca02c"}],"combinations":[{"name":"s1","type":"distinctIntersection","elems":["c","k"],"color":"#1f77b4","cardinality":2,"setNames":"s1","degree":1},{"name":"s2","type":"distinctIntersection","elems":"d","color":"#2ca02c","cardinality":1,"setNames":"s2","degree":1},{"name":"s3","type":"distinctIntersection","elems":["f","i"],"color":"#d62728","cardinality":2,"setNames":"s3","degree":1},{"name":"s1&s2","type":"distinctIntersection","elems":"b","color":"#9467bd","cardinality":1,"setNames":["s1","s2"],"degree":2},{"name":"s1&s3","type":"distinctIntersection","elems":["g","h","l","m"],"color":"#8c564b","cardinality":4,"setNames":["s1","s3"],"degree":2},{"name":"s3&s2","type":"distinctIntersection","elems":"j","color":null,"cardinality":1,"setNames":["s3","s2"],"degree":2},{"name":"s1&s3&s2","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["s1","s3","s2"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"selectionColor":"","hasSelectionOpacity":0.3,"interactive":true},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
   </div>
@@ -146,11 +150,13 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by Samuel Gratzl.</p>
+  <p></p>
+<p>Developed by Samuel Gratzl.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -158,6 +164,8 @@
 
   
 
+
+  
 
   </body>
 </html>

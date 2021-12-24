@@ -19,6 +19,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,17 +33,14 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">upsetjs</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.6.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.10.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
+  <a href="../articles/upsetjs.html">Get started</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -54,9 +53,6 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../articles/basic.html">UpSet.js Introduction</a>
-    </li>
-    <li>
       <a href="../articles/colors.html">UpSet.js Coloring</a>
     </li>
     <li>
@@ -76,8 +72,8 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/upsetjs/upsetjs_r/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/upsetjs/upsetjs_r/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -91,28 +87,30 @@
 
       
 
-      </header><script src="combinationModes_files/accessible-code-block-0.0.1/empty-anchor.js"></script><script src="combinationModes_files/htmlwidgets-1.5.1/htmlwidgets.js"></script><script src="combinationModes_files/upsetjs-binding-1.6.0/upsetjs.js"></script><div class="row">
+      </header><script src="combinationModes_files/htmlwidgets-1.5.4/htmlwidgets.js"></script><script src="combinationModes_files/upsetjs-binding-1.10.0/upsetjs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>UpSet.js Combination Modes</h1>
-                        <h4 class="author">Samuel Gratzl</h4>
+                        <h4 data-toc-skip class="author">Samuel Gratzl</h4>
             
-            <h4 class="date">2020-07-02</h4>
+            <h4 data-toc-skip class="date">2021-12-24</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/upsetjs/upsetjs_r/blob/master/../vignettes/combinationModes.Rmd"><code>../vignettes/combinationModes.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/upsetjs/upsetjs_r/blob/HEAD/vignettes/combinationModes.Rmd" class="external-link"><code>vignettes/combinationModes.Rmd</code></a></small>
       <div class="hidden name"><code>combinationModes.Rmd</code></div>
 
     </div>
 
     
     
-<div id="upset-js-combination-modes" class="section level1">
-<h1 class="hasAnchor">
-<a href="#upset-js-combination-modes" class="anchor"></a>UpSet.js Combination Modes</h1>
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">upsetjs</span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">tibble</span>)</pre></body></html></div>
-<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="no">t</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tribble.html">tribble</a></span>(
-  ~<span class="no">set1</span>, ~<span class="no">set2</span>, ~<span class="no">set3</span>,
+<div class="section level1">
+<h1 id="upset-js-combination-modes">UpSet.js Combination Modes<a class="anchor" aria-label="anchor" href="#upset-js-combination-modes"></a>
+</h1>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/upsetjs/upsetjs_r/" class="external-link">upsetjs</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/" class="external-link">tibble</a></span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">t</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tribble.html" class="external-link">tribble</a></span><span class="op">(</span>
+  <span class="op">~</span><span class="va">set1</span>, <span class="op">~</span><span class="va">set2</span>, <span class="op">~</span><span class="va">set3</span>,
    <span class="fl">1</span>,   <span class="fl">1</span>,   <span class="fl">0</span>,
    <span class="fl">0</span>,   <span class="fl">0</span>,   <span class="fl">1</span>,
    <span class="fl">0</span>,   <span class="fl">1</span>,   <span class="fl">1</span>,
@@ -133,27 +131,36 @@
    <span class="fl">0</span>,   <span class="fl">1</span>,   <span class="fl">0</span>,
    <span class="fl">0</span>,   <span class="fl">0</span>,   <span class="fl">1</span>,
    <span class="fl">0</span>,   <span class="fl">0</span>,   <span class="fl">1</span>
-)</pre></body></html></div>
-<div id="intersection-mode" class="section level2">
-<h2 class="hasAnchor">
-<a href="#intersection-mode" class="anchor"></a>Intersection Mode</h2>
-<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromDataFrame.html">fromDataFrame</a></span>(<span class="no">t</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/generateIntersections.html">generateIntersections</a></span>()</pre></body></html></div>
-<div id="htmlwidget-91c47d51ed8643015cb9" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-91c47d51ed8643015cb9">{"x":{"mode":"hover","sets":[{"name":"set3","type":"set","color":null,"elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"]},{"name":"set2","type":"set","color":null,"elems":["1","3","6","8","11","14","15","16","17","18"]},{"name":"set1","type":"set","color":null,"elems":["1","7","11","12","15"]}],"combinations":[{"name":"set3","color":null,"type":"intersection","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"setNames":"set3"},{"name":"set2","color":null,"type":"intersection","elems":["1","3","6","8","11","14","15","16","17","18"],"setNames":"set2"},{"name":"set3&set2","color":null,"type":"intersection","elems":["3","6","8","11","15","17"],"setNames":["set3","set2"]},{"name":"set1","color":null,"type":"intersection","elems":["1","7","11","12","15"],"setNames":"set1"},{"name":"set2&set1","color":null,"type":"intersection","elems":["1","11","15"],"setNames":["set2","set1"]},{"name":"set3&set1","color":null,"type":"intersection","elems":["7","11","15"],"setNames":["set3","set1"]},{"name":"set3&set2&set1","color":null,"type":"intersection","elems":["11","15"],"setNames":["set3","set2","set1"]}],"elems":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"expressionData":false},"evals":[],"jsHooks":[]}</script>
+<span class="op">)</span></code></pre></div>
+<div class="section level2">
+<h2 id="intersection-mode">Intersection Mode<a class="anchor" aria-label="anchor" href="#intersection-mode"></a>
+</h2>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+    <span class="fu"><a href="../reference/fromDataFrame.html">fromDataFrame</a></span><span class="op">(</span><span class="va">t</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+    <span class="fu"><a href="../reference/generateIntersections.html">generateIntersections</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-40f6d44bec2c38f5b31d" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-40f6d44bec2c38f5b31d">{"x":{"sets":[{"name":"set3","type":"set","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"cardinality":15,"color":null},{"name":"set2","type":"set","elems":["1","3","6","8","11","14","15","16","17","18"],"cardinality":10,"color":null},{"name":"set1","type":"set","elems":["1","7","11","12","15"],"cardinality":5,"color":null}],"combinations":[{"name":"set3","type":"intersection","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"color":null,"cardinality":15,"setNames":"set3","degree":1},{"name":"set2","type":"intersection","elems":["1","3","6","8","11","14","15","16","17","18"],"color":null,"cardinality":10,"setNames":"set2","degree":1},{"name":"set3&set2","type":"intersect","elems":["3","6","8","11","15","17"],"color":null,"cardinality":6,"setNames":["set3","set2"],"degree":2},{"name":"set1","type":"intersection","elems":["1","7","11","12","15"],"color":null,"cardinality":5,"setNames":"set1","degree":1},{"name":"set2&set1","type":"intersect","elems":["1","11","15"],"color":null,"cardinality":3,"setNames":["set2","set1"],"degree":2},{"name":"set3&set1","type":"intersect","elems":["7","11","15"],"color":null,"cardinality":3,"setNames":["set3","set1"],"degree":2},{"name":"set3&set2&set1","type":"intersect","elems":["11","15"],"color":null,"cardinality":2,"setNames":["set3","set2","set1"],"degree":3}],"elems":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"expressionData":false},"evals":[],"jsHooks":[]}</script>
 </div>
-<div id="union-mode" class="section level2">
-<h2 class="hasAnchor">
-<a href="#union-mode" class="anchor"></a>Union Mode</h2>
-<div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromDataFrame.html">fromDataFrame</a></span>(<span class="no">t</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/generateUnions.html">generateUnions</a></span>()</pre></body></html></div>
-<div id="htmlwidget-07b5d55404d01784f884" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-07b5d55404d01784f884">{"x":{"mode":"hover","sets":[{"name":"set3","type":"set","color":null,"elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"]},{"name":"set2","type":"set","color":null,"elems":["1","3","6","8","11","14","15","16","17","18"]},{"name":"set1","type":"set","color":null,"elems":["1","7","11","12","15"]}],"combinations":[{"name":"set3&set2&set1","color":null,"type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20","1","14","16","18","12"],"setNames":["set3","set2","set1"]},{"name":"set3&set2","color":null,"type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20","1","14","16","18"],"setNames":["set3","set2"]},{"name":"set3&set1","color":null,"type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20","1","12"],"setNames":["set3","set1"]},{"name":"set3","color":null,"type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"setNames":"set3"},{"name":"set2&set1","color":null,"type":"union","elems":["1","3","6","8","11","14","15","16","17","18","7","12"],"setNames":["set2","set1"]},{"name":"set2","color":null,"type":"union","elems":["1","3","6","8","11","14","15","16","17","18"],"setNames":"set2"},{"name":"set1","color":null,"type":"union","elems":["1","7","11","12","15"],"setNames":"set1"}],"elems":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"expressionData":false},"evals":[],"jsHooks":[]}</script>
+<div class="section level2">
+<h2 id="union-mode">Union Mode<a class="anchor" aria-label="anchor" href="#union-mode"></a>
+</h2>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+    <span class="fu"><a href="../reference/fromDataFrame.html">fromDataFrame</a></span><span class="op">(</span><span class="va">t</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+    <span class="fu"><a href="../reference/generateUnions.html">generateUnions</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-0466a922c504ab881653" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0466a922c504ab881653">{"x":{"sets":[{"name":"set3","type":"set","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"cardinality":15,"color":null},{"name":"set2","type":"set","elems":["1","3","6","8","11","14","15","16","17","18"],"cardinality":10,"color":null},{"name":"set1","type":"set","elems":["1","7","11","12","15"],"cardinality":5,"color":null}],"combinations":[{"name":"set3&set2&set1","type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20","1","14","16","18","12"],"color":null,"cardinality":20,"setNames":["set3","set2","set1"],"degree":3},{"name":"set3&set2","type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20","1","14","16","18"],"color":null,"cardinality":19,"setNames":["set3","set2"],"degree":2},{"name":"set3&set1","type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20","1","12"],"color":null,"cardinality":17,"setNames":["set3","set1"],"degree":2},{"name":"set3","type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"color":null,"cardinality":15,"setNames":"set3","degree":1},{"name":"set2&set1","type":"union","elems":["1","3","6","8","11","14","15","16","17","18","7","12"],"color":null,"cardinality":12,"setNames":["set2","set1"],"degree":2},{"name":"set2","type":"union","elems":["1","3","6","8","11","14","15","16","17","18"],"color":null,"cardinality":10,"setNames":"set2","degree":1},{"name":"set1","type":"union","elems":["1","7","11","12","15"],"color":null,"cardinality":5,"setNames":"set1","degree":1}],"elems":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"expressionData":false},"evals":[],"jsHooks":[]}</script>
 </div>
-<div id="distinct-intersection-mode" class="section level2">
-<h2 class="hasAnchor">
-<a href="#distinct-intersection-mode" class="anchor"></a>Distinct Intersection Mode</h2>
-<div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span>() <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/fromDataFrame.html">fromDataFrame</a></span>(<span class="no">t</span>) <span class="kw">%&gt;%</span> <span class="fu"><a href="../reference/generateDistinctIntersections.html">generateDistinctIntersections</a></span>()</pre></body></html></div>
-<div id="htmlwidget-937c537f1947ad92ff23" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-937c537f1947ad92ff23">{"x":{"mode":"hover","sets":[{"name":"set3","type":"set","color":null,"elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"]},{"name":"set2","type":"set","color":null,"elems":["1","3","6","8","11","14","15","16","17","18"]},{"name":"set1","type":"set","color":null,"elems":["1","7","11","12","15"]}],"combinations":[{"name":"set3","color":null,"type":"distinctIntersection","elems":["2","4","5","9","10","13","19","20"],"setNames":"set3"},{"name":"set3&set2","color":null,"type":"distinctIntersection","elems":["3","6","8","17"],"setNames":["set3","set2"]},{"name":"set2","color":null,"type":"distinctIntersection","elems":["14","16","18"],"setNames":"set2"},{"name":"set3&set2&set1","color":null,"type":"distinctIntersection","elems":["11","15"],"setNames":["set3","set2","set1"]},{"name":"set1","color":null,"type":"distinctIntersection","elems":"12","setNames":"set1"},{"name":"set2&set1","color":null,"type":"distinctIntersection","elems":"1","setNames":["set2","set1"]},{"name":"set3&set1","color":null,"type":"distinctIntersection","elems":"7","setNames":["set3","set1"]}],"elems":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"expressionData":false},"evals":[],"jsHooks":[]}</script>
+<div class="section level2">
+<h2 id="distinct-intersection-mode">Distinct Intersection Mode<a class="anchor" aria-label="anchor" href="#distinct-intersection-mode"></a>
+</h2>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+    <span class="fu"><a href="../reference/fromDataFrame.html">fromDataFrame</a></span><span class="op">(</span><span class="va">t</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+    <span class="fu"><a href="../reference/generateDistinctIntersections.html">generateDistinctIntersections</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<div id="htmlwidget-da65337e1252bbe93dc0" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-da65337e1252bbe93dc0">{"x":{"sets":[{"name":"set3","type":"set","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"cardinality":15,"color":null},{"name":"set2","type":"set","elems":["1","3","6","8","11","14","15","16","17","18"],"cardinality":10,"color":null},{"name":"set1","type":"set","elems":["1","7","11","12","15"],"cardinality":5,"color":null}],"combinations":[{"name":"set3","type":"distinctIntersection","elems":["2","4","5","9","10","13","19","20"],"color":null,"cardinality":8,"setNames":"set3","degree":1},{"name":"set3&set2","type":"distinctIntersection","elems":["3","6","8","17"],"color":null,"cardinality":4,"setNames":["set3","set2"],"degree":2},{"name":"set2","type":"distinctIntersection","elems":["14","16","18"],"color":null,"cardinality":3,"setNames":"set2","degree":1},{"name":"set3&set2&set1","type":"intersect","elems":["11","15"],"color":null,"cardinality":2,"setNames":["set3","set2","set1"],"degree":3},{"name":"set1","type":"distinctIntersection","elems":"12","color":null,"cardinality":1,"setNames":"set1","degree":1},{"name":"set2&set1","type":"distinctIntersection","elems":"1","color":null,"cardinality":1,"setNames":["set2","set1"],"degree":2},{"name":"set3&set1","type":"distinctIntersection","elems":"7","color":null,"cardinality":1,"setNames":["set3","set1"],"degree":2}],"elems":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"expressionData":false},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
   </div>
@@ -169,11 +176,13 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by Samuel Gratzl.</p>
+  <p></p>
+<p>Developed by Samuel Gratzl.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -181,6 +190,8 @@
 
   
 
+
+  
 
   </body>
 </html>
