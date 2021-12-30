@@ -8,7 +8,7 @@ This package is part of the UpSet.js ecosystem located at the main [Github Monor
 
 ![UpSet.js Report](https://user-images.githubusercontent.com/4129778/80864985-9b771380-8c86-11ea-809c-a4473b32ed3b.png)
 
-see also [Sample PBIX file](https://upset.js.org/integrations/powerbi/got.pbix)
+see also [Sample GoT PBIX file](https://upset.js.org/integrations/powerbi/got.pbix) or [Sample PBIX file](https://upset.js.org/integrations/powerbi/sample.pbix)
 
 ## Installation
 
