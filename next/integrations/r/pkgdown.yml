@@ -1,0 +1,12 @@
+pandoc: '2.5'
+pkgdown: 2.0.1
+pkgdown_sha: ~
+articles:
+  colors: colors.html
+  combinationModes: combinationModes.html
+  got: got.html
+  kmap: kmap.html
+  upsetjs: upsetjs.html
+  venn: venn.html
+last_built: 2021-12-30T21:49Z
+
