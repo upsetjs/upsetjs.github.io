@@ -93,7 +93,7 @@
       <h1 data-toc-skip>UpSet.js Combination Modes</h1>
                         <h4 data-toc-skip class="author">Samuel Gratzl</h4>
             
-            <h4 data-toc-skip class="date">2022-01-04</h4>
+            <h4 data-toc-skip class="date">2022-01-27</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/upsetjs/upsetjs_r/blob/HEAD/vignettes/combinationModes.Rmd" class="external-link"><code>vignettes/combinationModes.Rmd</code></a></small>
       <div class="hidden name"><code>combinationModes.Rmd</code></div>
@@ -102,9 +102,9 @@
 
     
     
-<div class="section level1">
-<h1 id="upset-js-combination-modes">UpSet.js Combination Modes<a class="anchor" aria-label="anchor" href="#upset-js-combination-modes"></a>
-</h1>
+<div class="section level2">
+<h2 id="upset-js-combination-modes">UpSet.js Combination Modes<a class="anchor" aria-label="anchor" href="#upset-js-combination-modes"></a>
+</h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/upsetjs/upsetjs_r/" class="external-link">upsetjs</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/" class="external-link">tibble</a></span><span class="op">)</span></code></pre></div>
@@ -132,35 +132,35 @@
    <span class="fl">0</span>,   <span class="fl">0</span>,   <span class="fl">1</span>,
    <span class="fl">0</span>,   <span class="fl">0</span>,   <span class="fl">1</span>
 <span class="op">)</span></code></pre></div>
-<div class="section level2">
-<h2 id="intersection-mode">Intersection Mode<a class="anchor" aria-label="anchor" href="#intersection-mode"></a>
-</h2>
+<div class="section level3">
+<h3 id="intersection-mode">Intersection Mode<a class="anchor" aria-label="anchor" href="#intersection-mode"></a>
+</h3>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
     <span class="fu"><a href="../reference/fromDataFrame.html">fromDataFrame</a></span><span class="op">(</span><span class="va">t</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
     <span class="fu"><a href="../reference/generateIntersections.html">generateIntersections</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
-<div id="htmlwidget-146bfe82022f740637ae" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-146bfe82022f740637ae">{"x":{"sets":[{"name":"set3","type":"set","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"cardinality":15,"color":null},{"name":"set2","type":"set","elems":["1","3","6","8","11","14","15","16","17","18"],"cardinality":10,"color":null},{"name":"set1","type":"set","elems":["1","7","11","12","15"],"cardinality":5,"color":null}],"combinations":[{"name":"set3","type":"intersection","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"color":null,"cardinality":15,"setNames":"set3","degree":1},{"name":"set2","type":"intersection","elems":["1","3","6","8","11","14","15","16","17","18"],"color":null,"cardinality":10,"setNames":"set2","degree":1},{"name":"set3&set2","type":"intersect","elems":["3","6","8","11","15","17"],"color":null,"cardinality":6,"setNames":["set3","set2"],"degree":2},{"name":"set1","type":"intersection","elems":["1","7","11","12","15"],"color":null,"cardinality":5,"setNames":"set1","degree":1},{"name":"set2&set1","type":"intersect","elems":["1","11","15"],"color":null,"cardinality":3,"setNames":["set2","set1"],"degree":2},{"name":"set3&set1","type":"intersect","elems":["7","11","15"],"color":null,"cardinality":3,"setNames":["set3","set1"],"degree":2},{"name":"set3&set2&set1","type":"intersect","elems":["11","15"],"color":null,"cardinality":2,"setNames":["set3","set2","set1"],"degree":3}],"elems":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"expressionData":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-238b56c69f8942c3eecf" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-238b56c69f8942c3eecf">{"x":{"sets":[{"name":"set3","type":"set","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"cardinality":15,"color":null},{"name":"set2","type":"set","elems":["1","3","6","8","11","14","15","16","17","18"],"cardinality":10,"color":null},{"name":"set1","type":"set","elems":["1","7","11","12","15"],"cardinality":5,"color":null}],"combinations":[{"name":"set3","type":"intersection","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"color":null,"cardinality":15,"setNames":"set3","degree":1},{"name":"set2","type":"intersection","elems":["1","3","6","8","11","14","15","16","17","18"],"color":null,"cardinality":10,"setNames":"set2","degree":1},{"name":"set3&set2","type":"intersect","elems":["3","6","8","11","15","17"],"color":null,"cardinality":6,"setNames":["set3","set2"],"degree":2},{"name":"set1","type":"intersection","elems":["1","7","11","12","15"],"color":null,"cardinality":5,"setNames":"set1","degree":1},{"name":"set2&set1","type":"intersect","elems":["1","11","15"],"color":null,"cardinality":3,"setNames":["set2","set1"],"degree":2},{"name":"set3&set1","type":"intersect","elems":["7","11","15"],"color":null,"cardinality":3,"setNames":["set3","set1"],"degree":2},{"name":"set3&set2&set1","type":"intersect","elems":["11","15"],"color":null,"cardinality":2,"setNames":["set3","set2","set1"],"degree":3}],"elems":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"expressionData":false},"evals":[],"jsHooks":[]}</script>
 </div>
-<div class="section level2">
-<h2 id="union-mode">Union Mode<a class="anchor" aria-label="anchor" href="#union-mode"></a>
-</h2>
+<div class="section level3">
+<h3 id="union-mode">Union Mode<a class="anchor" aria-label="anchor" href="#union-mode"></a>
+</h3>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
     <span class="fu"><a href="../reference/fromDataFrame.html">fromDataFrame</a></span><span class="op">(</span><span class="va">t</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
     <span class="fu"><a href="../reference/generateUnions.html">generateUnions</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
-<div id="htmlwidget-aeae72ddb8b414eed1bb" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-aeae72ddb8b414eed1bb">{"x":{"sets":[{"name":"set3","type":"set","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"cardinality":15,"color":null},{"name":"set2","type":"set","elems":["1","3","6","8","11","14","15","16","17","18"],"cardinality":10,"color":null},{"name":"set1","type":"set","elems":["1","7","11","12","15"],"cardinality":5,"color":null}],"combinations":[{"name":"set3&set2&set1","type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20","1","14","16","18","12"],"color":null,"cardinality":20,"setNames":["set3","set2","set1"],"degree":3},{"name":"set3&set2","type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20","1","14","16","18"],"color":null,"cardinality":19,"setNames":["set3","set2"],"degree":2},{"name":"set3&set1","type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20","1","12"],"color":null,"cardinality":17,"setNames":["set3","set1"],"degree":2},{"name":"set3","type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"color":null,"cardinality":15,"setNames":"set3","degree":1},{"name":"set2&set1","type":"union","elems":["1","3","6","8","11","14","15","16","17","18","7","12"],"color":null,"cardinality":12,"setNames":["set2","set1"],"degree":2},{"name":"set2","type":"union","elems":["1","3","6","8","11","14","15","16","17","18"],"color":null,"cardinality":10,"setNames":"set2","degree":1},{"name":"set1","type":"union","elems":["1","7","11","12","15"],"color":null,"cardinality":5,"setNames":"set1","degree":1}],"elems":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"expressionData":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a93ef0425c65a2baa40d" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a93ef0425c65a2baa40d">{"x":{"sets":[{"name":"set3","type":"set","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"cardinality":15,"color":null},{"name":"set2","type":"set","elems":["1","3","6","8","11","14","15","16","17","18"],"cardinality":10,"color":null},{"name":"set1","type":"set","elems":["1","7","11","12","15"],"cardinality":5,"color":null}],"combinations":[{"name":"set3&set2&set1","type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20","1","14","16","18","12"],"color":null,"cardinality":20,"setNames":["set3","set2","set1"],"degree":3},{"name":"set3&set2","type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20","1","14","16","18"],"color":null,"cardinality":19,"setNames":["set3","set2"],"degree":2},{"name":"set3&set1","type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20","1","12"],"color":null,"cardinality":17,"setNames":["set3","set1"],"degree":2},{"name":"set3","type":"union","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"color":null,"cardinality":15,"setNames":"set3","degree":1},{"name":"set2&set1","type":"union","elems":["1","3","6","8","11","14","15","16","17","18","7","12"],"color":null,"cardinality":12,"setNames":["set2","set1"],"degree":2},{"name":"set2","type":"union","elems":["1","3","6","8","11","14","15","16","17","18"],"color":null,"cardinality":10,"setNames":"set2","degree":1},{"name":"set1","type":"union","elems":["1","7","11","12","15"],"color":null,"cardinality":5,"setNames":"set1","degree":1}],"elems":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"expressionData":false},"evals":[],"jsHooks":[]}</script>
 </div>
-<div class="section level2">
-<h2 id="distinct-intersection-mode">Distinct Intersection Mode<a class="anchor" aria-label="anchor" href="#distinct-intersection-mode"></a>
-</h2>
+<div class="section level3">
+<h3 id="distinct-intersection-mode">Distinct Intersection Mode<a class="anchor" aria-label="anchor" href="#distinct-intersection-mode"></a>
+</h3>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
     <span class="fu"><a href="../reference/fromDataFrame.html">fromDataFrame</a></span><span class="op">(</span><span class="va">t</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
     <span class="fu"><a href="../reference/generateDistinctIntersections.html">generateDistinctIntersections</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
-<div id="htmlwidget-128eb091ad00bc58f565" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-128eb091ad00bc58f565">{"x":{"sets":[{"name":"set3","type":"set","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"cardinality":15,"color":null},{"name":"set2","type":"set","elems":["1","3","6","8","11","14","15","16","17","18"],"cardinality":10,"color":null},{"name":"set1","type":"set","elems":["1","7","11","12","15"],"cardinality":5,"color":null}],"combinations":[{"name":"set3","type":"distinctIntersection","elems":["2","4","5","9","10","13","19","20"],"color":null,"cardinality":8,"setNames":"set3","degree":1},{"name":"set3&set2","type":"distinctIntersection","elems":["3","6","8","17"],"color":null,"cardinality":4,"setNames":["set3","set2"],"degree":2},{"name":"set2","type":"distinctIntersection","elems":["14","16","18"],"color":null,"cardinality":3,"setNames":"set2","degree":1},{"name":"set3&set2&set1","type":"intersect","elems":["11","15"],"color":null,"cardinality":2,"setNames":["set3","set2","set1"],"degree":3},{"name":"set1","type":"distinctIntersection","elems":"12","color":null,"cardinality":1,"setNames":"set1","degree":1},{"name":"set2&set1","type":"distinctIntersection","elems":"1","color":null,"cardinality":1,"setNames":["set2","set1"],"degree":2},{"name":"set3&set1","type":"distinctIntersection","elems":"7","color":null,"cardinality":1,"setNames":["set3","set1"],"degree":2}],"elems":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"expressionData":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-56fddff60806f14e50b2" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-56fddff60806f14e50b2">{"x":{"sets":[{"name":"set3","type":"set","elems":["2","3","4","5","6","7","8","9","10","11","13","15","17","19","20"],"cardinality":15,"color":null},{"name":"set2","type":"set","elems":["1","3","6","8","11","14","15","16","17","18"],"cardinality":10,"color":null},{"name":"set1","type":"set","elems":["1","7","11","12","15"],"cardinality":5,"color":null}],"combinations":[{"name":"set3","type":"distinctIntersection","elems":["2","4","5","9","10","13","19","20"],"color":null,"cardinality":8,"setNames":"set3","degree":1},{"name":"set3&set2","type":"distinctIntersection","elems":["3","6","8","17"],"color":null,"cardinality":4,"setNames":["set3","set2"],"degree":2},{"name":"set2","type":"distinctIntersection","elems":["14","16","18"],"color":null,"cardinality":3,"setNames":"set2","degree":1},{"name":"set3&set2&set1","type":"intersect","elems":["11","15"],"color":null,"cardinality":2,"setNames":["set3","set2","set1"],"degree":3},{"name":"set1","type":"distinctIntersection","elems":"12","color":null,"cardinality":1,"setNames":"set1","degree":1},{"name":"set2&set1","type":"distinctIntersection","elems":"1","color":null,"cardinality":1,"setNames":["set2","set1"],"degree":2},{"name":"set3&set1","type":"distinctIntersection","elems":"7","color":null,"cardinality":1,"setNames":["set3","set1"],"degree":2}],"elems":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],"expressionData":false},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
   </div>
@@ -182,7 +182,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
 </div>
 
       </footer>

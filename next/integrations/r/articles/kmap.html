@@ -93,7 +93,7 @@
       <h1 data-toc-skip>UpSet.js Karnaugh Map</h1>
                         <h4 data-toc-skip class="author">Samuel Gratzl</h4>
             
-            <h4 data-toc-skip class="date">2022-01-04</h4>
+            <h4 data-toc-skip class="date">2022-01-27</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/upsetjs/upsetjs_r/blob/HEAD/vignettes/kmap.Rmd" class="external-link"><code>vignettes/kmap.Rmd</code></a></small>
       <div class="hidden name"><code>kmap.Rmd</code></div>
@@ -102,16 +102,16 @@
 
     
     
-<div class="section level1">
-<h1 id="upset-js-r-widget---karnaugh-map">UpSet.js R Widget - Karnaugh Map<a class="anchor" aria-label="anchor" href="#upset-js-r-widget---karnaugh-map"></a>
-</h1>
+<div class="section level2">
+<h2 id="upset-js-r-widget---karnaugh-map">UpSet.js R Widget - Karnaugh Map<a class="anchor" aria-label="anchor" href="#upset-js-r-widget---karnaugh-map"></a>
+</h2>
 <p>UpSet.js has a basic support for adapted version of Karnaugh Maps.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># devtools::install_url("https://github.com/upsetjs/upsetjs_r/releases/latest/download/upsetjs.tar.gz")</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/upsetjs/upsetjs_r/" class="external-link">upsetjs</a></span><span class="op">)</span></code></pre></div>
-<div class="section level2">
-<h2 id="basic-user-interface">Basic User Interface<a class="anchor" aria-label="anchor" href="#basic-user-interface"></a>
-</h2>
+<div class="section level3">
+<h3 id="basic-user-interface">Basic User Interface<a class="anchor" aria-label="anchor" href="#basic-user-interface"></a>
+</h3>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">listInput</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>one <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"e"</span>, <span class="st">"g"</span>, <span class="st">"h"</span>, <span class="st">"k"</span>, <span class="st">"l"</span>, <span class="st">"m"</span><span class="op">)</span>, two <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"a"</span>,
     <span class="st">"b"</span>, <span class="st">"d"</span>, <span class="st">"e"</span>, <span class="st">"j"</span><span class="op">)</span>, three <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"e"</span>, <span class="st">"f"</span>, <span class="st">"g"</span>, <span class="st">"h"</span>, <span class="st">"i"</span>, <span class="st">"j"</span>, <span class="st">"l"</span>, <span class="st">"m"</span><span class="op">)</span><span class="op">)</span>
@@ -120,61 +120,61 @@
     <span class="fu"><a href="../reference/fromList.html">fromList</a></span><span class="op">(</span><span class="va">listInput</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
     <span class="fu"><a href="../reference/interactiveChart.html">interactiveChart</a></span><span class="op">(</span><span class="op">)</span>
 <span class="va">w</span></code></pre></div>
-<div id="htmlwidget-4c053689bf95d391e1ad" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4c053689bf95d391e1ad">{"x":{"renderMode":"kmap","sets":[{"name":"one","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":null},{"name":"three","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":null},{"name":"two","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":null}],"combinations":[{"name":"one","type":"distinctIntersection","elems":["c","k"],"color":null,"cardinality":2,"setNames":"one","degree":1},{"name":"three","type":"distinctIntersection","elems":["f","i"],"color":null,"cardinality":2,"setNames":"three","degree":1},{"name":"two","type":"distinctIntersection","elems":"d","color":null,"cardinality":1,"setNames":"two","degree":1},{"name":"one&three","type":"distinctIntersection","elems":["g","h","l","m"],"color":null,"cardinality":4,"setNames":["one","three"],"degree":2},{"name":"one&two","type":"distinctIntersection","elems":"b","color":null,"cardinality":1,"setNames":["one","two"],"degree":2},{"name":"three&two","type":"distinctIntersection","elems":"j","color":null,"cardinality":1,"setNames":["three","two"],"degree":2},{"name":"one&three&two","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["one","three","two"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"interactive":true},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b94e359b41fb78756b01" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b94e359b41fb78756b01">{"x":{"renderMode":"kmap","sets":[{"name":"one","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":null},{"name":"three","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":null},{"name":"two","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":null}],"combinations":[{"name":"one","type":"distinctIntersection","elems":["c","k"],"color":null,"cardinality":2,"setNames":"one","degree":1},{"name":"three","type":"distinctIntersection","elems":["f","i"],"color":null,"cardinality":2,"setNames":"three","degree":1},{"name":"two","type":"distinctIntersection","elems":"d","color":null,"cardinality":1,"setNames":"two","degree":1},{"name":"one&three","type":"distinctIntersection","elems":["g","h","l","m"],"color":null,"cardinality":4,"setNames":["one","three"],"degree":2},{"name":"one&two","type":"distinctIntersection","elems":"b","color":null,"cardinality":1,"setNames":["one","two"],"degree":2},{"name":"three&two","type":"distinctIntersection","elems":"j","color":null,"cardinality":1,"setNames":["three","two"],"degree":2},{"name":"one&three&two","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["one","three","two"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"interactive":true},"evals":[],"jsHooks":[]}</script>
 </div>
-<div class="section level2">
-<h2 id="input-formats">Input Formats<a class="anchor" aria-label="anchor" href="#input-formats"></a>
-</h2>
+<div class="section level3">
+<h3 id="input-formats">Input Formats<a class="anchor" aria-label="anchor" href="#input-formats"></a>
+</h3>
 <p>same as for <code>upsetjs</code>: <code>fromList</code>, <code>fromDataFrame</code>, and <code>fromExpression</code></p>
 </div>
-<div class="section level2">
-<h2 id="data-intersections">Data Intersections<a class="anchor" aria-label="anchor" href="#data-intersections"></a>
-</h2>
+<div class="section level3">
+<h3 id="data-intersections">Data Intersections<a class="anchor" aria-label="anchor" href="#data-intersections"></a>
+</h3>
 <p>not possible to define since the number of sections in the Venn diagrams are fixed</p>
 </div>
-<div class="section level2">
-<h2 id="interaction">Interaction<a class="anchor" aria-label="anchor" href="#interaction"></a>
-</h2>
 <div class="section level3">
-<h3 id="interactivity">Interactivity<a class="anchor" aria-label="anchor" href="#interactivity"></a>
+<h3 id="interaction">Interaction<a class="anchor" aria-label="anchor" href="#interaction"></a>
+</h3>
+<div class="section level4">
+<h4 id="interactivity">Interactivity<a class="anchor" aria-label="anchor" href="#interactivity"></a>
+</h4>
+<p>same as <code>upsetjs</code></p>
+</div>
+<div class="section level4">
+<h4 id="selection">Selection<a class="anchor" aria-label="anchor" href="#selection"></a>
+</h4>
+<p>same as <code>upsetjs</code></p>
+</div>
+</div>
+<div class="section level3">
+<h3 id="queries">Queries<a class="anchor" aria-label="anchor" href="#queries"></a>
 </h3>
 <p>same as <code>upsetjs</code></p>
 </div>
 <div class="section level3">
-<h3 id="selection">Selection<a class="anchor" aria-label="anchor" href="#selection"></a>
+<h3 id="attributes">Attributes<a class="anchor" aria-label="anchor" href="#attributes"></a>
 </h3>
-<p>same as <code>upsetjs</code></p>
-</div>
-</div>
-<div class="section level2">
-<h2 id="queries">Queries<a class="anchor" aria-label="anchor" href="#queries"></a>
-</h2>
-<p>same as <code>upsetjs</code></p>
-</div>
-<div class="section level2">
-<h2 id="attributes">Attributes<a class="anchor" aria-label="anchor" href="#attributes"></a>
-</h2>
 <p>not supported</p>
 </div>
-<div class="section level2">
-<h2 id="styling">Styling<a class="anchor" aria-label="anchor" href="#styling"></a>
-</h2>
 <div class="section level3">
-<h3 id="theme">Theme<a class="anchor" aria-label="anchor" href="#theme"></a>
+<h3 id="styling">Styling<a class="anchor" aria-label="anchor" href="#styling"></a>
 </h3>
+<div class="section level4">
+<h4 id="theme">Theme<a class="anchor" aria-label="anchor" href="#theme"></a>
+</h4>
 <p>same as <code>upsetjs</code></p>
 </div>
-<div class="section level3">
-<h3 id="title">Title<a class="anchor" aria-label="anchor" href="#title"></a>
-</h3>
+<div class="section level4">
+<h4 id="title">Title<a class="anchor" aria-label="anchor" href="#title"></a>
+</h4>
 <p>provided as a different function: <code>chartKarnaughMapLabels</code></p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/upsetjsKarnaughMap.html">upsetjsKarnaughMap</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
     <span class="fu"><a href="../reference/fromList.html">fromList</a></span><span class="op">(</span><span class="va">listInput</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
     <span class="fu"><a href="../reference/chartKarnaughMapLabels.html">chartKarnaughMapLabels</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Chart Title"</span>, description <span class="op">=</span> <span class="st">"this is a long chart description"</span><span class="op">)</span></code></pre></div>
-<div id="htmlwidget-a8bf0657dbf23e93d3c5" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a8bf0657dbf23e93d3c5">{"x":{"renderMode":"kmap","sets":[{"name":"one","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":null},{"name":"three","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":null},{"name":"two","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":null}],"combinations":[{"name":"one","type":"distinctIntersection","elems":["c","k"],"color":null,"cardinality":2,"setNames":"one","degree":1},{"name":"three","type":"distinctIntersection","elems":["f","i"],"color":null,"cardinality":2,"setNames":"three","degree":1},{"name":"two","type":"distinctIntersection","elems":"d","color":null,"cardinality":1,"setNames":"two","degree":1},{"name":"one&three","type":"distinctIntersection","elems":["g","h","l","m"],"color":null,"cardinality":4,"setNames":["one","three"],"degree":2},{"name":"one&two","type":"distinctIntersection","elems":"b","color":null,"cardinality":1,"setNames":["one","two"],"degree":2},{"name":"three&two","type":"distinctIntersection","elems":"j","color":null,"cardinality":1,"setNames":["three","two"],"degree":2},{"name":"one&three&two","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["one","three","two"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"title":"Chart Title","description":"this is a long chart description"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-03f5aebdf102d869d566" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-03f5aebdf102d869d566">{"x":{"renderMode":"kmap","sets":[{"name":"one","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":null},{"name":"three","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":null},{"name":"two","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":null}],"combinations":[{"name":"one","type":"distinctIntersection","elems":["c","k"],"color":null,"cardinality":2,"setNames":"one","degree":1},{"name":"three","type":"distinctIntersection","elems":["f","i"],"color":null,"cardinality":2,"setNames":"three","degree":1},{"name":"two","type":"distinctIntersection","elems":"d","color":null,"cardinality":1,"setNames":"two","degree":1},{"name":"one&three","type":"distinctIntersection","elems":["g","h","l","m"],"color":null,"cardinality":4,"setNames":["one","three"],"degree":2},{"name":"one&two","type":"distinctIntersection","elems":"b","color":null,"cardinality":1,"setNames":["one","two"],"degree":2},{"name":"three&two","type":"distinctIntersection","elems":"j","color":null,"cardinality":1,"setNames":["three","two"],"degree":2},{"name":"one&three&two","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["one","three","two"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"title":"Chart Title","description":"this is a long chart description"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -197,7 +197,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
 </div>
 
       </footer>
