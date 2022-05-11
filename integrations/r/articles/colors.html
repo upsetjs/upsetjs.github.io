@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">upsetjs</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.10.11</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.11.0</span>
       </span>
     </div>
 
@@ -46,7 +46,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -87,13 +87,13 @@
 
       
 
-      </header><script src="colors_files/htmlwidgets-1.5.4/htmlwidgets.js"></script><script src="colors_files/upsetjs-binding-1.10.11/upsetjs.js"></script><div class="row">
+      </header><script src="colors_files/htmlwidgets-1.5.4/htmlwidgets.js"></script><script src="colors_files/upsetjs-binding-1.11.0/upsetjs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>UpSet.js Coloring</h1>
                         <h4 data-toc-skip class="author">Samuel Gratzl</h4>
             
-            <h4 data-toc-skip class="date">2022-01-27</h4>
+            <h4 data-toc-skip class="date">2022-05-11</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/upsetjs/upsetjs_r/blob/HEAD/vignettes/colors.Rmd" class="external-link"><code>vignettes/colors.Rmd</code></a></small>
       <div class="hidden name"><code>colors.Rmd</code></div>
@@ -123,18 +123,18 @@
 <code class="sourceCode R"><span class="va">v</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/upsetjs.html">upsetjs</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
     <span class="fu">render</span><span class="op">(</span><span class="op">)</span>
 <span class="va">v</span></code></pre></div>
-<div id="htmlwidget-8d6f1a90b8d948595cf7" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8d6f1a90b8d948595cf7">{"x":{"sets":[{"name":"s1","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":"#1f77b4"},{"name":"s3","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":"#d62728"},{"name":"s2","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":"#2ca02c"}],"combinations":[{"name":"s1","type":"intersection","elems":["a","b","c","e","g","h","k","l","m"],"color":"#1f77b4","cardinality":9,"setNames":"s1","degree":1},{"name":"s3","type":"intersection","elems":["a","e","f","g","h","i","j","l","m"],"color":"#d62728","cardinality":9,"setNames":"s3","degree":1},{"name":"s1&s3","type":"intersect","elems":["a","e","g","h","l","m"],"color":"#8c564b","cardinality":6,"setNames":["s1","s3"],"degree":2},{"name":"s2","type":"intersection","elems":["a","b","d","e","j"],"color":"#2ca02c","cardinality":5,"setNames":"s2","degree":1},{"name":"s1&s2","type":"intersect","elems":["a","b","e"],"color":"#9467bd","cardinality":3,"setNames":["s1","s2"],"degree":2},{"name":"s3&s2","type":"intersect","elems":["a","e","j"],"color":null,"cardinality":3,"setNames":["s3","s2"],"degree":2},{"name":"s1&s3&s2","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["s1","s3","s2"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"selectionColor":"","hasSelectionOpacity":0.3,"interactive":true},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div id="htmlwidget-8f25447e9c71ca7b905c" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8f25447e9c71ca7b905c">{"x":{"sets":[{"name":"s1","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":"#1f77b4"},{"name":"s3","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":"#d62728"},{"name":"s2","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":"#2ca02c"}],"combinations":[{"name":"s1","type":"intersection","elems":["a","b","c","e","g","h","k","l","m"],"color":"#1f77b4","cardinality":9,"setNames":"s1","degree":1},{"name":"s3","type":"intersection","elems":["a","e","f","g","h","i","j","l","m"],"color":"#d62728","cardinality":9,"setNames":"s3","degree":1},{"name":"s1&s3","type":"intersect","elems":["a","e","g","h","l","m"],"color":"#8c564b","cardinality":6,"setNames":["s1","s3"],"degree":2},{"name":"s2","type":"intersection","elems":["a","b","d","e","j"],"color":"#2ca02c","cardinality":5,"setNames":"s2","degree":1},{"name":"s1&s2","type":"intersect","elems":["a","b","e"],"color":"#9467bd","cardinality":3,"setNames":["s1","s2"],"degree":2},{"name":"s3&s2","type":"intersect","elems":["a","e","j"],"color":null,"cardinality":3,"setNames":["s3","s2"],"degree":2},{"name":"s1&s3&s2","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["s1","s3","s2"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"selectionColor":"","hasSelectionOpacity":0.3,"interactive":true,"events_nonce":false},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">v</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/upsetjsVennDiagram.html">upsetjsVennDiagram</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
     <span class="fu">render</span><span class="op">(</span><span class="op">)</span>
 <span class="va">v</span></code></pre></div>
-<div id="htmlwidget-7c53ba8c018292d4e278" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7c53ba8c018292d4e278">{"x":{"renderMode":"venn","sets":[{"name":"s1","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":"#1f77b4"},{"name":"s3","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":"#d62728"},{"name":"s2","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":"#2ca02c"}],"combinations":[{"name":"s1","type":"distinctIntersection","elems":["c","k"],"color":"#1f77b4","cardinality":2,"setNames":"s1","degree":1},{"name":"s2","type":"distinctIntersection","elems":"d","color":"#2ca02c","cardinality":1,"setNames":"s2","degree":1},{"name":"s3","type":"distinctIntersection","elems":["f","i"],"color":"#d62728","cardinality":2,"setNames":"s3","degree":1},{"name":"s1&s2","type":"distinctIntersection","elems":"b","color":"#9467bd","cardinality":1,"setNames":["s1","s2"],"degree":2},{"name":"s1&s3","type":"distinctIntersection","elems":["g","h","l","m"],"color":"#8c564b","cardinality":4,"setNames":["s1","s3"],"degree":2},{"name":"s3&s2","type":"distinctIntersection","elems":"j","color":null,"cardinality":1,"setNames":["s3","s2"],"degree":2},{"name":"s1&s3&s2","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["s1","s3","s2"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"selectionColor":"","hasSelectionOpacity":0.3,"interactive":true},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div id="htmlwidget-0263880265aac7fb7d53" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0263880265aac7fb7d53">{"x":{"renderMode":"venn","sets":[{"name":"s1","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":"#1f77b4"},{"name":"s3","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":"#d62728"},{"name":"s2","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":"#2ca02c"}],"combinations":[{"name":"s1","type":"distinctIntersection","elems":["c","k"],"color":"#1f77b4","cardinality":2,"setNames":"s1","degree":1},{"name":"s2","type":"distinctIntersection","elems":"d","color":"#2ca02c","cardinality":1,"setNames":"s2","degree":1},{"name":"s3","type":"distinctIntersection","elems":["f","i"],"color":"#d62728","cardinality":2,"setNames":"s3","degree":1},{"name":"s1&s2","type":"distinctIntersection","elems":"b","color":"#9467bd","cardinality":1,"setNames":["s1","s2"],"degree":2},{"name":"s1&s3","type":"distinctIntersection","elems":["g","h","l","m"],"color":"#8c564b","cardinality":4,"setNames":["s1","s3"],"degree":2},{"name":"s3&s2","type":"distinctIntersection","elems":"j","color":null,"cardinality":1,"setNames":["s3","s2"],"degree":2},{"name":"s1&s3&s2","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["s1","s3","s2"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"selectionColor":"","hasSelectionOpacity":0.3,"interactive":true,"events_nonce":false},"evals":[],"jsHooks":[]}</script><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">v</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/upsetjsEulerDiagram.html">upsetjsEulerDiagram</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
     <span class="fu">render</span><span class="op">(</span><span class="op">)</span>
 <span class="va">v</span></code></pre></div>
-<div id="htmlwidget-f4078ddfa6c97c98b477" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f4078ddfa6c97c98b477">{"x":{"renderMode":"euler","sets":[{"name":"s1","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":"#1f77b4"},{"name":"s3","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":"#d62728"},{"name":"s2","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":"#2ca02c"}],"combinations":[{"name":"s1","type":"distinctIntersection","elems":["c","k"],"color":"#1f77b4","cardinality":2,"setNames":"s1","degree":1},{"name":"s2","type":"distinctIntersection","elems":"d","color":"#2ca02c","cardinality":1,"setNames":"s2","degree":1},{"name":"s3","type":"distinctIntersection","elems":["f","i"],"color":"#d62728","cardinality":2,"setNames":"s3","degree":1},{"name":"s1&s2","type":"distinctIntersection","elems":"b","color":"#9467bd","cardinality":1,"setNames":["s1","s2"],"degree":2},{"name":"s1&s3","type":"distinctIntersection","elems":["g","h","l","m"],"color":"#8c564b","cardinality":4,"setNames":["s1","s3"],"degree":2},{"name":"s3&s2","type":"distinctIntersection","elems":"j","color":null,"cardinality":1,"setNames":["s3","s2"],"degree":2},{"name":"s1&s3&s2","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["s1","s3","s2"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"selectionColor":"","hasSelectionOpacity":0.3,"interactive":true},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-89cd41d462950fa61a51" style="width:100%;height:480px;" class="upsetjs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-89cd41d462950fa61a51">{"x":{"renderMode":"euler","sets":[{"name":"s1","type":"set","elems":["a","b","c","e","g","h","k","l","m"],"cardinality":9,"color":"#1f77b4"},{"name":"s3","type":"set","elems":["a","e","f","g","h","i","j","l","m"],"cardinality":9,"color":"#d62728"},{"name":"s2","type":"set","elems":["a","b","d","e","j"],"cardinality":5,"color":"#2ca02c"}],"combinations":[{"name":"s1","type":"distinctIntersection","elems":["c","k"],"color":"#1f77b4","cardinality":2,"setNames":"s1","degree":1},{"name":"s2","type":"distinctIntersection","elems":"d","color":"#2ca02c","cardinality":1,"setNames":"s2","degree":1},{"name":"s3","type":"distinctIntersection","elems":["f","i"],"color":"#d62728","cardinality":2,"setNames":"s3","degree":1},{"name":"s1&s2","type":"distinctIntersection","elems":"b","color":"#9467bd","cardinality":1,"setNames":["s1","s2"],"degree":2},{"name":"s1&s3","type":"distinctIntersection","elems":["g","h","l","m"],"color":"#8c564b","cardinality":4,"setNames":["s1","s3"],"degree":2},{"name":"s3&s2","type":"distinctIntersection","elems":"j","color":null,"cardinality":1,"setNames":["s3","s2"],"degree":2},{"name":"s1&s3&s2","type":"intersect","elems":["a","e"],"color":null,"cardinality":2,"setNames":["s1","s3","s2"],"degree":3}],"elems":["a","b","c","e","g","h","k","l","m","d","j","f","i"],"expressionData":false,"attrs":[],"selectionColor":"","hasSelectionOpacity":0.3,"interactive":true,"events_nonce":false},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
   </div>
@@ -156,7 +156,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
 </div>
 
       </footer>
