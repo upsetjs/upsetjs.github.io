@@ -1,5 +1,5 @@
 pandoc: '2.5'
-pkgdown: 2.0.3
+pkgdown: 2.0.5
 pkgdown_sha: ~
 articles:
   colors: colors.html
@@ -8,5 +8,5 @@ articles:
   kmap: kmap.html
   upsetjs: upsetjs.html
   venn: venn.html
-last_built: 2022-05-11T08:40Z
+last_built: 2022-07-13T01:57Z
 
